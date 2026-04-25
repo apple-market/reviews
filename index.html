@@ -4913,41 +4913,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     if (!listEl.children.length) draw();
     btn.addEventListener('click', draw);
-  });
-})();
-// ---- END SAFE PATCH ----
-</script>
-</body>
-</html>
-/* DARK THEME */
-body.dark {
-  --bg: #0b0f1a;
-  --card: #111827;
-  --accent: #3b82f6;
-  --muted: #9ca3af;
-  --danger: #ef4444;
-  --shadow: 0 8px 24px rgba(0,0,0,0.6);
-  color: #e5e7eb;
-  background: linear-gradient(180deg,#020617 0%, var(--bg) 100%);
-}
-
-body.dark .card { background: var(--card); }
-
-body.dark .review {
-  border: 1px solid rgba(255,255,255,0.05);
-}
-
-body.dark .text { color: #e5e7eb; }
-
-body.dark input,
-body.dark textarea,
-body.dark select {
-  background: #020617;
-  color: #e5e7eb;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-body.dark .chip { background: #1f2937; }
+});
 const themeBtn = document.getElementById('themeToggle');
 
 themeBtn.addEventListener('click', () => {
@@ -4963,3 +4929,5 @@ themeBtn.addEventListener('click', () => {
 if(localStorage.getItem('theme') === 'dark'){
   document.body.classList.add('dark');
 }
+
+  
