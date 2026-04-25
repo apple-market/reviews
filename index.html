@@ -4881,70 +4881,9 @@ document.addEventListener('DOMContentLoaded', function(){
   renderApprovedList();
 });
 </script>
-<script>
-// ---- SAFE PATCH (keeps your original scripts) ----
-(function(){
-  function ready(fn){
-    if (document.readyState === 'complete' || document.readyState === 'interactive') {
-      setTimeout(fn, 0);
-    } else {
-      document.addEventListener('DOMContentLoaded', fn);
-    }
-  }
-  ready(function(){
-    var listEl = document.getElementById('approvedList');
-    var btn = document.getElementById('loadMoreBtn');
-    if(!listEl || !btn) return;
+// ---- END SAFE PATCH ----
 
-    if (btn.__hasSafePatch) return;
-    btn.__hasSafePatch = true;
-
-    if (typeof window.renderApprovedChunk === 'function') {
-      if (!listEl.children.length) {
-        try { window.renderApprovedChunk(); } catch(e){ /* no-op */ }
-      }
-      btn.addEventListener('click', function(){
-        try { window.renderApprovedChunk(); } catch(e){ /* no-op */ }
-      });
-      return;
-    }
-
-    var data = (window.approved && Array.isArray(window.approved) && window.approved.length)
-                ? window.approved
-                : (window.seed || []);
-    var loaded = 0, STEP = 20;
-
-    function fmt(ms){
-      var d = new Date(Number(ms || Date.now())); 
-      return d.toLocaleString();
-    }
-    function add(r){
-      var div = document.createElement('div');
-      div.className = 'review';
-      var initial = (r.name || 'А').toString().charAt(0);
-      var text = (r.text == null ? '' : String(r.text));
-      div.innerHTML = ''
-        + '<div class="avatar">'+initial+'</div>'
-        + '<div class="rbody">'
-        +   '<div class="rhead" style="display:flex;justify-content:space-between;gap:8px">'
-        +     '<div><div class="rname"><strong>'+(r.name||'Аноним')+'</strong></div>'
-        +     '<div class="rmeta small">'+fmt(r.date)+'</div></div>'
-        +   '</div>'
-        +   '<div class="text" style="margin-top:8px">'+text+'</div>'
-        + '</div>';
-      listEl.appendChild(div);
-    }
-    function draw(){
-      var slice = data.slice(loaded, loaded + STEP);
-      if (!slice.length) { btn.style.display = 'none'; return; }
-      slice.forEach(add);
-      loaded += slice.length;
-      if (loaded >= data.length) btn.style.display = 'none';
-      else btn.style.display = 'flex';
-    }
-    if (!listEl.children.length) draw();
-    btn.addEventListener('click', draw);
-});
+// DARK THEME JS
 const themeBtn = document.getElementById('themeToggle');
 
 themeBtn.addEventListener('click', () => {
@@ -4961,4 +4900,4 @@ if(localStorage.getItem('theme') === 'dark'){
   document.body.classList.add('dark');
 }
 
-  
+</script>
