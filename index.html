@@ -1,0 +1,4849 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090c">
+<title>Отзывы AM_BY — мнения клиентов</title>
+<style>
+:root{--bg:#08090c;--panel:#101217;--panel2:#15171d;--line:rgba(255,255,255,.09);--text:#f5f7fa;--muted:#9aa1ad;--accent:#fff;--gold:#f7c948;--green:#39d98a;--red:#ff5c67;--shadow:0 24px 70px rgba(0,0,0,.34);--radius:22px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,#1b1e27 0,transparent 34%),radial-gradient(circle at 90% 8%,#181a20 0,transparent 30%),var(--bg);color:var(--text);min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 28%)}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.container{width:min(1180px,calc(100% - 32px));margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:24px 0 18px;gap:20px}.brand{display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border-radius:14px;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.28)}.logo img{width:100%;height:100%;object-fit:contain}.brand-title{font-size:17px;font-weight:800;letter-spacing:-.02em}.brand-sub{font-size:12px;color:var(--muted);margin-top:2px}.nav{display:flex;gap:8px;align-items:center}.nav a,.nav button{border:1px solid var(--line);background:rgba(255,255,255,.035);color:#dfe3ea;padding:10px 13px;border-radius:12px;font-weight:700;font-size:13px}.nav .primary{background:#fff;color:#090a0d;border-color:#fff}
+.hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:30px;padding:54px 42px 42px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));box-shadow:var(--shadow)}.hero:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-100px;top:-130px;background:rgba(255,255,255,.08);filter:blur(50px)}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:#d9dde4;background:rgba(255,255,255,.04);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.hero h1{font-size:clamp(38px,6vw,68px);line-height:.98;letter-spacing:-.055em;max-width:760px;margin:18px 0 14px}.hero p{font-size:18px;line-height:1.55;color:#b9bec8;max-width:690px;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.btn{border:0;border-radius:13px;padding:12px 16px;background:#fff;color:#08090c;font-weight:850;transition:.2s transform,.2s box-shadow,.2s background}.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,255,255,.12)}.btn.secondary{background:rgba(255,255,255,.05);color:#f1f3f7;border:1px solid var(--line)}.btn.danger{background:var(--red);color:#fff}.btn.small{padding:9px 11px;font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:34px}.stat{padding:18px;border:1px solid var(--line);background:rgba(0,0,0,.16);border-radius:17px}.stat strong{display:block;font-size:27px;letter-spacing:-.04em}.stat span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0 28px}.trust-item{padding:17px;border-radius:18px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:#d8dce3}.trust-item b{display:block;font-size:14px;color:#fff;margin-bottom:5px}.trust-icon{font-size:20px;margin-bottom:8px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:34px 0 16px}.section-head h2{font-size:25px;margin:0;letter-spacing:-.03em}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.review-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border-radius:20px;padding:19px;margin-bottom:11px;transition:.2s transform,.2s border-color,.2s background}.review-card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.06)}.review-top{display:flex;gap:12px;align-items:flex-start}.avatar{width:46px;height:46px;flex:0 0 46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#2a2e37,#171920);font-weight:850;font-size:16px;color:#fff;border:1px solid rgba(255,255,255,.07)}.review-main{min-width:0;flex:1}.name-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.name{font-weight:800}.verified{font-size:10px;padding:4px 7px;border-radius:999px;background:rgba(57,217,138,.11);color:var(--green);border:1px solid rgba(57,217,138,.2);font-weight:800}.meta{color:var(--muted);font-size:12px;margin-top:4px}.rating{margin-left:auto;white-space:nowrap;color:var(--gold);letter-spacing:1px;font-size:15px}.review-text{color:#e3e6eb;line-height:1.62;font-size:14px;margin:14px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.review-photo{display:block;width:min(100%,420px);max-height:420px;object-fit:cover;margin-top:14px;border-radius:15px;border:1px solid var(--line);cursor:zoom-in}.photo-modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:24px;z-index:300}.photo-modal.open{display:flex}.photo-modal img{max-width:min(1100px,96vw);max-height:90vh;object-fit:contain;border-radius:14px}.photo-modal button{position:absolute;top:18px;right:18px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.45);color:#fff;border-radius:10px;padding:9px 12px;cursor:pointer}.reply{margin-top:14px;padding:13px 14px;border-left:2px solid #fff;background:rgba(255,255,255,.035);border-radius:0 12px 12px 0;font-size:13px;color:#cfd4dc}.reply b{display:block;color:#fff;margin-bottom:4px}
+.filters{position:sticky;top:8px;z-index:5;display:flex;gap:7px;flex-wrap:wrap;padding:10px;margin-bottom:15px;border:1px solid var(--line);border-radius:16px;background:rgba(10,11,15,.82);backdrop-filter:blur(18px)}.filter{border:1px solid var(--line);background:transparent;color:#bfc5ce;border-radius:10px;padding:8px 11px;font-weight:750;font-size:12px}.filter.active{background:#fff;color:#08090c;border-color:#fff}.count{opacity:.55;margin-left:3px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:start}.side{position:sticky;top:75px}.card{border:1px solid var(--line);background:var(--panel);border-radius:22px;padding:20px;box-shadow:0 12px 35px rgba(0,0,0,.16)}.card h3{margin:0 0 7px;font-size:19px}.card-desc{font-size:12px;color:var(--muted);line-height:1.5;margin:0 0 18px}.field{margin-bottom:12px}label{display:block;font-size:12px;font-weight:800;color:#cdd2db;margin-bottom:7px}input,textarea,select{width:100%;border:1px solid var(--line);background:#0b0d12;color:#f5f7fa;border-radius:12px;padding:12px 13px;outline:none}input:focus,textarea:focus,select:focus{border-color:rgba(255,255,255,.35);box-shadow:0 0 0 3px rgba(255,255,255,.04)}textarea{min-height:145px;resize:vertical}.stars-input{display:flex;gap:5px}.star-btn{border:1px solid var(--line);background:#0b0d12;color:#5d6470;border-radius:10px;width:38px;height:38px;font-size:20px}.star-btn.active{color:var(--gold);border-color:rgba(247,201,72,.4);background:rgba(247,201,72,.07)}.photo-box{border:1px dashed #343844;padding:12px;border-radius:12px;color:var(--muted);font-size:11px}.photo-preview{display:none;margin-top:9px;max-height:150px;width:100%;object-fit:cover;border-radius:11px}.form-note{font-size:11px;line-height:1.45;color:#747b87;margin-top:10px}.submit{width:100%;margin-top:5px}
+.load-wrap{text-align:center;padding:8px 0 28px}.empty{padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px}.footer{border-top:1px solid var(--line);margin-top:45px;padding:25px 0 45px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.open{display:flex}.modal-card{width:min(980px,100%);max-height:90vh;overflow:auto;background:#0d0f14;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 35px 100px rgba(0,0,0,.55)}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:18px}.admin-list{display:flex;flex-direction:column;gap:9px;max-height:55vh;overflow:auto}.admin-item{border:1px solid var(--line);background:#11131a;border-radius:15px;padding:13px}.admin-item .actions{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}.close{float:right;border:1px solid var(--line);background:transparent;color:#fff;border-radius:10px;padding:7px 10px}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#fff;color:#090a0d;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:800;z-index:200;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:static}.stats,.trust{grid-template-columns:repeat(2,1fr)}.admin-grid{grid-template-columns:1fr}.hero{padding:38px 24px 28px}}
+@media(max-width:620px){.container{width:min(100% - 20px,1180px)}.topbar{padding-top:15px}.brand-sub{display:none}.nav a{display:none}.nav .admin-trigger{display:block}.hero h1{font-size:42px}.hero p{font-size:15px}.stats{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr 1fr}.stat strong{font-size:22px}.review-card{padding:15px}.rating{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="topbar">
+  <a class="brand" href="#top"><div class="logo"><img src="123.JPG.PNG" alt="AM_BY"></div><div><div class="brand-title">AM_BY 💎</div><div class="brand-sub">Ваше мнение важно для нас!</div></div></a>
+  <nav class="nav"><a href="#reviews">Отзывы</a><a href="#write">Оставить отзыв</a><button class="admin-trigger" id="adminOpen">Админ</button></nav>
+</header>
+<main id="top">
+<section class="hero">
+  <span class="eyebrow">✦ Репутация AM_BY</span>
+  <h1>Отзывы клиентов,<br>которым доверяют.</h1>
+  <p>Реальные мнения покупателей о технике, сервисе, консультации и доставке. Читайте опыт других клиентов перед покупкой.</p>
+  <div class="hero-actions"><a class="btn" href="#reviews">Читать отзывы</a><a class="btn secondary" href="#write">Оставить свой отзыв</a></div>
+  <div class="stats">
+    <div class="stat"><strong>2200+</strong><span>отзывов</span></div>
+    <div class="stat"><strong>4.9 ★</strong><span>средний рейтинг</span></div>
+    <div class="stat"><strong>8100+</strong><span>отправок</span></div>
+    <div class="stat"><strong>5 – 7</strong><span>дней доставка</span></div>
+  </div>
+</section>
+<section class="trust">
+  <div class="trust-item"><div class="trust-icon">🛡️</div><b>Проверка</b>Возможность проверить товар при получении.</div>
+  <div class="trust-item"><div class="trust-icon">🤝</div><b>Надёжность</b>Прозрачные условия и честный подход.</div>
+  <div class="trust-item"><div class="trust-icon">📦</div><b>Доставка</b>Доставка заказов в Беларусь и другие страны.</div>
+  <div class="trust-item"><div class="trust-icon">💬</div><b>Поддержка</b>Консультация и сопровождение на всех этапах покупки.</div>
+</section>
+<div class="section-head" id="reviews"><div><h2>Что говорят клиенты</h2><p id="resultInfo"></p></div></div>
+<div class="layout"><section><div id="reviewList"></div><div class="load-wrap"><button class="btn secondary" id="loadMore">Показать ещё</button></div></section>
+<aside class="side" id="write"><div class="card"><h3>Оставить отзыв</h3><p class="card-desc">Расскажите, что покупали и как прошла покупка. После проверки отзыв появится на сайте.</p>
+<form id="reviewForm">
+<div class="field"><label for="name">Ваше имя</label><input id="name" maxlength="60" required placeholder="Например, Максим"></div>
+<div class="field"><label>Оценка</label><div class="stars-input" id="starPicker"></div><input type="hidden" id="rating" value="5"></div>
+<div class="field"><label for="product">Что покупали?</label><select id="product"><option value="iPhone">iPhone</option><option value="MacBook">MacBook</option><option value="iPad">iPad</option><option value="Apple Watch">Apple Watch</option><option value="Другое">Другое</option></select></div>
+<div class="field"><label for="text">Ваш отзыв</label><textarea id="text" maxlength="1500" required placeholder="Что понравилось? Как прошла доставка? Как помог менеджер?"></textarea></div>
+<div class="field"><label for="photo">Фото (необязательно)</label><div class="photo-box"><input id="photo" type="file" accept="image/*"><img id="photoPreview" class="photo-preview" alt="Предпросмотр"></div></div>
+<button class="btn submit" type="submit">Отправить на модерацию</button><div class="form-note">Мы не публикуем отзыв автоматически: сначала проверяем его, затем он появляется в общей ленте.</div>
+</form></div></aside></div>
+</main>
+<footer class="footer"><span>AM_BY 💎 · Отзывы клиентов</span><span>Сделано для удобного чтения отзывов</span></footer>
+</div>
+<div class="modal" id="adminModal"><div class="modal-card"><button class="close" id="adminClose">Закрыть</button><h2 style="margin:0">Панель модерации</h2><p class="card-desc">В этой статической версии данные сохраняются в браузере. Для общей онлайн-модерации нужен сервер/API.</p><div id="adminLogin"><input id="adminPassword" type="password" placeholder="Пароль модератора" style="max-width:360px"><button class="btn" id="adminEnter" style="margin-top:9px">Войти</button></div><div id="adminArea" style="display:none"><div class="admin-grid"><div><h3>Новые отзывы</h3><div class="admin-list" id="pendingList"></div></div><div><h3>Опубликованные</h3><div class="admin-list" id="publishedList"></div></div></div></div></div></div>
+<div class="photo-modal" id="photoModal"><button type="button" id="photoModalClose">Закрыть</button><img id="photoModalImg" alt="Фото клиента"></div><div class="toast" id="toast"></div>
+<script>
+const seed = [
+ {
+     "id": "u1104",
+    "name": "Максим",
+    "text": "17 айфон отвечает заявленным характеристикам. Состояние оригинал с пломбами. Сервис на уровне, спасибо за возможность приобрести такую модель по приятной цене 👍🏻",
+    "rating": 5,
+    "date": 1778749932000
+},
+ {
+     "id": "u1104",
+    "name": "Инна ☺️",
+    "text": "Телефон в хорошем состоянии, без неприятных сюрпризов. Работает стабильно, все соответствует описанию. Пока нареканий нет!",
+    "rating": 5,
+    "date": 1778663532000
+},
+ {
+     "id": "u1104",
+    "name": "Igor",
+    "text": "Обещал отзыв 🙃 Через несколько дней пользования стало ясно, что это просто удобный рабочий телефон без лишних моментов. Нет ощущения что постоянно нужно что-то подстраивать. Экран хороший, глаза не устают. Камера снимает стабильно без резких перепадов качества. Батарея держит нормально, если пользоваться разумно. Оплату произвел без труда. Посылка пришла быстро. 13 Pro все еще актуальный 😁",
+    "rating": 5,
+    "date": 1778663532000
+},
+ {
+     "id": "u1104",
+    "name": "Антон",
+    "text": "Пожалуйста дайте премию вашей сотруднице Татьяне, за неё надо держаться😇",
+    "rating": 5,
+    "date": 1778663532000
+},
+ {
+     "id": "u1104",
+    "name": "Кри 🍇",
+    "text": "Покупала дочери на день рождения, переживала чтобы успели. Доставили ранее обещанного срока. Упаковка аккуратная, все выглядело достойно, Спс",
+    "rating": 5,
+    "date": 1778577132000
+},
+ {
+     "id": "u1104",
+    "name": "🥰",
+    "text": "Очень довольна 😋😋😋🫡🫡🫡",
+    "rating": 5,
+    "date": 1778490732000
+},
+ {
+     "id": "u1104",
+    "name": "Егор-Шаров",
+    "text": "Телефон получил все прошло четко удобная форма оплаты быстрая доставка. Представитель компании дал полезную консультацию при выборе модели. Телефон сейчас тестирую все работает четко без проблем пришел в пленках как и обещали. Рекомендую магазин. Спасибо.",
+    "rating": 5,
+    "date": 1778490732000
+},
+ {
+     "id": "u1104",
+    "name": "Руслан",
+    "text": "Всем советую 16 про к покупке",
+    "rating": 5,
+    "date": 1778404332000
+},
+ {
+     "id": "u1104",
+    "name": "Даша",
+    "text": "Наконец-то сбылась мечта! AM_BY, вы крутые 😍😍 Быстрая доставка, телефон идеально упакован. Отдельный лайк за чехол, стекло и зарядку в подарок, приятно!☺️",
+    "rating": 5,
+    "date": 1778404332000
+},
+ {
+     "id": "u1104",
+    "name": "Nadeshda",
+    "text": "всё пришло быстро и в полном объеме. консультация просто профессиональная, всё чётко и по существу. приятно было иметь дело. бесспорно рекомендую",
+    "rating": 5,
+    "date": 1778404332000
+},
+ {
+     "id": "u1104",
+    "name": "Матвей 🐼",
+    "text": "Покупаю здесь уже третий айфон, но отзыв пишу впервые, но тут есть за что. На все вопросы отвечают сразу, даже на те, что казались глупыми 🫣 Объяснили состояние и комплектацию без размытых формулировок. Фото и описание совпадают с реальностью. Доставка быстрее, чем ожидаешь и так каждый раз. Упаковка плотная, ничего не болталось внутри. Видно внимание к деталям. Чувствуется, что процесс отработан на 100% именно за это вас и выбираю 😌",
+    "rating": 5,
+    "date": 1778404332000
+},
+ {
+     "id": "u1104",
+    "name": "Алла",
+    "text": "Можно доверять, спасибо)",
+    "rating": 5,
+    "date": 1778317932000
+},
+ {
+     "id": "u1104",
+    "name": "Николай",
+    "text": "Решил проверить магазин на прочность. Задал десяток странных вопросов. В ответ получил покой и доводы без истерики. Телефон соответствует описанию деталей, будто его готовили к фотосессии. Доставка приехала вовремя, без приключений и квестов. Упаковка так аккуратна, что даже открывать было жаль. Никаких скрытых нюансов. Все работает стабильно 😎 Невероятно благодарен ✌️",
+    "rating": 5,
+    "date": 1778231532000
+},
+ {
+     "id": "u1104",
+    "name": "Павел Гурский",
+    "text": "Телефон получил, спасибо за оперативность, все хорошо",
+    "rating": 5,
+    "date": 1778231532000
+},
+ {
+     "id": "u1104",
+    "name": "Дмитрий, отзыв",
+    "text": "Купил себе здесь Apple iPhone 15 Pro в версии с двумя физическими nano-SIM, потому что для работы это гораздо удобнее. Один номер использую для клиентов, другой оставил личный. Перед заказом уточнил у менеджера, это ли именно модель с двумя слотами для SIM-карт, все подробно объяснили. Заказ оформили быстро и отправили в тот же день. На почте спокойно проверил телефон – корпус и экран в отличном состоянии. Телефон смотрится очень аккуратно, титановая рамка приятно чувствуется в руке. Экран яркий и плавный, работает быстро без подвисаний. Камера делает очень четкие фото, особенно хорошо выходят вечерние снимки. Батарея при активном использовании хватает на целый день. В общем покупкой доволен, телефон работает стабильно и полностью оправдал ожидания, магазину лайк!",
+    "rating": 5,
+    "date": 1778145132000
+},
+ {
+     "id": "u1104",
+    "name": "Bogdan88",
+    "text": "Была проблема с блочком. Вопрос решили быстро. После обращения менеджер проверил ситуацию и заменили блок зарядки, теперь телефон заряжается нормально без задержек. Спасибо за оперативную реакцию и помощь👍",
+    "rating": 5,
+    "date": 1778145132000
+},
+ {
+     "id": "u1104",
+    "name": "🔥",
+    "text": "Спасибо, все понравилось, супер быстро приехал 🔝",
+    "rating": 5,
+    "date": 1778145132000
+},
+ {
+     "id": "u1104",
+    "name": "Михаил",
+    "text": "Долго колебался, стоит ли брать 13 про, но менеджер все разложил по полочкам без впаривания. Оформили быстро, трек и вход в лк сбросили в тот же вечер. Телефон огонь, состояние идеал, все в заводских пломбах. Спасибо за сервис!",
+    "rating": 5,
+    "date": 1778145132000
+},
+ {
+     "id": "u1104",
+    "name": "Злата",
+    "text": "Приветствую.Хочу оставить положительный отзыв о магазине.Заказывала телефон, консультацию предоставили быстро и качественно.Посылку получила уже через 7 дней.Всем довольна",
+    "rating": 5,
+    "date": 1778145132000
+},
+ {
+     "id": "u1104",
+    "name": "Клиент",
+    "text": "Покупал iphone 14, цены здесь намного дешевле чем у других магазинов в Беларуси😉",
+    "rating": 5,
+    "date": 1777972332000
+},
+ {
+     "id": "u1104",
+    "name": "Эльдар",
+    "text": "Лично я знаю что еще буду покупать у вас, всем советую и желаю магазину как можно больше клиентов!!!",
+    "rating": 5,
+    "date": 1777885932000
+},
+ {
+     "id": "u1104",
+    "name": "Василиса",
+    "text": "Доброго времени суток ✌🏻Хочу оставить позитивный отзыв за магазин AM_BY. Заказывала телефон, консультацию предоставили быстро и качественно. Посылку получила через 6 дней. Всем довольна. Рекомендую 😻",
+    "rating": 5,
+    "date": 1777885932000
+},
+ {
+     "id": "u1104",
+    "name": "Юля_1997",
+    "text": "Пользуюсь маком уже две недели. Сначала конечно сложно было перейти с виндовс, но быстро привыкла и теперь уже на виндовс наверное не вернусь). Я очень довольна, спасибо)",
+    "rating": 5,
+    "date": 1777799532000
+},
+ {
+     "id": "u1104",
+    "name": "Отзыв AMBY",
+    "text": "советую магазин кто ищет бу айфоны в суперском состоянии еще и по дешевке ❤️‍🔥❤️‍🔥❤️‍🔥",
+    "rating": 5,
+    "date": 1777713132000
+},
+ {
+     "id": "u1104",
+    "name": "Демченко",
+    "text": "Могу смело рекомендовать магазин к приобретению техники.Квалифицированная консультация сотрудников помогли сделать правильный выбор.Всё доставлено вовремя и в срок",
+    "rating": 5,
+    "date": 1777626732000
+},
+ {
+     "id": "u1104",
+    "name": "Ksenia❤️",
+    "text": "5 звезд без раздумий,хотя изначально опасения были 🤪",
+    "rating": 5,
+    "date": 1777626732000
+},
+ {
+     "id": "u1104",
+    "name": "Пётр",
+    "text": "Купил айфон, все прекрасно и цены у вас то что нужно 💣",
+    "rating": 5,
+    "date": 1777626732000
+},
+ {
+     "id": "u1104",
+    "name": "Глеб",
+    "text": "Отличный магазин, покупал айфон месяца 3-4 назад, случился гарантийный случай и без проблем сделали ремонт. Также отдельная благодарность менеджеру Татьяне 🤗 В следующий раз опять буду покупать у вас.",
+    "rating": 5,
+    "date": 1777626732000
+},
+ {
+     "id": "u1104",
+    "name": "Чернов В",
+    "text": "Всё понравилось, но ставлю 4 звезды из-за того что задержали доставку",
+    "rating": 4,
+    "date": 1777540332000
+},
+ {
+     "id": "u1104",
+    "name": "наталья",
+    "text": "доброжелательный менеджер , большой выбор техники - особенно по яблочкам 😌 еще сделали нам скидку за покупку 3-х моделей, за это большое спасибо 😇🙏 быстрая доставка в брест, в целом уверенно рекомендую 🙂",
+    "rating": 5,
+    "date": 1777540332000
+},
+ {
+     "id": "u1104",
+    "name": "Client",
+    "text": "Плохо что нет трейд ин...",
+    "rating": 4,
+    "date": 1777367532000
+},
+ {
+     "id": "u1104",
+    "name": "Иван Ковалёв",
+    "text": "Покупал 15 промакс пока всё ок, тестирую",
+    "rating": 5,
+    "date": 1777367532000
+},
+ {
+     "id": "u1104",
+    "name": "Юрий",
+    "text": "наш заказ получила жена, я еще не видел но сказала что все хорошо. Уже по приезду на родину кину отчет 😁",
+    "rating": 5,
+    "date": 1777281132000
+},
+ {
+     "id": "u1104",
+    "name": "Tim",
+    "text": "Молодцы!! АМ BY так держать!",
+    "rating": 5,
+    "date": 1777194732000
+},
+ {
+     "id": "u1104",
+    "name": "Мария Власова",
+    "text": "Спасибо за профессиональную работу и оригинальный товар 😚 Пользуюсь айфоном 3 недели, рекомендую 😎",
+    "rating": 5,
+    "date": 1776935532000
+},
+ {
+     "id": "u1104",
+    "name": "🍎",
+    "text": "Купила ребёнку для занятий мак бук,рабочий и всё как в описании,отправили в Беларусь сразу в день заказа и оплаты,сегодня уже забрали его с почты. Всё круто,спасибо.",
+    "rating": 5,
+    "date": 1776849132000
+},
+ {
+     "id": "u1104",
+    "name": "Валентин",
+    "text": "Был в магазине, дружелюбная атмосфера и приятные цены 👍🏽",
+    "rating": 5,
+    "date": 1776762732000
+},
+ {
+     "id": "u1104",
+    "name": "Андрей, Беларусь",
+    "text": "Хороший магазин, подберут гаджет на любой бюджет. Консультация безупречная, спасибо менеджеру Татьяне))",
+    "rating": 5,
+    "date": 1776762732000
+},
+ {
+     "id": "u1104",
+    "name": "Sofiya",
+    "text": "сервис 100/10 😍🔝",
+    "rating": 5,
+    "date": 1776676332000
+},
+ {
+     "id": "u1104",
+    "name": "Покупка",
+    "text": "В Минск пришло за 7 дней. Четко, вопросов и проблем нет!",
+    "rating": 5,
+    "date": 1776417132000
+},
+ {
+     "id": "u1104",
+    "name": "Д Анна",
+    "text": "Заказывала в этом магазине айпад а позже макбук. Очень понравился подход к клиенту - перед отправкой предоставили видео отчет, после отправки вход в личный кабинет что бы я могла отслеживать свой заказ. Еще и приятно за кешбек, спасибо вам огромное ❤️",
+    "rating": 5,
+    "date": 1776244332000
+},
+ {
+     "id": "u1104",
+    "name": "123",
+    "text": "Покупал в магазине , цены соответствуют",
+    "rating": 5,
+    "date": 1776157932000
+},
+ {
+     "id": "u1104",
+    "name": "Лёша",
+    "text": "Приятный опыт покупки в АМ 🙃 Обслуживание было вежливым и профессиональным. Все подсказали и на все мои вопросы ответили. Своим новым Айфоном доволен 🤝",
+    "rating": 5,
+    "date": 1776157932000
+},
+ {
+     "id": "u1104",
+    "name": "Кирилл",
+    "text": "Товаром доволен, всё отлично, сервис хороший, рекомендую!) ",
+    "rating": 5,
+    "date": 1775812332000
+},
+ {
+     "id": "u1104",
+    "name": "⭐️⭐️⭐️",
+    "text": "Заказ получен спасибо",
+    "rating": 5,
+    "date": 1775725932000
+},
+ {
+     "id": "u1104",
+    "name": "Юлия",
+    "text": "Давно мечтала за дайсон, спасибо вам большое 😘 Везде дорого и никак не решалась купить, но если бы не вы 😚😘",
+    "rating": 5,
+    "date": 1775639532000
+},
+ {
+     "id": "u1104",
+    "name": "MaKs",
+    "text": "Лучший магазин техники, здесь есть все что пожелаете, если нет то найдут под заказ по хорошей цене😉 В который раз меня выручают ✊ Последний год только здесь и покупаю 👍",
+    "rating": 5,
+    "date": 1775380332000
+},
+ {
+     "id": "u1104",
+    "name": "Отзыв",
+    "text": "Взяли мобилки для всей семьи. Работают хорошо. Рекомендую",
+    "rating": 5,
+    "date": 1775380332000
+},
+ {
+     "id": "u1104",
+    "name": "Игорь",
+    "text": "Уже брал в этом магазине и хочу сказать что лучше товара и цены вы не найдёте нигде, я беру тут и всегда остаюсь доволен!",
+    "rating": 5,
+    "date": 1775380332000
+},
+ {
+     "id": "u1104",
+    "name": "🐹Людмила🐹",
+    "text": "Цены АМ Маркет и Мегаплейс это что-то с чем-то 🤩 Взяла себе 15 про макс бушный, но состояние просто 🤩🤩🤩 я в телеграм вам скинула фото для отзыва ☺️ Процветания и успехов вам 🙏",
+    "rating": 5,
+    "date": 1775380332000
+},
+ {
+     "id": "u1104",
+    "name": "Богдан",
+    "text": "Спс 😎 Телефон шустрый, хороший звук, большой экран, батарею держит неплохо",
+    "rating": 5,
+    "date": 1775293932000
+},
+ {
+     "id": "u1104",
+    "name": "Владислав",
+    "text": "приставку получил и хочу написать спасибо менеджеру татьяне что помогли настроить)",
+    "rating": 5,
+    "date": 1775207532000
+},
+ {
+     "id": "u1104",
+    "name": "Danil00",
+    "text": "Покупал айфон на подарок, человек в восторге и я тоже 🙂",
+    "rating": 5,
+    "date": 1774948332000
+},
+ {
+     "id": "u1104",
+    "name": "Yana 🫶🏻",
+    "text": "Решила обновится с Samsung на iPhone 17 и ни капли не жалею!! Спасибо AM_BY за такую возможность, со всем помогли и даже после покупки помогли разобраться с установкой.",
+    "rating": 5,
+    "date": 1774948332000
+},
+ {
+     "id": "u1104",
+    "name": "Назар",
+    "text": "В комплекте не было блока питания",
+    "rating": 4,
+    "date": 1774948332000
+},
+ {
+     "id": "u1104",
+    "name": "Евгения",
+    "text": "Магазин АМ стоит внимания, постоянно заказываем с мужем (кстати для постоянных клиентов у них скидки 😍) и никогда проблем не возникало. Так что рекомендуем 🥰😉",
+    "rating": 5,
+    "date": 1774861932000
+},
+ {
+     "id": "u1104",
+    "name": "Вова",
+    "text": "Часики супер, до этого носил механические, не видел смысла в вотчах, но теперь понял на сколько это удобно. Приходят уведомления и не нужно доставать телефон и отвлекаться, особенно за рулем)",
+    "rating": 5,
+    "date": 1774689132000
+},
+ {
+     "id": "u1104",
+    "name": "Мира 🌹",
+    "text": "Отзыв за 16 Про - отличный телефон,оригинал,приятнейшая цена. Доставили в РБ за 7 дней,доставка за счет компании - Спасибо😊",
+    "rating": 5,
+    "date": 1774689132000
+},
+ {
+     "id": "u1104",
+    "name": "Юрий",
+    "text": "Покупал в розницу, крайний раз купил оптом. Был нюанс, но решили. AM_BY + к репутации 🤝",
+    "rating": 5,
+    "date": 1774516332000
+},
+ {
+     "id": "u1104",
+    "name": "Sasha)",
+    "text": "за 530 бун купил 13 айфон и не жалею ) после андроида конечно привыкнуть надо, но как адаптировался был впечатлен скоростью работы, камерой и возможностями в целом ) если надумаю обновить айфон, то только к вам )) ",
+    "rating": 5,
+    "date": 1774429932000
+},
+ {
+     "id": "u1104",
+    "name": "Лена",
+    "text": "Спасибо за бесплатную доставку🩷",
+    "rating": 5,
+    "date": 1774429932000
+},
+ {
+     "id": "u1104",
+    "name": "Илья",
+    "text": "Всем привет ✋🏻 Всё что покупал получил. Всё новенькое без нюансов, как и обещал магазин. Спасибо за честность и нормальное отношение к клиенту! Обязательно еще обращусь к вам, так и манят ваши цены!!",
+    "rating": 5,
+    "date": 1774343532000
+},
+ {
+     "id": "u1104",
+    "name": "Георгий",
+    "text": "Сделал бронь, приехал знакомый забрал, никаких лишних вопроов, только по делу. Теперь в Беларусь буду заказывать напрямую.",
+    "rating": 5,
+    "date": 1774257132000
+},
+ {
+     "id": "u1104",
+    "name": "Stepan",
+    "text": "Приобрел 17 про макс, курьер доставил прям на работу. Я доволен, но переживал пздц что придет кирпич 😆🤣",
+    "rating": 5,
+    "date": 1774257132000
+},
+ {
+     "id": "u1104",
+    "name": "Roma.k",
+    "text": "AM вы супер! Советую 👍",
+    "rating": 5,
+    "date": 1774257132000
+},
+ {
+     "id": "u1104",
+    "name": "Виктория",
+    "text": "здравствуйте) планшет хороший, оригинальный. не обижайтесь, но ходила в сервиску что бы проверили что он оригинальный и не вскрывался.. просто за такую цену всё равно были сомнения🫣 а теперь с уверенностью буду покупать у вас ещё)",
+    "rating": 5,
+    "date": 1774084332000
+},
+ {
+     "id": "u1104",
+    "name": "Артём",
+    "text": "Телефон пришел, по нему вопросов нет, но положили чехол не тем цветом а стекло вообще забыли поклеить 😓",
+    "rating": 4,
+    "date": 1773997932000
+},
+ {
+     "id": "u1104",
+    "name": "Denis_21",
+    "text": "Цены у вас конечно 🔥🔥🔥🔥 Спасибо что радуете простых людей!",
+    "rating": 5,
+    "date": 1773997932000
+},
+ {
+     "id": "u1104",
+    "name": "Марго",
+    "text": "Магазин хороший, покупали айфоны. Доставка была вовремя, состояние идеальное как указывала Татьяна",
+    "rating": 5,
+    "date": 1773911532000
+},
+ {
+     "id": "u1104",
+    "name": "💬",
+    "text": "Полная консультация и быстрая доставка. Специалист порекомендовал сопутствующие товары, которые были так необходимы. От души делают свое дело и это радует 🤝😌",
+    "rating": 5,
+    "date": 1773840099000
+},
+ {
+     "id": "u1104",
+    "name": "Nastya",
+    "text": "Приобрела телефон, чехол и стекло положили в подарок, очень довольная работой продавца-консультанта. Данный магазин выбрала по рекомендации, обязательно вернусь, когда будет время обновиться 💖",
+    "rating": 5,
+    "date": 1773835649000
+},
+ {
+     "id": "u1104",
+    "name": "user_x",
+    "text": "был в магазине. ребята приятные, обслуживание на высшем уровне 🔝 а самое приятное что предложили самому все распаковать, так же дали на замен блочок с нужной вилкой. очень рад.",
+    "rating": 5,
+    "date": 1773826449000
+},
+ {
+     "id": "u1104",
+    "name": "Марина🔗",
+    "text": "Договаривались о заказе с менеджером, все ясно объяснил и ответил на все мои вопросы, за это большой плюс. Отгрузка товара на точку в Беларусь пришла довольно быстро и корректно, обслуживание клиентов также радует душу и оставляет в покое. В целом очень довольна, что выбрала именно этот магазин для покупки продукции Apple, и в дальнейшем буду пользоваться услугами этого магазина. По телефону все отлично, новенький, хорошенький, серийный номер бьется и все по датам как надо, очень волновалась за это, но все супер). Поэтому рекомендую всем этот магазин, реально топ!",
+    "rating": 5,
+    "date": 1773767409000
+},
+ {
+     "id": "u1104",
+    "name": "Серго",
+    "text": "Отношение к клиентам огонь, однозначно рекомендую)",
+    "rating": 5,
+    "date": 1773757409000
+},
+ {
+     "id": "u1104",
+    "name": "Юлия",
+    "text": "Подобрали телефон, помогли разобраться и перенести данные. Очень вежливый менеджер Татьяна",
+    "rating": 5,
+    "date": 1773687009000
+},
+ {
+     "id": "u1104",
+    "name": "Алексей",
+    "text": "покупаю только здесь 😘 качественно, быстро и цены адекватные",
+    "rating": 5,
+    "date": 1773486970000
+},
+ {
+     "id": "u1104",
+    "name": "Roman.VL",
+    "text": "17 Про Макс на руках. Заказ откладывал недели две, все не решался. Сейчас думаю зачем тянул вообще🤦‍♂️ давно бы уже пользовался😂 Спасибо!!",
+    "rating": 5,
+    "date": 1773475900000
+},
+ {
+     "id": "u1104",
+    "name": "Егор",
+    "text": "Все ок",
+    "rating": 5,
+    "date": 1773430500000
+},
+ {
+     "id": "u1104",
+    "name": "Оля",
+    "text": "Перешла на Айфон с Андройда и не жалею. Лучшая моя покупка.",
+    "rating": 5,
+    "date": 1773330500000
+},
+ {
+     "id": "u1104",
+    "name": "55555",
+    "text": "Забрал сегодня, честно ехал с мыслью «ну ща будет сюрприз» 😅 Открыл, включил… и всё, выдохнул. Уже настроил, покупкой доволен 🤗",
+    "rating": 5,
+    "date": 1773320500000
+},
+ {
+     "id": "u1104",
+    "name": "Сергей (Гродно)",
+    "text": "Cпасибо) Айфон реально выглядит свежо, без ощущения б/у. Состояние как и обещал менеджер)",
+    "rating": 5,
+    "date": 1773120800000
+},
+ {
+     "id": "u1104",
+    "name": "Антон",
+    "text": "Купил макбук, под мои задачи подходит, справляется на ура 😎",
+    "rating": 5,
+    "date": 1772878640000
+},
+ {
+     "id": "u1104",
+    "name": "Станислав.",
+    "text": "Здравствуйте. Решил оставить подробный отзыв о покупке, потому что сам перед заказом долго все изучал и читал чужие отзывы. Честно говоря, сначала относился к покупке очень осторожно. Сейчас такое время, что в интернете много разных историй, поэтому я несколько дней просто наблюдал, читал отзывы, смотрел информацию и только потом написал вам уточнить несколько вопросов. Меня интересовала конкретная модель айфона, а также состояние устройства и как проходит сам процесс покупки. Ответили достаточно быстро и подробно объяснили все моменты: что входит в комплект, как проходит оформление заказа и что делать после получения посылки. После общения стало немного спокойнее и я решил все таки оформить заказ. Уже вечером в тот день я получил сообщение об отправке и информацию по отслеживанию. После этого уже просто ждал когда посылка приедет. Когда пришло уведомление о том что заказ можно забирать, поехал на почту. Открыл коробку прямо там и внимательно все проверил. Устройство оказалось в очень хорошем состоянии, аккуратно упаковано, никаких неприятных сюрпризов не было. После этого уже спокойно забрал телефон домой. Дома включил, начал настраивать, переносить данные со старого телефона. Сейчас пользуюсь уже некоторое время и могу сказать что покупкой полностью доволен. Хочу сказать спасибо за нормальное и адекватное обслуживание. Без лишних разговоров, все по делу. Это всегда приятно. В общем, решил написать этот отзыв для таких же людей как я, которые сначала переживают и долго думают перед покупкой. Если все проходит так же как в моем случае - можно не переживать. Спасибо.",
+    "rating": 5,
+    "date": 1772821460000
+},
+ {
+     "id": "u1104",
+    "name": "ЯросХ",
+    "text": "Отправка быстрая, работает без нареканий",
+    "rating": 5,
+    "date": 1772638200000
+},
+ {
+     "id": "u1104",
+    "name": "Dima 🤷‍♂️",
+    "text": "Просил поклеить защитку, но просто положили в коробку...",
+    "rating": 4,
+    "date": 1772618100000
+},
+ {
+     "id": "u1104",
+    "name": "Вероника",
+    "text": "Здравствуйте! Забрала заказ, все в порядке. Сейчас буду настраивать 🙃",
+    "rating": 5,
+    "date": 1772608100000
+},
+ {
+     "id": "u1104",
+    "name": "Татьяна Н",
+    "text": "Затарились у вас всей семьей, доставили в РБ за недельку. Сначала брали один телефон, но пока общались решили сразу обновить телефоны всем. Сделали у вас семейный апгрейд техники 😅 Теперь у каждого новый телефон и все довольны 😇 (жалко что у вас нету трейд ин)",
+    "rating": 5,
+    "date": 1772568150000
+},
+ {
+     "id": "u1104",
+    "name": "Марк",
+    "text": "Айфон супер внешне как новый🔥",
+    "rating": 5,
+    "date": 1772468000000
+},
+ {
+     "id": "u1104",
+    "name": "karina🌷",
+    "text": "5 из 5 ❤️‍🔥 всё соответствовало тому что обсуждали перед покупкой 😚",
+    "rating": 5,
+    "date": 1772367900000
+},
+ {
+     "id": "u1104",
+    "name": "Арсений",
+    "text": "Заказывал телефон на подарок. Самое сложное было выбрать модель, потому что я в этом не очень разбираюсь. Написал консультанту и сказал что нужен хороший вариант, но без переплаты за ненужные функции. Мне все объяснили простым языком и помогли определиться. Когда получил телефон, проверил, мне все подошло. Человек которому дарил остался очень доволен 🫰",
+    "rating": 5,
+    "date": 1772347600000
+},
+ {
+     "id": "u1104",
+    "name": "Владлен",
+    "text": "Пользуюсь новым айфоном и разница с моим старым андроидом просто огромная",
+    "rating": 5,
+    "date": 1772266320000
+},
+ {
+     "id": "u1104",
+    "name": "V1ktor",
+    "text": "Спасибо!",
+    "rating": 5,
+    "date": 1772125200000
+},
+ {
+     "id": "u1104",
+    "name": "Эмилия 🪭",
+    "text": "За айпад и часы спасибо 😘 Надеюсь до 8 марта успею обновить у вас телефон 😇",
+    "rating": 5,
+    "date": 1771924790000
+},
+ {
+     "id": "u1104",
+    "name": "Богдан",
+    "text": "Здравствуйте, прошло несколько недель использования. Решил написать отзыв не сразу, а после тестирования. За это время проблем не возникло, работает стабильно.",
+    "rating": 5,
+    "date": 1771853800000
+},
+ {
+     "id": "u1104",
+    "name": "R.S",
+    "text": "Покупал б у но с виду не скажешь) еще и комплект фул. Спасибо АМ 💚",
+    "rating": 5,
+    "date": 1771843800000
+},
+ {
+     "id": "u1104",
+    "name": "Инга",
+    "text": "Спасибо за айфон.",
+    "rating": 5,
+    "date": 1771744090000
+},
+ {
+     "id": "u1104",
+    "name": "🔫",
+    "text": "Заказал телефон в Беларусь, пришло в отделение почты. Коробка упакована в пузыревую пленку (за это +), распечатан гарантийный талон и моя накладная о покупке. Проверял на почте, сверил имей, совпал. Я рад. Спасибо, буду заказывать у вас еще 🫰🏻",
+    "rating": 5,
+    "date": 1771701450000
+},
+ {
+     "id": "u1104",
+    "name": "Андрей Викторович",
+    "text": "Сервис топ! сотрудничаем очень давно",
+    "rating": 5,
+    "date": 1771691400000
+},
+ {
+     "id": "u1104",
+    "name": "покупка",
+    "text": "ожидания совпали с реальностю 😌 айфон новенький, с пломбами, оригинал, даже и не знаю что еще написать 😅",
+    "rating": 5,
+    "date": 1771681450000
+},
+ {
+     "id": "u1104",
+    "name": "Roma_vl",
+    "text": "Купил у вас 17 про макс для съёмки контента. Камера огонь 🔥🔥 Цвета живые, стабилизация супер. Для работы самое то. За цену отдельное спасибо 🔥🤝",
+    "rating": 5,
+    "date": 1771661550000
+},
+ {
+     "id": "u1104",
+    "name": "Диана",
+    "text": "Брали два устройства сразу. Оформили и отправили быстро. Посылку вскрывали прямо на почте - все совпадает по модели и комплектации. Документы и гарантия на месте",
+    "rating": 5,
+    "date": 1771611490000
+},
+ {
+     "id": "u1104",
+    "name": "Юлия",
+    "text": "Доставили в Беларусь, была путаница с адресом по моей вине, но все быстро решили. (За это респект 💐) Пишу отзыв уже с нового айфона)) Спасибо Apple Market 🙏",
+    "rating": 5,
+    "date": 1771512750000
+},
+ {
+     "id": "u1104",
+    "name": "Отзыв",
+    "text": "Планшет забрал, работаем 🤜🏻🤛🏻",
+    "rating": 5,
+    "date": 1771506909999
+},
+ {
+     "id": "u1104",
+    "name": "Kulesh Valera",
+    "text": "айфон хорош, в идеале хотя брал б у и спасибо что помогли перенести данные со старого устройства!",
+    "rating": 5,
+    "date": 1771407559900
+},
+ {
+     "id": "u1104",
+    "name": "✌🏻",
+    "text": "Первая моя покупка в этом магазине. Оставили хорошие впечатления😌 Оригинал, цена суперская, доставили без повреждений🩵",
+    "rating": 5,
+    "date": 1771348059900
+},
+ {
+     "id": "u1104",
+    "name": "Anuta",
+    "text": "Спустя месяц использования все летает 😍",
+    "rating": 5,
+    "date": 1771334459900
+},
+ {
+     "id": "u1104",
+    "name": "Ярослав",
+    "text": "Немного задержалась отправка на сутки, но предупредили заранее. Телефон полностью соответствует информацией что указывал консультант.",
+    "rating": 5,
+    "date": 1771314699900
+},
+ {
+     "id": "u1104",
+    "name": "Ксюша ❤️",
+    "text": "Спасибо,телефоном пользуюсь.Жду свою еще одну покупку 😎",
+    "rating": 5,
+    "date": 1771164359900
+},
+ {
+     "id": "u1104",
+    "name": "Павел",
+    "text": "Встретили возле тц, провели в магазин и подобрали нужную модель 💥 Рекомендую 🔝",
+    "rating": 5,
+    "date": 1771098259900
+},
+ {
+     "id": "u1104",
+    "name": "Игорь (Минск)",
+    "text": "Товар доставлен и получен но пишу благодарность менеджеру. Было очень много покупок в интернете, но таких квалифицированных менеджеров я еще не встречал. Татьяна всегда была на связи, помогла с выбором на мой бюджет, обьяснила как отследить заказ в кабинете клиента и еще помогла настроить мой новый телефон так как я в этом дуб. Премию Татьяне!!!",
+    "rating": 5,
+    "date": 1770898259900
+},
+ {
+     "id": "u1104",
+    "name": "DimaK",
+    "text": "покупали 2 15 про макс, ставим 5 звёзд 👍🏼",
+    "rating": 5,
+    "date": 1770798499900
+},
+ {
+     "id": "u1104",
+    "name": "Заказ 5149",
+    "text": "Не было блочка",
+    "rating": 4,
+    "date": 1770568499900
+},
+ {
+     "id": "u1104",
+    "name": "Слава_77",
+    "text": "Многим магазинам стоит поучится такого уровня как у вас) Третья моя покупка и точно не последняя)",
+    "rating": 5,
+    "date": 1770458409900
+},
+ {
+     "id": "u1104",
+    "name": "Ника",
+    "text": "Заказала по совету подруги 🙃 Только положительные эмоции 🤩 Айфон оригинал, с полным комплектом, стекло поклеено и чехол тот что я выбирала 🥰 Доставили где-то за неделю. Приятный магаин с приятными ценами, спасибо вам 😘😘",
+    "rating": 5,
+    "date": 1770416209900
+},
+ {
+     "id": "u1104",
+    "name": "Kronix",
+    "text": "Покупаю постоянно оптом. Сотрудничаем больше года🤝",
+    "rating": 5,
+    "date": 1770318209900
+},
+ {
+     "id": "u1104",
+    "name": "Cаша.",
+    "text": "Доставили в Брест за 6 дней. Подвохов нет, действительно настоящий оригинал и по такой цене!)",
+    "rating": 5,
+    "date": 1770117909900
+},
+ {
+     "id": "u1104",
+    "name": "annet 🐥",
+    "text": "очень переживала за оплату если честно 🫣 но после того как получила трек и могла отслеживать в лк то стало спокойнее. сегодня уже с новым телефоном 😌 уже похвасталась родственникам и буду заказывать еще 😇",
+    "rating": 5,
+    "date": 1769947209900
+},
+ {
+     "id": "u1104",
+    "name": "Lerra",
+    "text": "Здравствуйте! забрала свой заказ на почте, вскрывала там же. Минут 10 крутила коробку в руках 😅 Проверила серийник, всё бьётся. Пломбы целые. В комплекте чехол и стекло. Лучшие 🫶🏻",
+    "rating": 5,
+    "date": 1769940809900
+},
+ {
+     "id": "u1104",
+    "name": "Владимир",
+    "text": "Покупал в Кракове, встретили, провели к магазину и подобрали нужный товар. Я доволен)",
+    "rating": 5,
+    "date": 1769758809900
+},
+ {
+     "id": "u1104",
+    "name": "Екатерина (Гомель)",
+    "text": "Мой первый айфон о котором я так долго мечтала уже у меня 🥹🫣 Спасибо вам ❤️❤️❤️",
+    "rating": 5,
+    "date": 1769505199900
+},
+ {
+     "id": "u1104",
+    "name": "Di🖤",
+    "text": "Магазин просто вау 🤩 ЛУЧШИЕ ЦЕНЫ на сегодняшний день!! Приятный менеджер, связь 24/7, отслеживание заказа, поддержка после получения и помощь в эксплуатации! И вижу еще бонусы в личном кабинете. Это будет глупо не заказать у вас еще раз в будущем 😘 Рекомендую!",
+    "rating": 5,
+    "date": 1769495199900
+},
+ {
+     "id": "u1104",
+    "name": "Покупатель",
+    "text": "Немного задержали отправку",
+    "rating": 4,
+    "date": 1769465100000
+},
+ {
+     "id": "u1104",
+    "name": "NASTYA 🍓",
+    "text": "Заказывала для дочери в подарок. Переживала что может быть дефект или повредят при доставке, но коробка была целая как и товар в целом 😍 Дочь счастлива 🥰 Большое спасибо за 15 про 🥰",
+    "rating": 5,
+    "date": 1769366890000
+},
+ {
+     "id": "u1104",
+    "name": "Borya01",
+    "text": "Купил iPhone здесь впервые. Цена оказалась супер приятной, доставка умеренная. Пользуюсь уже месяц - телефон стабильный, ничего не зависает",
+    "rating": 5,
+    "date": 1769266890000
+},
+ {
+     "id": "u1104",
+    "name": "Юрец",
+    "text": "Магазин проверен 👍🏻👍🏻",
+    "rating": 5,
+    "date": 1769254490000
+},
+ {
+     "id": "u1104",
+    "name": "Татьяна С",
+    "text": "Немного переживала за сроки в Беларусь, но всё пришло вовремя. Макбук сыну понравился, надеюсь прослужит долго 🙏",
+    "rating": 5,
+    "date": 1769090000000
+},
+ {
+     "id": "u1104",
+    "name": "Vetal",
+    "text": "Честно скажу, я из тех людей, кто до последнего ищет подвох. Даже когда уже оплатил, сидел и перечитывал переписку, смотрел фото, думал «а вдруг». Когда пришло уведомление о доставке, поехал забирать с каким-то внутренним напряжением. Открыл посылку, проверил всё что знал как проверять — и в этот момент просто выдохнул. Телефон в состоянии как и указывал менеджер, аккуратный, все как должно быть. Очень странное чувство, когда переживаешь больше, чем надо, а по факту все проходит идеально. Спасибо Apple Market!",
+    "rating": 5,
+    "date": 1768980000000
+},
+ {
+     "id": "u1104",
+    "name": "user_ok",
+    "text": "покупаю здесь уже второй раз и ни разу не подвели 💪🏽",
+    "rating": 5,
+    "date": 1768769109900
+},
+ {
+     "id": "u1104",
+    "name": "Алина",
+    "text": "Очень довольна покупкой, телефон просто летает и цены у вас отпад",
+    "rating": 5,
+    "date": 1768759000000
+},
+ {
+     "id": "u1104",
+    "name": "Margo💋",
+    "text": "Получила свой заказ, открывала прямо при курьере. Дали спокойно осмотреть. Айфон новый, ни царапинки. Спасибо за чехол и стекло, сама бы криво наклеила 😅",
+    "rating": 5,
+    "date": 1768659000000
+},
+ {
+     "id": "u1104",
+    "name": "Kristi_N",
+    "text": "Сомневались с мужем ооочень долго)) А сейчас пишу отзыв с нового телефона по акции и уже заказали мужу!)",
+    "rating": 5,
+    "date": 1768329000000
+},
+ {
+     "id": "u1104",
+    "name": "Павел555",
+    "text": "АМ от души за айфон 🤜🏻🤛🏻",
+    "rating": 5,
+    "date": 1768305900000
+},
+ {
+     "id": "u1104",
+    "name": "den",
+    "text": "планшет у меня но смущали цены до конца🫣 уже пару дней как пользуюсь планшетом но все равно не верю что с вашим магазином можно так хорошо сэкономить😆😁",
+    "rating": 5,
+    "date": 1768292090000
+},
+ {
+     "id": "u1104",
+    "name": "Sonya 🧚‍♀️",
+    "text": "Брала на подарок 13 про, очень переживала чтобы все пришло вовремя. Успели четко к дате, за это отдельное спасибо ❤️",
+    "rating": 5,
+    "date": 1768152090000
+},
+ {
+     "id": "u1104",
+    "name": "Лилия",
+    "text": "Спасибо за телефон 🥰 (Делала бронь на самовывоз), вежливые консультанты, приятное обслуживание 😍 Вернусь к вам еще 😌",
+    "rating": 5,
+    "date": 1768053190000
+},
+ {
+     "id": "u1104",
+    "name": "Елена Брест",
+    "text": "Доставили в Брест, дошло за 6 дней. Всё целое, искала подвог до конца но не нашла😅😅",
+    "rating": 5,
+    "date": 1768052190000
+},
+ {
+     "id": "u1104",
+    "name": "Валерий",
+    "text": "Забрал на почте, вскрывал там же. Проверил серийник, дествительно оригинал. Комплект и подарки на месте. Спасибо apple market за честность и приятные цены 👍",
+    "rating": 5,
+    "date": 1767691190000
+},
+ {
+     "id": "u1104",
+    "name": "ArtemTema 🪖",
+    "text": "Айфон забрал, все работает",
+    "rating": 5,
+    "date": 1767642029900
+},
+ {
+     "id": "u1104",
+    "name": "...",
+    "text": "был косяк с защиткой, написал - решили без споров",
+    "rating": 5,
+    "date": 1767442329900
+},
+ {
+     "id": "u1104",
+    "name": "kirillneo",
+    "text": "Таких цен как у вас не найдешь!) еще и оригинал) Спасибо, теперь я ваш постонный клиент ✌️ С новым годом!",
+    "rating": 5,
+    "date": 1767362829900
+},
+ {
+     "id": "u1104",
+    "name": "Владислав",
+    "text": "Заказ №10714 получил. Модель соответствует. IMEI проверен. Претензий нет.",
+    "rating": 5,
+    "date": 1766901709900
+},
+ {
+     "id": "u1104",
+    "name": "Анна 🌸",
+    "text": "если бы знала раньше что все пройдет так просто, заказала бы еще раньше 😄 теперь точно вернусь снова 👄 С наступающим 🎄🎇",
+    "rating": 5,
+    "date": 1766743509900
+},
+ {
+     "id": "u1104",
+    "name": "iFan",
+    "text": "Пришёл чехол не тем цветом",
+    "rating": 4,
+    "date": 1766596659900
+},
+ {
+     "id": "u1104",
+    "name": "🦁",
+    "text": "Порекомендовал друг, купил айфон себе и жене, все четко",
+    "rating": 5,
+    "date": 1766576800000
+},
+ {
+     "id": "u1104",
+    "name": "Осипова Ю А",
+    "text": "По оплате присутствовал страх)) Боялась так как первый заказ🫣 Но Татьяна всегда была на связи и после отправки мне сразу скинула трек код. Пишу отзыв для таких боягузов как я 🤣🤣 Покупайте у проверенного магазина Apple Market😌😘",
+    "rating": 5,
+    "date": 1766532000000
+},
+ {
+     "id": "u1104",
+    "name": "Заказ",
+    "text": "Взял не дорогой ноут, для работы самый раз 🔥 Спасибо 🤝",
+    "rating": 5,
+    "date": 1766522000000
+},
+ {
+     "id": "u1104",
+    "name": "Mishania 🤘🏽",
+    "text": "Получил посылку, открыл прямо на почте. Все совпадает: модель, цвет, комплектация, подарки на месте. Коробка целая, пломбы тоже. Хороший магазин, будет возможность, куплю еще 😎",
+    "rating": 5,
+    "date": 1766322000000
+},
+ {
+     "id": "u1104",
+    "name": "Валик -Полоцк",
+    "text": "Благодарю, планшет и часы у меня!",
+    "rating": 5,
+    "date": 1766315000000
+},
+ {
+     "id": "u1104",
+    "name": "Светлана К",
+    "text": "напишу пару слов за консультанта, такой подход сейчас редкость 👍 спросили, для чего телефон, объяснили разницу между моделями, и выбор стал очевидным. купила у вас 16 про макс)",
+    "rating": 5,
+    "date": 1766217000000
+},
+ {
+     "id": "u1104",
+    "name": "Мaxx_13",
+    "text": "Долго тянул с заказом потому что уже обжигался раньше в других местах. Тут решил рискнуть и не прогадал. Проверил, активировал, пользуюсь. Спокойно могу рекомендовать",
+    "rating": 5,
+    "date": 1766137110000
+},
+ {
+     "id": "u1104",
+    "name": "Raf",
+    "text": "После покупки через пару недель менеджер сам написал и спросил всё ли ок с устройством. Не продать что-то ещё, а реально узнать, как работает. Это очень приятно и замотивировало написать за это отзыв 🥺💥 Спасибо 🙏🏽",
+    "rating": 5,
+    "date": 1765887110000
+},
+ {
+     "id": "u1104",
+    "name": "Сенкевич",
+    "text": "Покупал 15 про, доставка задержалась на день но важно что предупредили заранее, а не “ой, оно само”. Айфон огонь, оригинал, состояние супер, наушники как и обещали, в целом доволен",
+    "rating": 5,
+    "date": 1765822190000
+},
+ {
+     "id": "u1104",
+    "name": "Юлия Н",
+    "text": "В данном магазине мне понравилось что не давят. Я 3 раза меняла выбор модели (да, я душная 😂), и мне всё равно спокойно помогали. Итог - взяла то что реально надо, а не самое дорогое",
+    "rating": 5,
+    "date": 1765659100000
+},
+ {
+     "id": "u1104",
+    "name": "Vika🤍",
+    "text": "забирала телефон лично. дали спокойно проверить, включить, посмотреть. плюс сразу наклеили стекло, чтобы я не криво налепила дома :) приятный подход, прям как покупала у своих)",
+    "rating": 5,
+    "date": 1765619100000
+},
+ {
+     "id": "u1104",
+    "name": "Darrina",
+    "text": "Рискнула взять б/у, потому что бюджет. По факту пришел в супер состоянии, что если бы не знала подумала бы новый 😄 Спасибо за честность.",
+    "rating": 4,
+    "date": 1765549100000
+},
+ {
+     "id": "u1104",
+    "name": "Тимур",
+    "text": "Случился момент когда я сам затупил и перепутал данные... Уже мысленно попрощался с деньгами 🙃 Но все разрулили без истерик и нравоучений, за это РЕСПЕКТ!",
+    "rating": 5,
+    "date": 1765539400000
+},
+ {
+     "id": "u1104",
+    "name": "Отзыв ✌️",
+    "text": "AppleMarket вы лучшие 👍 Нравится когда не пытаются удивить громкими словами, а просто выполняют обязательства. Завленная цена, ничего не доплачивал (ниже на рынке и без обмана таких цен  не видел), быстрая доставка, упаковано на совесть и отдельно спасибо за наушники 🤝",
+    "rating": 5,
+    "date": 1765388400000
+},
+ {
+     "id": "u1104",
+    "name": "ilya",
+    "text": "купил айфон, пользуюсь пару дней, вопросов нет. думаю еще обращусь",
+    "rating": 5,
+    "date": 1765375400000
+},
+ {
+     "id": "u1104",
+    "name": "Лисай Наталья",
+    "text": "Возникли проблемы по настройке.. Написала уже вечером, думала ответят на следующий день. Ответили почти сразу и помогли разобраться. Это редкость сейчас, поэтому плюс 😘🥰",
+    "rating": 5,
+    "date": 1765356700000
+},
+ {
+     "id": "u1104",
+    "name": "Денис К",
+    "text": "Заказ получился спонтанный) увидел наличие, написал, через пару минут уже понял, что беру. Оплатил, получил трек и через неделю привез курьер. Все прошло легко без лишних разговоров.",
+    "rating": 5,
+    "date": 1765286700000
+},
+ {
+     "id": "u1104",
+    "name": "Artur4",
+    "text": "Обычно не доверяю онлайн покупкам, но тут решил попробовать из-за рекомендации знакомого. Заказ оформили за 10 минут, дальше только ждал доставку. Набрал курьер, привёз, дал проверить. Всё чётко, теперь уже думаю о следующей покупке😉",
+    "rating": 5,
+    "date": 1765034200000
+},
+ {
+     "id": "u1104",
+    "name": "Валерьевна🍓",
+    "text": "телефон пришёл,без следов вскрытия,серийник бьется. спасибо вам",
+    "rating": 5,
+    "date": 1765015200000
+},
+ {
+     "id": "u1104",
+    "name": "Яна",
+    "text": "Сначала просто наблюдала за магазином, читала отзывы и решилась заказать. Доставили, уже сутки тестирую, никаких проблем 🙏🏻Удобно что можно отслеживать посылку, очень приемлемые цены, квалифицированный консультант та и что сказать в принципе 😅 Вот где уровень, многим магазинам еще расти и расти до вас 🙏🏻",
+    "rating": 5,
+    "date": 1764971059000
+},
+ {
+     "id": "u1104",
+    "name": "Миха_Ил",
+    "text": "Заказывал часы Apple Watch. Сроки соблюдены, техническое качество как и было указано перед покупкой. После получения ещё консультировали по настройке, это приятно удивило 😍",
+    "rating": 5,
+    "date": 1764850059000
+},
+ {
+     "id": "u1104",
+    "name": "Андрей Полоцк",
+    "text": "Долго сравнивал магазины, в итоге рискнул приобрести здесь. Не прогадал)) Телефон пришел в идеальном состоянии, комплект полный, ещё и подарок положили как и обещали) Теперь понимаю откуда столько положительных отзывов)",
+    "rating": 5,
+    "date": 1764772359000
+},
+ {
+     "id": "u1104",
+    "name": "177117",
+    "text": "редко пишу отзывы, но тут захотелось 😁 сделка прошла уверенно: заказ - оплата - доставка - проверка. без нервов и без сюрпризов. уровень сервиса = уважение",
+    "rating": 5,
+    "date": 1764762359000
+},
+ {
+     "id": "u1104",
+    "name": "Илона 🌿",
+    "text": "Айфон нужен был срочно для работы. Менеджер помог выбрать модель под бюджет без навязывания. Доставили ровно в срок. Телефон новый, батарея 100%, всё идеально 😘❤️",
+    "rating": 5,
+    "date": 1764619999000
+},
+ {
+     "id": "u1104",
+    "name": "Ruuslann",
+    "text": "Честно покупал «на свой страх и риск». Оплатил, получил трек, ждал без особых ожиданий. Когда курьер принес посылку, проверил IMEI, коробку, комплект… всё сошлось. Теперь понимаю, что зря волновался. Спасибо за честную работу.",
+    "rating": 5,
+    "date": 1764519999000
+},
+ {
+     "id": "u1104",
+    "name": "Владимир 🧢",
+    "text": "Приобрели у вас самсунг для бабушки, работает хорошо - цена удивила качеству и оригиналу 🤭🫢 На данный момент вопросов нет, учим бабушку пользоваться)",
+    "rating": 5,
+    "date": 1764319900000
+},
+ {
+     "id": "u1104",
+    "name": "Лариса отзыв AMBY",
+    "text": "Очень довольна айфоном и хочу оставить отзыв! Полностью устраивает его функциональность, камера супер, батарею держит два дня без проблем при активном пользовании, телефон классный и впечатляет своим прежде всего видом, стильная качественная сборка и камера одна из лучших на рынке, фотографии четкие цвета насыщены, сам телефон шустрый справляется с любыми задачами просто летает, функционал также радует, обновила до последней версии, спасибо вам! 💜",
+    "rating": 5,
+    "date": 1764166200000
+},
+ {
+     "id": "u1104",
+    "name": "kuzmenkov.a",
+    "text": "всё отлично та и в принципе другого не ожидалось от вашего магазина 🤝 посоветовал вас кум, теперь моя очередь по цепочке советовать всем 😉",
+    "rating": 5,
+    "date": 1764102200000
+},
+ {
+     "id": "u1104",
+    "name": "ИльяФан",
+    "text": "Купил 15 про макс в данном магазине. Отличная мобилка, функциональный и быстрый. Я не понимаю как я раньше ходил с ксяоми",
+    "rating": 5,
+    "date": 1764062200000
+},
+ {
+     "id": "u1104",
+    "name": "Минчанин",
+    "text": "AppleMarket, пишу вам уже с нового айфона)) Пишу спасибо и буду заказывать технику только у вас) Ну очень выгодно и ответственный магазин) ",
+    "rating": 5,
+    "date": 1763983200000
+},
+ {
+     "id": "u1104",
+    "name": "ketti",
+    "text": "Здравствуйте! Вчера пришел мой 16 про, сказать что я в шоке - ничего не сказать 😻😻😻 Айфон ну очень крутой, все так как в описании, без дефектов, просто искренне вам спасибо 💕 Впервые кстати заказываю в интернете и очень рада что заказала именно у вас и ни за что не переплатила ✌️😎 И отдельное спасибо за чехольчик и стекло 🥰",
+    "rating": 5,
+    "date": 1763933200000
+},
+ {
+     "id": "u1104",
+    "name": "Романович55",
+    "text": "Все получил , телефон пушка.За час уже привык к нему будто бы всю жзнь с ним хожу 😅 Надеюсь прослужит долго 🤞🏽 В общем лучший магазин за последнее время моих покупок в интернете",
+    "rating": 5,
+    "date": 1763713200000
+},
+ {
+     "id": "u1104",
+    "name": "Егор",
+    "text": "Заказывал ноутбук для игр, всё отлично, тянет на ура. Отдельное спасибо за руссификатор наклеек на клавиатуру 🤝❤️",
+    "rating": 5,
+    "date": 1763503200000
+},
+ {
+     "id": "u1104",
+    "name": "Dmitry_",
+    "text": "Работаю не первый год с данным магазином и пока что не подводили)",
+    "rating": 5,
+    "date": 1763481290000
+},
+ {
+     "id": "u1104",
+    "name": "Осипова Ю А",
+    "text": "проверяла айфон у специалистов, делали полную диагностику и мне сказали что это действительно настоящий оригинал который не был в ремонте (вы меня извините за недоверие, но я должна признаться в этом, так как внутри были сомнения 🫣 сами понимаете какое время... та и думаю это будет важно многим почитать мой отзыв, так как я сама была такой) Огромное спасибо вам за честность и оригинальную технику за такую приятную цену😘",
+    "rating": 5,
+    "date": 1763149990000
+},
+ {
+     "id": "u1104",
+    "name": "Рита1609",
+    "text": "Сын доволен в целом как и я ☺️😌 Будет лишняя копеечка, закажем ещё",
+    "rating": 5,
+    "date": 1763137800000
+},
+ {
+     "id": "u1104",
+    "name": "Ge.na",
+    "text": "Обновился у вас с 14 про на 17 про макс. Никаких проблем, быстро, качественно, безопастно и главное чуствуется что с душой и любовью относятся к клиентам 🥹 Без сомнений 5",
+    "rating": 5,
+    "date": 1763129690000
+},
+ {
+     "id": "u1104",
+    "name": "Владислав",
+    "text": "Хороший магазин. Подтверждаю все что было ниже сказано до моего отзыва!",
+    "rating": 5,
+    "date": 1763100000000
+},
+ {
+     "id": "u1104",
+    "name": "Катя Душко",
+    "text": "Ребят желаю вам только расти и продвигать свой магазин 🙏🏻 Не останавливайтесь, вы лучшие ❤️❤️❤️",
+    "rating": 5,
+    "date": 1763030990000
+},
+ {
+     "id": "u1104",
+    "name": "отзыв за АМ 💎",
+    "text": "порадовали меня всем чем только можно ) цены +, быстрая доставка в Беларусь +, оригинал +, консультация + однозначно рекомендую!)",
+    "rating": 5,
+    "date": 1762964900000
+},
+ {
+     "id": "u1104",
+    "name": "444",
+    "text": "Ноутбук огонь, для работы самый раз - Спасибо🤝",
+    "rating": 5,
+    "date": 1762774900000
+},
+ {
+     "id": "u1104",
+    "name": "Vera 💅",
+    "text": "Здравствуйте, получила свой заказ. Всё работает без проблем, пишу собственно через новый телефон, но из-за цены я не могу смирится 😂 ищу подвох но его нету, как найду напишу 😁",
+    "rating": 5,
+    "date": 1762766000000
+},
+ {
+     "id": "u1104",
+    "name": "Артем",
+    "text": "Вотчи доставили, спасибо) Так сказать проверочный заказ прошел на ура)) Вскором времени закажу айфон)",
+    "rating": 5,
+    "date": 1762689000000
+},
+ {
+     "id": "u1104",
+    "name": "Alexxandro",
+    "text": "Порадовали. Благодарю от души",
+    "rating": 5,
+    "date": 1762634000000
+},
+ {
+     "id": "u1104",
+    "name": "И_Павел",
+    "text": "Applemarket лучший сервис по продаже техники что я знаю ❤️‍🔥 Заказываем не в первой, никаких минусов и проблем не возникало",
+    "rating": 5,
+    "date": 1762434000000
+},
+ {
+     "id": "u1104",
+    "name": "Маша (Брест)",
+    "text": "Заказ доставлен всё окей только цвет чехла не тот что я выбирала😢",
+    "rating": 4,
+    "date": 1762432000000
+},
+ {
+     "id": "u1104",
+    "name": "vitya",
+    "text": "я до сих пор в шоке с ваших цен ) мне не верится что во первых телефон у меня, он оригинал!, во вторых что я так сэономил и не переплатил )) ближе к нг сделаю еще заказ, спс )",
+    "rating": 5,
+    "date": 1762415999000
+},
+ {
+     "id": "u1104",
+    "name": "Зинаида",
+    "text": "5 👍",
+    "rating": 5,
+    "date": 1762355900000
+},
+ {
+     "id": "u1104",
+    "name": "Inoii",
+    "text": "Тестирую айфон уже месяц - полет нормальный 🫡",
+    "rating": 5,
+    "date": 1762346111000
+},
+ {
+     "id": "u1104",
+    "name": "Левчик Татьяна",
+    "text": "Переживала что приедет копия🫣 И мои мучения были зря🤣 Курьер доставил, перед ним проверила на подлинность. В коробке чеки, гарантия, чехол со стеклом, в общем все как положено. Спасибо вам, еще обращусь😘 Apple Market🔥",
+    "rating": 5,
+    "date": 1762176111000
+},
+ {
+    "id": "u1104",
+    "name": "Ася🍇",
+    "text": "Всем довольны, брали планшет для семьи, цена, сервис, качество топ 🔝🔝 Оно того стоит",
+    "rating": 5,
+    "date": 1762112880000
+},
+ {
+    "id": "u1104",
+    "name": "Виталий.",
+    "text": "Хочу оставить отзыв о вашей работе. Всё четко, быстро а главное честно. Заказал, оплатил и через 7 дней поехал на почту забирать. Проверил, оригинал работает отлично.",
+    "rating": 5,
+    "date": 1761732880000
+},
+ {
+    "id": "u1104",
+    "name": "dasshaaa",
+    "text": "добрый день 🙂 айфон получила, проверила, все работает - спасибо 🙏🏻",
+    "rating": 5,
+    "date": 1761726880000
+},
+ {
+    "id": "u1104",
+    "name": "Нарек",
+    "text": "Рекомендую магазин и останусь здесь постоянным клиентом :) Приятно иметь дело с професионалами)",
+    "rating": 5,
+    "date": 1761599991199
+},
+ {
+     "id": "u1104",
+    "name": "Саша (Айфон 15 про)",
+    "text": "Покупали лично в тц. Проконсультировали, помогли с выбором на нужный бюджет, чеки, документы, все положили, дали выбрать чехол и поклеили стекло 🥹 Покупкой безумно довольны 😌",
+    "rating": 5,
+    "date": 1761418820000
+},
+ {
+     "id": "u1104",
+    "name": "заказ",
+    "text": "⭐️👍",
+    "rating": 5,
+    "date": 1761396620000
+},
+ {
+     "id": "u1104",
+    "name": "Evgenia T.",
+    "text": "Apple Market - 5 из 5. Очень достойный магазин.",
+    "rating": 5,
+    "date": 1761394520000
+},
+ {
+     "id": "u1104",
+    "name": "Лена К5",
+    "text": "Цены ШИКАРНЫЕ🤩🤩 Больше 10 покупок на моем счету у вас и ни один раз вы не подвели🤝",
+    "rating": 5,
+    "date": 1761291520000
+},
+ {
+     "id": "u1104",
+    "name": "Пётр $",
+    "text": "На сутки задержалась доставка, но в целом отлично! Ориг, состояние соответсвует видео которое скинул менеджер. Спасибо!",
+    "rating": 4,
+    "date": 1761211520000
+},
+ {
+     "id": "u1104",
+    "name": "Ангелина 💜",
+    "text": "покупала здесь на подарок брату, ничего плохого сказать не могу 💜 только скажу что немного позже буду покупать теперь айфон себе 😊 надеюсь успею до конца акции 💜",
+    "rating": 5,
+    "date": 1761194520000
+},
+ {
+     "id": "u1104",
+    "name": "ViP",
+    "text": "Хороший шоп без грязи",
+    "rating": 5,
+    "date": 1761084220000
+},
+ {
+     "id": "u1104",
+    "name": "Мицкевич Виктория",
+    "text": "Брестчане на связи ✌🏼 Айфон и планшет доставили, уже похвастались и посоветовали всем кому можно 😍😄",
+    "rating": 5,
+    "date": 1760984220000
+},
+ {
+     "id": "u1104",
+    "name": "1111111",
+    "text": "Забрали с магазина заранее оформленную бронь, ставлю 5!",
+    "rating": 5,
+    "date": 1760958400000
+},
+ {
+     "id": "u1104",
+    "name": "Игорь-Гоша",
+    "text": "Спасибо, заказ получен.",
+    "rating": 5,
+    "date": 1760956400000
+},
+ {
+     "id": "u1104",
+    "name": "марьяна",
+    "text": "apple market достойный магазин, не просто так у вас крутая репутация и много отзывов 💎😎 доставили в беларусь вовремя, даже раньше на день",
+    "rating": 5,
+    "date": 1760937100000
+},
+ {
+     "id": "u1104",
+    "name": "Alexandra_🐇",
+    "text": "Всё отлично, айфон у меня ) Рекомендую и у вас плюс один постоянный теперь клиент !)",
+    "rating": 5,
+    "date": 1760896100000
+},
+ {
+     "id": "u1104",
+    "name": "Павлович (webskm)",
+    "text": "Недавно покупал 16 про макс, с головы вылетело оставить отзыв. Покупкой рад, не жалею что выбрал вас😌 Теперь жду в продаже 17 про макс 😉",
+    "rating": 5,
+    "date": 1760885700000
+},
+ {
+     "id": "u1104",
+    "name": "Женек",
+    "text": "Уточняли по поводу стекла, попросил поклеить, но забыли. А так все гуд 👌🏼",
+    "rating": 4,
+    "date": 1760761600000
+},
+ {
+     "id": "u1104",
+    "name": "Mixa205",
+    "text": "Пишу с нового телефона) Придет зп и нужен будет небольшой опт) Есть пару заказов от семьи))",
+    "rating": 5,
+    "date": 1760691600000
+ },
+  {
+     "id": "u1104",
+    "name": "Елизавета П",
+    "text": "делюсь опытом покупки в магазине Apple MArket... заказывала с мужем 16 про и про макс в Беларусь. Смущала 100% оплата и были опасения что не дойдет заказ с Польши.. Связались с менеджером в телеграм, нам все ясно обьяснили что за рубежных отправок в Беларусь с оплатой при получении не существует. Мы долго сомневались, просмотрели кучу отзывов, смотрели отправки, фото ваших работ, начиная с 2023 года 😆, ознкомились с гарантиным постом о сто процентной гарантии получения товара клиенту и все таки решились. После оформления заказа, мы оплатили его и буквально через 2 часа получили отчет и инф. об отправке. Мандража стало меньше 😃 Через неделю в завленный срок нам поступает смс что товар уже находится в почтовом отделении. Приехали получать, указали трек номер, нам дали возможность его осмотреть, сразу же на почте проверили по серийному номеру и убедились что это самый настоящий оригинал. Мандраж исчез 😆 Теперь я рекомендую и советую абсолютно всем кого знаю ваш магазин. Вы лучшие, вы мои любимчики 😘🥹😍",
+    "rating": 5,
+    "date": 1760621100000
+ },
+  {
+     "id": "u1104",
+    "name": "Борис 🤌🏻",
+    "text": "Ноутбук получен, все хорошо Цены бобма 💣",
+    "rating": 5,
+    "date": 1760611100000
+ },
+  {
+     "id": "u1104",
+    "name": "ОqcekW",
+    "text": "В целом покупкой счастлива) Давно хотела обновится) мой 7 айфон уже стар на сегодняшний день. Спасибо вам!)",
+    "rating": 5,
+    "date": 1760511100000
+ },
+  {
+     "id": "u1104",
+    "name": "заказ",
+    "text": "за мои туповатые вопросы, переживание и назойливость хочу извинится перед Татьяной.. Татьяна, если читаете это то вы лучший консультант что я видел ❤️ ❤️ Извините вдруг что, я очень переживал что это обман😬",
+    "rating": 5,
+    "date": 1760475900000
+ },
+  {
+     "id": "u1104",
+    "name": "Ника_",
+    "text": "Знакомые забрали с магазина бронь, спасибо 🤝",
+    "rating": 5,
+    "date": 1760459200000
+ },
+  {
+     "id": "u1104",
+    "name": "☯️",
+    "text": "Быстро - качественно - честно - оригинально и точка.",
+    "rating": 5,
+    "date": 1760453000000
+ },
+  {
+     "id": "u1104",
+    "name": "Валик - Могилёв",
+    "text": "Заказывал бу айфон, хотя как распаковал не мог сказать что это бу 😳 он реально отборный как новый 🥵",
+    "rating": 5,
+    "date": 1760451000000
+ },
+  {
+     "id": "u1104",
+    "name": "Otziv",
+    "text": "Поссылку получил, благодарю ) Обращусь еще как будут деньги )",
+    "rating": 5,
+    "date": 1760390000000
+ },
+  {
+     "id": "u1104",
+    "name": "Надя",
+    "text": "Сынок айпадом очень доволен, не может оторватся 😅 Та и я довольная что купила у вас и не переплатила в другом магазине, спасибо 🙃",
+    "rating": 5,
+    "date": 1760371055555
+ },
+  {
+     "id": "u1104",
+    "name": "Кравцова Ренат",
+    "text": "мой заказ 2 15 в брест, всё пришло, рекомендую!)",
+    "rating": 5,
+    "date": 1760340900000
+ },
+  {
+     "id": "u1104",
+    "name": "белка 🐿",
+    "text": "Маркет бай, вы достойные быть лучшими на рынке на сегодня 🥺🥹🥺🥹 И это говорю вам я ваш постоянный клиент 😌",
+    "rating": 5,
+    "date": 1760270900000
+ },
+  {
+     "id": "u1104",
+    "name": "Rudkovskiy",
+    "text": "Видимо забыли положить блок питаня к телефону, а в целом все ок",
+    "rating": 4,
+    "date": 1760260900000
+ },
+  {
+     "id": "u1104",
+    "name": "константинF",
+    "text": "люди!! здесь реально ориг по такой цене! мы с другом проверили и теперь места не можем себе найти🤣",
+    "rating": 5,
+    "date": 1760210900000
+ },
+  {
+     "id": "u1104",
+    "name": "Счастливый_клиент",
+    "text": "Покупал 16 про макс, пришел в Минск вовремя как и писал точные сроки менеджер. Спасибо за выгодную цену и за подарочки в комплекте 🔝👍🏻",
+    "rating": 5,
+    "date": 1760199999000
+ },
+  {
+     "id": "u1104",
+    "name": "Daniil Levin",
+    "text": "Не лохотрон) Мое мнение было ошибочным пока сам не заказал и не убедился в этом))",
+    "rating": 5,
+    "date": 1760179999000
+ },
+  {
+     "id": "u1104",
+    "name": "👑ИННА👑",
+    "text": "Apple Market - умеете порадовать. 😎 Ставлю 5.",
+    "rating": 5,
+    "date": 1760169999000
+ },
+  {
+     "id": "u1104",
+    "name": "Лукьянова. А.",
+    "text": "айфоны у меня, спасибо и только процетания вашему магазину!",
+    "rating": 5,
+    "date": 1760133583000
+ },
+  {
+     "id": "u1104",
+    "name": "Отзыв о АМ 🔥🔥",
+    "text": "Приятные цены (прям очень приятные), квалифицированный консультант, быстрая доставка в белорусь, заказывал курьером, набрали заранее уточнили могу ли я получить заказ, доставили до двери, дали проверить. Я проверил, убедился что техника ориг, сижу радуюсь и пишу вам отзыв 😁🤗",
+    "rating": 5,
+    "date": 1760123583000
+ },
+  {
+     "id": "u1104",
+    "name": "Валера",
+    "text": "Супер магазин, ничего плохого написать не могу)",
+    "rating": 5,
+    "date": 1760121583000
+  },
+  {
+     "id": "u1104",
+    "name": "iascuohf",
+    "text": "Быстрая доставка и хороший сервис. Удивили 😇",
+    "rating": 5,
+    "date": 1760072683000
+  },
+  {
+    "id": "u6055",
+    "name": "Денис Сергеевич",
+    "text": "apple market доказал, что дешево не значит плохо! айфон оригинальный, доставили в сроки, всё честно",
+    "rating": 5,
+    "date": 1760028579000
+  },
+  {
+    "id": "u0018",
+    "name": "Анна Р",
+    "text": "Честно, сначала сомневалась заказывать технику из Польши, но решилась. Оформила айфон, ребята быстро связались, всё объяснили, прислали трек. Через шесть дней курьер уже стоял под дверью. Коробка запечатана, чувствовался запах нового айфона 😍 Проверила — оригинал, всё совпадает. Теперь вообще не боюсь заказывать 🫣",
+    "rating": 5,
+    "date": 1759967040000
+  },
+  {
+    "id": "u0054",
+    "name": "Пользователь",
+    "text": "Брал ноутбук, долго выбирал, сравнивал цены. В наших магазинах дороже в два раза так точно. Здесь оформил, оплатил, через неделю уже получил. Всё новое, аккуратно упаковано, даже пыль внутри коробки отсутствует)) Всё работает идеально, спасибо ребятам из Apple Market)",
+    "rating": 3,
+    "date": 1759910220000
+  },
+  {
+    "id": "u2599",
+    "name": "Olga",
+    "text": "Порадовали, без обмана!",
+    "rating": 5,
+    "date": 1759673480000
+  },
+  {
+    "id": "u7820",
+    "name": "KATE💫",
+    "text": "доставили в Гродно всё пришло целое потому что за это очень переживала, но когда открыла посылку на почте - убедилась что вы с бережностью относитесь к заказам клиентов и хорошо упаковываете. 5 звёзд",
+    "rating": 5,
+    "date": 1759403967000
+  },
+  {
+    "id": "u6826",
+    "name": "Владимир",
+    "text": "Очень доволен! Айфон новый, не активированный, цена просто подарок 😎",
+    "rating": 5,
+    "date": 1759242228000
+  },
+  {
+    "id": "u0079",
+    "name": "alexx",
+    "text": "купил здесь впервые, и опыт положителен! экран без царапин батарея в отличном состоянии как и было указано консультант помог подобрать подходящую модель и за это отдельное спасибо🫶",
+    "rating": 5,
+    "date": 1759182600000
+  },
+  {
+    "id": "u8151",
+    "name": "Имя 1",
+    "text": "Доставка заняла 6 дней, безумно доволен покупкой 😊",
+    "rating": 4,
+    "date": 1759121584000
+  },
+  {
+    "id": "u0042",
+    "name": "johnny😁",
+    "text": "+РЕП",
+    "rating": 4,
+    "date": 1759054740000
+  },
+  {
+    "id": "u4546",
+    "name": "Мary2245",
+    "text": "До конца не верила что существуют такие низкие цены, пока сама не заказала и не убедилась в этом 😍 Теперь вы один ил лучших магазинов для меня 🩷🩷",
+    "rating": 5,
+    "date": 1759019697000
+  },
+  {
+    "id": "u8855",
+    "name": "отзыв",
+    "text": "Все как всегда – быстро, качественно, надежно 🔝",
+    "rating": 5,
+    "date": 1759001853000
+  },
+  {
+    "id": "u7509",
+    "name": "Николаевич",
+    "text": "Не верил отзывам, но теперь сам пишу 😄 всё честно, айфон оригинал, доставка в сроки, без воды",
+    "rating": 5,
+    "date": 1758902712000
+  },
+  {
+    "id": "u2823",
+    "name": "Tom99",
+    "text": "действительно оригинал, цены пока лучшие что видел. рекомендую магазин 💯",
+    "rating": 5,
+    "date": 1758896823000
+  },
+  {
+    "id": "u0003",
+    "name": "Полинка",
+    "text": "Заказываем всей семьёй на постоянке) Лучшие)",
+    "rating": 5,
+    "date": 1758740040000
+  },
+  {
+    "id": "u5975",
+    "name": "5 звёздочек",
+    "text": "Все пришло быстро, никакого кота в мешке! Редкость на сегодня 👍",
+    "rating": 5,
+    "date": 1758674580000
+  },
+  {
+    "id": "u3354",
+    "name": "😁David",
+    "text": "пишу уже с нового айфона 😅 подписываюсь под каждым отзывом - Apple Market легенда 💣💣💣",
+    "rating": 5,
+    "date": 1758067139000
+  },
+  {
+    "id": "u0073",
+    "name": "Игоревна",
+    "text": "Покупкой довольна как ребенок) К айфону положили чехол и стекло в подарок. Честность условий без подводных камней 😊 Поддержка помогла с настройкой по телефону. Спасибо команде 💜",
+    "rating": 4,
+    "date": 1758031380000
+  },
+  {
+    "id": "u1688",
+    "name": "имя пользователя",
+    "text": "apple market молодцы, видно что работают с душой, всё честно и быстро",
+    "rating": 5,
+    "date": 1757897275000
+  },
+  {
+    "id": "u5721",
+    "name": "Светлана К",
+    "text": "Менеджер Татьяна очень внимательная, приятно общаться 🙂 и спасибо что радуете низкими ценами ☺️",
+    "rating": 4,
+    "date": 1757778134000
+  },
+  {
+    "id": "u7693",
+    "name": "111",
+    "text": "Все пришло вовремя,ориг,рекомендую 🔥",
+    "rating": 5,
+    "date": 1757554977000
+  },
+  {
+    "id": "u0094",
+    "name": "😉",
+    "text": "Рекомендую этот магазин знакомым и друзьям!!",
+    "rating": 5,
+    "date": 1757504820000
+  },
+  {
+    "id": "u0032",
+    "name": "Заказ в Минск",
+    "text": "Apple market достойный внимания на сегодняшний день 🤝 Оригинальный товар который бьется на сайте Apple, шикарнейшие цены, обслуживание и помощь на уровне, быстрая и безопасная доставка. ВЫ лучшие 😇",
+    "rating": 5,
+    "date": 1757341380000
+  },
+  {
+    "id": "u0076",
+    "name": "Лёха",
+    "text": "всё супер и лично я доволен! твердые 4 по рейтингу",
+    "rating": 4,
+    "date": 1757323260000
+  },
+  {
+    "id": "u2051",
+    "name": "Юлия_1209",
+    "text": "Планшет пришёл целый, запечатанный! Буду заказывать еще!)",
+    "rating": 5,
+    "date": 1757155329000
+  },
+  {
+    "id": "u0091",
+    "name": "Pavlushuk",
+    "text": "В Могилеве я таких цен не нашел бы 😂 Спасибо что радуете простых смертных 😄",
+    "rating": 5,
+    "date": 1757125800000
+  },
+  {
+    "id": "u9959",
+    "name": "Лена Кучерук",
+    "text": "очень довольна, айфон как из офиц. Apple Store, а цена ниже почти вдвое 😎",
+    "rating": 5,
+    "date": 1757008638000
+  },
+  {
+    "id": "u7669",
+    "name": "клиент",
+    "text": "Мама давно мечтала об айфоне, решила сделать подарок. Заказала через Apple Market, оплатила заранее. Пришел из Польши за недельку к нам в РБ. Всё идеально: коробка запечатана, не восстановленный, гарантия, все чеки и документы. Мама до сих пор в восторге!",
+    "rating": 5,
+    "date": 1756618018000
+  },
+  {
+    "id": "u8563",
+    "name": "Ксения Алексеевна",
+    "text": "Доставка быстрая, техника настоящая, без обмана, уже второй раз заказываю",
+    "rating": 5,
+    "date": 1756599233000
+  },
+  {
+    "id": "u1036",
+    "name": "Lisa",
+    "text": "Товар соответствует описанию, довольна покупкой 👏",
+    "rating": 5,
+    "date": 1756381657000
+  },
+  {
+    "id": "u4132",
+    "name": "лучшие",
+    "text": "купила айпад для учёбы, менеджер предоставил всю информацию, оплатила сразу всю сумму, но немного переживала. пришло в целости, плёнки целые, оригинал. также порадовала бесплатная доставка 😘 реально порядочный магазин 💙",
+    "rating": 5,
+    "date": 1755467422000
+  },
+  {
+    "id": "u7306",
+    "name": "Vladikkk",
+    "text": "Apple market приятно удивил, сервис, доставка, честность — всё на высоте",
+    "rating": 5,
+    "date": 1755308579000
+  },
+  {
+    "id": "u7265",
+    "name": "Демидович Андрей",
+    "text": "Честно не верил пока не получил свой заказ ) Всё оригинальное полный комплект даже запах яблочный 😅",
+    "rating": 5,
+    "date": 1755207753000
+  },
+  {
+    "id": "u2657",
+    "name": "5",
+    "text": "Уже второй раз заказываю и не разу не подвели😻🙏🏻",
+    "rating": 5,
+    "date": 1755140980000
+  },
+  {
+    "id": "u8974",
+    "name": "Валерия💋",
+    "text": "макбук оригинальный. не подвели! спасибо вам! ",
+    "rating": 5,
+    "date": 1754646619000
+  },
+  {
+    "id": "u9239",
+    "name": "V Sivitskiy",
+    "text": "Не ожидал что можно купить айфон дешевле в два раза и чтоб не подделка))) Всё честно) СПС)",
+    "rating": 5,
+    "date": 1754421713000
+  },
+  {
+    "id": "u8967",
+    "name": "🔥",
+    "text": "Постоянно заказываю тут, всё стабильно хорошо 💪",
+    "rating": 5,
+    "date": 1754351625310
+  },
+  {
+    "id": "u4065",
+    "name": "Александра",
+    "text": "Впервые заказывала технику из-за границы.. Apple Market — единственные, кто вызвал доверие среди всех магазинов которые я посмотрела. По правилам межд отправки оплатила заказ сразу, в тот же день получила полную инормацию об отправке. Посылка дошла меньше чем за неделю, доставил курьер. Теперь с уверенностью могу всем рекомендовать ваш магазин.",
+    "rating": 5,
+    "date": 1753720926000
+  },
+  {
+    "id": "u4536",
+    "name": "_00_",
+    "text": "Все отлично, ребята знают свое дело 😃",
+    "rating": 4,
+    "date": 1753620007000
+  },
+  {
+    "id": "u2728",
+    "name": "NAME❤️",
+    "text": "Планшет классный , оригинал , всё работает идеально , доставка 6 дней",
+    "rating": 5,
+    "date": 1753550480000
+  },
+  {
+    "id": "u0051",
+    "name": "Юлия Мелешко",
+    "text": "Купили с мужем по айфону потому что у нас в Беларусии цены просто заоблачные 😤 За чехольчики и стекла в подарок респект!",
+    "rating": 5,
+    "date": 1753515780000
+  },
+  {
+    "id": "u4046",
+    "name": "Коля",
+    "text": "Реально кайф) Не ожидал что за такие деньги получу оригинальное яблоко",
+    "rating": 5,
+    "date": 1753455876000
+  },
+  {
+    "id": "u8255",
+    "name": "заказ 14iphone",
+    "text": "Отличный сервис, теперь только тут буду заказывать 💎",
+    "rating": 4,
+    "date": 1753337717000
+  },
+  {
+    "id": "u0026",
+    "name": "Viktoria🌹",
+    "text": "Доставили вовремя, курьер позвонил заранее. Экран без царапин, батарея в отличном состоянии. Отличный сервис закажу ещё при необходимости",
+    "rating": 4,
+    "date": 1753325531000
+  },
+  {
+    "id": "u8255527",
+    "name": "гайдук а в",
+    "text": "довольна",
+    "rating": 5,
+    "date": 1753195735000
+  },
+  {
+    "id": "u6156",
+    "name": "Егорик",
+    "text": "Отличный магазин, всё соответствует описанию 😍",
+    "rating": 4,
+    "date": 1753117293000
+  },
+  {
+    "id": "u5255",
+    "name": "Gelia L",
+    "text": "Без лишних обещаний — просто сделали как надо",
+    "rating": 5,
+    "date": 1752685087000
+  },
+  {
+    "id": "u4012",
+    "name": "Маша, Гомель",
+    "text": "Сомневалась и переживала но теперь пользуюсь новым айфоном и пишу отзыв))",
+    "rating": 5,
+    "date": 1752672470000
+  },
+  {
+    "id": "u5083",
+    "name": "RealBuyer",
+    "text": "Увидел Apple Market в рекомендациях, решил попробовать и заказала айфон. Цена приятно удивила, у нас в городе намного дороже. Оплатил 100% опасалась что сделала ошибку но менеджер всегда был на связи. Через пять дней получила посылку прямо домой! Айфон новый, оригинал, коробка запечатана с пломбами, внутри все документы, чек, гарантийный талон на 2 года. В подарок — чехол и стекло 💪🏼💪🏼💪🏼",
+    "rating": 5,
+    "date": 1752355413000
+  },
+  {
+    "id": "u3540",
+    "name": "новый клиент",
+    "text": "Татьяне отдельная благодарность за выдержку и помощь!!!",
+    "rating": 4,
+    "date": 1752290075000
+  },
+  {
+    "id": "u8848",
+    "name": "Юлия Алексеевна 🍫",
+    "text": "Не ожидала такой скорости доставки.. ставлю честные 5",
+    "rating": 5,
+    "date": 1752283684000
+  },
+  {
+    "id": "u2177",
+    "name": "Клиент из Минск",
+    "text": "Заказывали сразу три устройства: себе, жене и сыну. Всё пришло в одной посылке. Бесплатная доставка, всё оригинал. В подарок каждому положили чехол и стекло. Чеки и гарантийные талоны на месте. Спасибо Эпл Маркет)",
+    "rating": 5,
+    "date": 1752164317000
+  },
+  {
+    "id": "u0009",
+    "name": "DenisL",
+    "text": "При покупке объяснили все нюансы , телефон полностью соответствует описанию, никаких дефектов. Покупкой честно сказать рад 🤗 Вежливый менеджер объяснил условия гарантии. Рекомендую 🙏",
+    "rating": 5,
+    "date": 1752062580000
+  },
+  {
+    "id": "u7082",
+    "name": "я покупал тут",
+    "text": "APPLE MARKET - ВЫ ШИКАРНЫ! ПРОДОЛЖАЙТЕ В ТОМ ЖЕ ДУХЕ!",
+    "rating": 5,
+    "date": 1752017684000
+  },
+  {
+    "id": "u6309",
+    "name": "Витебск",
+    "text": "Покупкой довольна, спасибо большое, всё супер 🤩",
+    "rating": 5,
+    "date": 1751827708000
+  },
+  {
+    "id": "u5020",
+    "name": "кристина23",
+    "text": "Ребята молодцы) все четко и быстро) без лишних слов 😎",
+    "rating": 5,
+    "date": 1751673855310
+  },
+  {
+    "id": "u2488",
+    "name": "ClientBelarus",
+    "text": "обновили детям мобилки и никаких подвохов, всё честно даже чеки в бумажном виде. кто ещё не купил, зря сомневается (хотя я сам был такой)",
+    "rating": 5,
+    "date": 1751494621000
+  },
+  {
+    "id": "u8216",
+    "name": "Иван Романови4",
+    "text": "Товар оригинал, все работает отлично, гарантия есть 👍",
+    "rating": 5,
+    "date": 1751350745000
+  },
+  {
+    "id": "u1552",
+    "name": "Отзыв клиента",
+    "text": "Купил айфон в аpple мarket, потому что в наших магазинах цена просто дикая. Оплатил сразу 100%, получил подтверждение, отправили на следующий день. Через меньше чем неделю посылка уже была на почте в моём городе. Открыл — всё оригинал, коробка запечатана, документы, гарантия два года, даже чехол и стекло положили в подарок. Ни единого намёка на обман, всё как обещали 🔝🔝🔝🔝",
+    "rating": 5,
+    "date": 1750847409000
+  },
+  {
+    "id": "u4251",
+    "name": "С. Анастасия",
+    "text": "Айфон новый, всё супер, цена кайф, доставка без задержек, спасибо ))",
+    "rating": 5,
+    "date": 1750694162000
+  },
+  {
+    "id": "u5740",
+    "name": "iFanBY",
+    "text": "Молодцы ребята, без кота в мешке. Получил - проверил - забрал.",
+    "rating": 5,
+    "date": 1750462962000
+  },
+  {
+    "id": "u5115",
+    "name": "Ирина Кузнецова",
+    "text": "здравствуйте 😊 Получила долгожданный заказ, упакован отлично, все документы, гарантия, подарочные чехол и стекло. По виду — абсолютно новый, оригинальный, не вскрывался, (хотя покупала б/у) Цены у нас таких уже не встретишь, поэтому спасибо, что даёте возможность купить честно и без наценки 😊",
+    "rating": 5,
+    "date": 1750098882000
+  },
+  {
+    "id": "u3496",
+    "name": "Денчик 13",
+    "text": "Хорошее обслуживание и быстрый отклик на вопросы 💬",
+    "rating": 5,
+    "date": 1748756032000
+  },
+  {
+    "id": "u0092",
+    "name": "Mishania 🤘🏽",
+    "text": "Когда распаковал коробку, реально почувствовал себя как в Apple Store ) Бесплатная доставка из Польши это просто бонус ) Подарок в виде чехла и стекла очень кстати, уронил бы без него уже в первый день 😅",
+    "rating": 3,
+    "date": 1748568720000
+  },
+  {
+    "id": "u7812",
+    "name": "рекомендую всем",
+    "text": "заказываю постоянно в Apple Market и вам советую😌 хорошо сэкономите🤑",
+    "rating": 5,
+    "date": 1747955864000
+  },
+  {
+    "id": "u8370",
+    "name": "NickName",
+    "text": "цены приятно удивили, качество бомба, доставка ровно как и говорил менеджер",
+    "rating": 5,
+    "date": 1747652929000
+  },
+  {
+    "id": "u6227",
+    "name": "Павел,Бобруйск",
+    "text": "всё честно не обманули часики оригинал.",
+    "rating": 5,
+    "date": 1747510762000
+  },
+  {
+    "id": "u7771",
+    "name": "Барташевич АН",
+    "text": "Довольна от момента оплаты до распаковки 🤲Бесплатная доставка, оригинальная техника, документы, гарантия и подарок. Молодцы 🤝🤝",
+    "rating": 5,
+    "date": 1747249518000
+  },
+  {
+    "id": "u1897",
+    "name": "1 заказ",
+    "text": "пишу с полученного мной айпада от apple market и мне нужна будет помощь перенести данные",
+    "rating": 5,
+    "date": 1747222930000
+  },
+  {
+    "id": "u4050",
+    "name": "Наташа💚",
+    "text": "Рекомендую друзьям 😍",
+    "rating": 5,
+    "date": 1746912125000
+  },
+  {
+    "id": "u8459",
+    "name": "Честный Отзыв",
+    "text": "Apple Market реально настоящий магазин! Никаких “ref” и обмана!",
+    "rating": 5,
+    "date": 1746636190000
+  },
+  {
+    "id": "u9543",
+    "name": "Дмитрий - Жодино",
+    "text": "Понравилось что не надо ничего уточнять по сто раз) Все и так понятно) Оформил заказ - Оплатил - Доставили - Проверил - Забрал)",
+    "rating": 4,
+    "date": 1746208564000
+  },
+  {
+    "id": "u6280",
+    "name": "0185",
+    "text": "В наше время редкость найти такой магазин где всё без “ну, почти”. В Эпл Маркете всё идеально: доставка, упаковка, документы, подарок. Работаете круто, респектую 👍🏻👍🏻",
+    "rating": 5,
+    "date": 1745743261000
+  },
+  {
+    "id": "u2186",
+    "name": "Андрей User",
+    "text": "честный магазин, не первый раз заказываю) Оперативно и без лишних смс и звонков)",
+    "rating": 5,
+    "date": 1745680520000
+  },
+  {
+    "id": "u2632",
+    "name": "Женя! ГРОДНО",
+    "text": "Все четко и без задержек 🫂 Спасибо команде Apple Market 🙌",
+    "rating": 5,
+    "date": 1745277363000
+  },
+  {
+    "id": "u6409",
+    "name": "lover",
+    "text": "Магазин оставил только приятные эмоции😍 честно быстро и красиво.",
+    "rating": 5,
+    "date": 1744704678000
+  },
+  {
+    "id": "u1120",
+    "name": "Артём",
+    "text": "Айфон новый, не восстановленный, цена в два раза ниже чем у нас 😄",
+    "rating": 5,
+    "date": 1744315257000
+  },
+  {
+    "id": "u3098",
+    "name": "я",
+    "text": "жена подарком очеень рада, спс",
+    "rating": 5,
+    "date": 1744247696000
+  },
+  {
+    "id": "u8928",
+    "name": "Бобруйск 👋👋",
+    "text": "Никаких долгих ожиданий — ровно неделя, и посылка уже у меня) Консультант Татьяна вежливая, помогла подобрать нужный телефон по бюджету 🥰",
+    "rating": 5,
+    "date": 1744032614000
+  },
+  {
+    "id": "u4410",
+    "name": "💎",
+    "text": "14 про макс уже у меня)) Братишка посоветовал ваш магазин, а я теперь советую всем))",
+    "rating": 5,
+    "date": 1743076397000
+  },
+  {
+    "id": "u6901",
+    "name": "Покупка",
+    "text": "айфон и вотчи пришли быстро, цена ниже рынка, у нас капец как дорого по сравнению с вашим прайсом, качество огонь, проверен по имей что оригинал 🥹",
+    "rating": 5,
+    "date": 1741391974000
+  },
+  {
+    "id": "u2924",
+    "name": "irgnw",
+    "text": "Телефон новый без активации, доставка 5 дней, цена реально супер.",
+    "rating": 5,
+    "date": 1739906118000
+  },
+  {
+    "id": "u8923",
+    "name": "Ксения",
+    "text": "Честно сказать - порадовали:) До конца не верила что это все оригинал по дешевке)",
+    "rating": 5,
+    "date": 1739826528000
+  },
+  {
+    "id": "u1287",
+    "name": "Man",
+    "text": "Доброго времен суток 🌝 Очень классный магазин, низкие цены, оригинальная техника, всё быстро и без детского сада",
+    "rating": 5,
+    "date": 1739308393000
+  },
+  {
+    "id": "u9908",
+    "name": "Клиент2000",
+    "text": "Долго искала, где дешевле, и наткнулась на Apple Market. Прочла пару отзывов, решилась и взяла 13 модель для проверки 🤭 Когда распаковала — даже не верилось😹 Все как и было указано ранее менеджером, без единого подвоха🤭 Теперь насобираю денежку и еще хочу заказать у вас мак для учебы😌😌",
+    "rating": 5,
+    "date": 1739059356000
+  },
+  {
+    "id": "u8964",
+    "name": "ИМЯ Ф",
+    "text": "Друзья завидуют где я купил так дёшево) скинул им ваши контакты, теперь ждите от них заказы)",
+    "rating": 5,
+    "date": 1739002256000
+  },
+  {
+    "id": "u4055",
+    "name": "Review",
+    "text": "кто хочет оригинальную технику и на халяву - apple market в помощь😎😎",
+    "rating": 5,
+    "date": 1738891133000
+  },
+  {
+    "id": "u3380",
+    "name": "мой отзыв",
+    "text": "Спаибо что без сюрпризов 😂 Не люблю рисковать, но тут решился и НЕ ошибся в выборе! Мои айфончики пришли быстро,в упаковке с полным комплектом,гарантия и подарок чехол со стеклом 🎁 Спасибо!!",
+    "rating": 5,
+    "date": 1738717346000
+  },
+  {
+    "id": "u3805",
+    "name": "Пинск",
+    "text": "Когда включила ноутбук, поняла что это действительно оригинал. Всё работает идеально, никаких подвохов, документы и гарантия в комплекте.",
+    "rating": 5,
+    "date": 1738177320000
+  },
+  {
+    "id": "u2503",
+    "name": "Katya",
+    "text": "+ Репутация и Рекомендация 😘🥰",
+    "rating": 5,
+    "date": 1737330664000
+  },
+  {
+    "id": "u7225",
+    "name": "Счастливый клиент✨",
+    "text": "apple market реально топ, айфон оригинал, цена сказочная ))",
+    "rating": 5,
+    "date": 1737100812000
+  },
+  {
+    "id": "u8584",
+    "name": "пользователь",
+    "text": "минут 7 сижу за отзвом и не знаю что написать кроме того что вы лучшие из лучших на рынке на сегодня 😁🔝",
+    "rating": 5,
+    "date": 1737019790000
+  },
+  {
+    "id": "u7363",
+    "name": "ИльяП.",
+    "text": "Всё честно без каких-то но..",
+    "rating": 5,
+    "date": 1735595027000
+  },
+  {
+    "id": "u794997",
+    "name": "Purchase",
+    "text": "Всем привет! получил от курьера и сразу проверил IMEI😅 не обессудьте, но нужно было убедится лично 🙌🏾 Действительно настоящий оригинал с пометкой М на серийнике. Извините что сразу не поверил, теперь я ваш постоянный клиент🥺🤝",
+    "rating": 5,
+    "date": 1735547772000
+  },
+  {
+    "id": "u4266599",
+    "name": "Mурка",
+    "text": "Супер. Покупкой счастлива на все 100",
+    "rating": 3,
+    "date": 1735515126000
+  },
+  {
+    "id": "u4806450",
+    "name": "Tema",
+    "text": "Вы бы видели моё лицо когда я распаковал свой заказ на почте, подержав в руках свой новенький айфон и понял что меня не развели)) +реп",
+    "rating": 5,
+    "date": 1735401209000
+  },
+  {
+    "id": "u380903",
+    "name": "Отзыв",
+    "text": "Покупаю на постоянке, спасибо за скидки на опт!",
+    "rating": 5,
+    "date": 1735354025000
+  },
+  {
+    "id": "u3803",
+    "name": "Арсений Слуцк",
+    "text": "моя история простая и поучительная... не заказывайте в других магазинов в которых е*анут*я наценка, когда есть эйпл маркет 😉",
+    "rating": 5,
+    "date": 1735346111000
+  },
+  {
+    "id": "u2964",
+    "name": "ГАЛИНА",
+    "text": "👍🏻",
+    "rating": 5,
+    "date": 1735318719000
+  },
+  {
+    "id": "u655230",
+    "name": "Cat 🐈",
+    "text": "Теперь понимаю, почему про apple market by так много хороших отзывов ) Сама заказала и убедилась в том что это действительно правда ) тут грех не написать хорошие вам слова)) ",
+    "rating": 5,
+    "date": 1735306359000
+  },
+  {
+    "id": "u5505",
+    "name": "Покупка Онлайн",
+    "text": "Мой первый опыт онлайн покупки и он прошел на ура благодаря вам! Зная что в интернете много мошенников, но я все равно вам доверился и благодарю вас что вы меня не подвели 🙏🏻🙏🏻",
+    "rating": 5,
+    "date": 1735304658000
+  },
+  {
+    "id": "u1122",
+    "name": "🧚",
+    "text": "Счастливая обладательница 14 про макс оставляет вам отзыв 🤭 Спасибо вам 💕",
+    "rating": 5,
+    "date": 1735280389000
+  },
+  {
+    "id": "u3130013",
+    "name": "Sanya3",
+    "text": "все четко, респектую!!!",
+    "rating": 3,
+    "date": 1735254089000
+  },
+  {
+    "id": "u9507",
+    "name": "Заказ в AM_BY",
+    "text": "Приятно когда ожидание совпадает с реальностью) Все что обещано в телеграм, было выполнено до мелочей. Техника оригинальная, без следов использования, упаковка запечатана, документы и гарантия настоящие. Курьер вежливый, доставка бесплатная, из Польши ровно за 6 дней. Подарок — чехол и стекло, мелочь, но приятно)",
+    "rating": 5,
+    "date": 1735235759000
+  },
+  {
+    "id": "u4990977",
+    "name": "Vania K22",
+    "text": "Cпасибо за новый самсунг, все отлично🖤",
+    "rating": 5,
+    "date": 1735128880000
+  },
+  {
+    "id": "u7140",
+    "name": "Клиент",
+    "text": "Сервис удивил, не останавливайтесь и радуйте нас дальше!)",
+    "rating": 5,
+    "date": 1735109802000
+  },
+  {
+    "id": "u7684",
+    "name": "01",
+    "text": "Мне понравилось, что менеджеры не навязывают ничего лишнего. Всё объяснили, помогли выбрать, прислали трек после отправки. Через неделю приставка был у меня. Очень приятно, когда всё честно и без грязи.",
+    "rating": 5,
+    "date": 1735047933000
+  },
+  {
+    "id": "u3285618",
+    "name": "Good",
+    "text": "никакой суеты 🔝 оформил заказ в тг , оплатил , получил",
+    "rating": 4,
+    "date": 1734977382000
+  },
+  {
+    "id": "u4487605",
+    "name": "Имя Фамилия333",
+    "text": "ПК получил, спасибо)",
+    "rating": 5,
+    "date": 1734902807000
+  },
+  {
+    "id": "u6323",
+    "name": "nickby",
+    "text": "Рекомендую, никакой китайщины, только проверенный ОРИГИНАЛ.",
+    "rating": 5,
+    "date": 1734901940000
+  },
+  {
+    "id": "u4638104",
+    "name": "Привет с Бреста!",
+    "text": "Это уже не первый мой заказ и как всегда все на высшем уровне 👌🏼 Ценю вашу надежность и то что вы всегда на связи 🤝🤝🤝",
+    "rating": 5,
+    "date": 1734869036000
+  },
+  {
+    "id": "u2255",
+    "name": "Настя",
+    "text": "Спасибо вам за новенькое яблочко) что бы другие знали и не путали с мошенниками, оставлю здесь название магазина t.me/apple_market_by 🥇",
+    "rating": 5,
+    "date": 1734858166000
+  },
+  {
+    "id": "u5810",
+    "name": "Отзыв АМ🍎",
+    "text": "получил, проверил, всё ок 👍 пришло всё быстро и всё целое",
+    "rating": 5,
+    "date": 1734858076000
+  },
+  {
+    "id": "u3923",
+    "name": "Дмитрий - Орша",
+    "text": "Пока все в порядке! если что-то не так, сразу напишу тут",
+    "rating": 5,
+    "date": 1734804991000
+  },
+  {
+    "id": "u9074",
+    "name": "Nikita5",
+    "text": "Кофемашину получил, разбираюсь) Пока справляюсь без инструкции 😄",
+    "rating": 5,
+    "date": 1734697173000
+  },
+  {
+    "id": "u5557909",
+    "name": "Инесса💫",
+    "text": "Всем по айфону 🍎😎 Спасибо вам 💘",
+    "rating": 5,
+    "date": 1734662085310
+  },
+  {
+    "id": "u1693",
+    "name": "Максим. Т.",
+    "text": "Добрый день, хочу поблагодарить apple Market за прекрасное обслуживание! Вы превзошли мои ожидания!! Обязательно буду заказывать еще у вас!",
+    "rating": 5,
+    "date": 1734613342000
+  },
+  {
+    "id": "u7312",
+    "name": "⭐️⭐️⭐️",
+    "text": "в инсту скинула фото отчет, с вами приятно работать🥹 Обновить айфон на новый с вами не проблема😉",
+    "rating": 5,
+    "date": 1734590260000
+  },
+  {
+    "id": "u7140",
+    "name": "Dimka Ted",
+    "text": "Увидел ваш магазин и не смог устоять перед сладкими ценами) Поссылку получил, Благодарю вас",
+    "rating": 5,
+    "date": 1734549962000
+  },
+  {
+    "id": "u7182131",
+    "name": "Точно рекомендую",
+    "text": "Убедили что не лохотрон. Все получено, проверено ✊",
+    "rating": 5,
+    "date": 1734477768000
+  },
+  {
+    "id": "u917941",
+    "name": "iUser",
+    "text": "Забыла отписать.. получила телефон, сразу хочу поблагодарить за быструю доставку! В работе все нравится, спасибо вам большое 🙏🏻",
+    "rating": 5,
+    "date": 1734428967000
+  },
+  {
+    "id": "u7857594",
+    "name": "Слуцк - Ренат",
+    "text": "Отчитываюсь - забрал телефон и желаю вам хороших продаж)",
+    "rating": 5,
+    "date": 1734395468000
+  },
+  {
+    "id": "u8843",
+    "name": "Otziv",
+    "text": "Консультант входит в положение, телефон получен курьером, уже перекинул все данные🙌🏻 Качественное обслужвание, буду обращаться еще ✌🏼",
+    "rating": 5,
+    "date": 1734369828000
+  },
+  {
+    "id": "u4735",
+    "name": "Жуков Т",
+    "text": "Вы профи в своём деле. Девушке очень понравился подарок.",
+    "rating": 5,
+    "date": 1734313822000
+  },
+  {
+    "id": "u1938105",
+    "name": "Tatiiiana",
+    "text": "Этот магазин (APPLE MARKET) лучший на рынке 💎 говорил это всем и буду говорить 💎",
+    "rating": 5,
+    "date": 1734269799000
+  },
+  {
+    "id": "u3639",
+    "name": "Смирнов",
+    "text": "Желаю вам как можно больше продаж и адекватных клиентов!)",
+    "rating": 5,
+    "date": 1734268337000
+  },
+  {
+    "id": "u784498",
+    "name": "Вера Александровна",
+    "text": "Прошла неделя как я уже пользуюсь планшетом с вашего магазина🥰 Вопросов к вам нет, спасибо😍❤️",
+    "rating": 5,
+    "date": 1734266336000
+  },
+  {
+    "id": "u836518",
+    "name": "Отзыв с Пружаны",
+    "text": "Ваш клиент вновь доволен 😎 Спасибо за ещё один айфон.",
+    "rating": 5,
+    "date": 1734228068000
+  },
+  {
+    "id": "u907128",
+    "name": "никнейм",
+    "text": "apple watch забрал с почты, спасибо",
+    "rating": 4,
+    "date": 1734184706000
+  },
+  {
+    "id": "u2963",
+    "name": "Софья",
+    "text": "Пока все хорошо нареканий нет 😌 Буду рекомендовать 🙂",
+    "rating": 5,
+    "date": 1734136430000
+  },
+  {
+    "id": "u3377",
+    "name": "Vladlenka",
+    "text": "ЗДР! Хочу поблагодарить вас за телефон) честно сначала сомневалась что с ним какие-то проблемы, потому что смущала цена, но когда я получила его я была просто в шоке, он действительно идеальный и оригинал 😳 Еще отдельное спасибо за подарочки и за поклеенное стекло!",
+    "rating": 5,
+    "date": 1734055165000
+  },
+  {
+    "id": "u7642",
+    "name": "dddddddd",
+    "text": "Железо летает - Всё супер",
+    "rating": 5,
+    "date": 1734034521000
+  },
+  {
+    "id": "u2599",
+    "name": "-Викентий-",
+    "text": "Благодарность apple market и Татьяне за помощь и консультацию ☝️🔝",
+    "rating": 5,
+    "date": 1733955083000
+  },
+  {
+    "id": "u7994353",
+    "name": "Tanya Novak",
+    "text": "Добрый день, телефон забрала. Всё проверила, как вы и сказали — состояние идеальное 😊❤️",
+    "rating": 3,
+    "date": 1733934404000
+  },
+  {
+    "id": "u8964147",
+    "name": "kat_niko",
+    "text": "Получила телефон!Дочке брала, она очень удивилась, потому что это было неожиданно для неё. Все приложения установили, всё работает. Спасибо большое! Одну мечту дочки исполнила ❤️",
+    "rating": 4,
+    "date": 1733916906000
+  },
+  {
+    "id": "u5214",
+    "name": "Дима Задумов",
+    "text": "Телефоном довольны) Спасибо за быструю доставку)",
+    "rating": 5,
+    "date": 1733901625000
+  },
+  {
+    "id": "u3058038",
+    "name": "VLADA",
+    "text": "Забрала айфоны, всё просто 🔥",
+    "rating": 4,
+    "date": 1733865054000
+  },
+  {
+    "id": "u7917",
+    "name": "Панец",
+    "text": "Добрый день! Забыла вам написать!!!! Получила свою доставку — часы! Спасибо вам за оперативность, советы и отличную консультацию! Я уже не первый раз заказываю у вас!!!!! Вы лучшие!!!!!",
+    "rating": 5,
+    "date": 1733857631000
+  },
+  {
+    "id": "u7529",
+    "name": "Maryna B",
+    "text": "Пока что довольна на все 100 😁 Ещё раз спасибо 😊😊 Хороших продаж и вежливых клиентов 😊❤️",
+    "rating": 5,
+    "date": 1733815321000
+  },
+  {
+    "id": "u7451917",
+    "name": "Макс Заскалета",
+    "text": "Спасибо вам большое за ваш сервис и большое количество выбора. Телефоном очень доволен ❤️",
+    "rating": 5,
+    "date": 1733802998000
+  },
+  {
+    "id": "u8406",
+    "name": "сахарок",
+    "text": "искренне благодарю вас за качественное обслуживание и быструю доставку! заказанный мной айфон полностью соответствует описанию, отлично работает и оправдал все ожидания. Приятно иметь дело с ответственным магазином, где ценят каждого клиента. Желаю вам успехов, благодарных покупателей и дальнейшего развития! ❤️",
+    "rating": 5,
+    "date": 1733793000000
+  },
+  {
+    "id": "u8502",
+    "name": "Alexandr Mogil",
+    "text": "По телефону претензий нет Всё отлично! 📱❤️",
+    "rating": 5,
+    "date": 1733730723000
+  },
+  {
+    "id": "u9992",
+    "name": "Виталий В",
+    "text": "Здравствуйте, Заказывал у вас айфон 14 про на 512 Гб. Спасибо за товар, работает без проблем, фото соответствуют действительности. Телефоном очень доволен! 🤝",
+    "rating": 5,
+    "date": 1733694694000
+  },
+  {
+    "id": "u1430",
+    "name": "Hokage",
+    "text": "Телефон забрал) После Android впечатления невероятные! Телефон просто летает 🚀 Спасибо вам и продавцу) помог всё настроить и разобраться 🙏",
+    "rating": 5,
+    "date": 1733672149000
+  },
+  {
+    "id": "u5459",
+    "name": "Karina Korytna",
+    "text": "Мак забрала, спасибо вам! Всё отлично работает. Вернусь к вам ещё за телефоном 🥹❤️",
+    "rating": 5,
+    "date": 1733661252000
+  },
+  {
+    "id": "u9916",
+    "name": "Отзыв Покупателя",
+    "text": "Добрый день, Телефон забрала и уже настроила 🙌 Спасибо вам большое 🥰 Уже не первый раз покупаю у вас телефон, и каждый раз довольна Спасибо ещё раз ❤️✨",
+    "rating": 5,
+    "date": 1733660055000
+  },
+  {
+    "id": "u7698",
+    "name": "apple market 🔝💎",
+    "text": "получила телефон, всё работает) спасибо 😚",
+    "rating": 5,
+    "date": 1733613986000
+  },
+  {
+    "id": "u2795",
+    "name": "Vera KL",
+    "text": "Забрала телефончик, всё настроила, супер🔥 Спасибо за отличную коммуникацию и быструю доставку, обязательно буду обращаться ещё!",
+    "rating": 5,
+    "date": 1733606016000
+  },
+  {
+    "id": "u1875406",
+    "name": "Отзыв про айпад",
+    "text": "Получили iPad, спасибо вам большое 🙏🏻 Он идеальный 😍 За оперативную доставку отдельное огромное спасибо 🙏",
+    "rating": 5,
+    "date": 1733567200000
+  },
+  {
+    "id": "u4998",
+    "name": "24899",
+    "text": "Хочу оставить отзыв. Неделю назад заказал 15 Pro Max, сегодня уже забрал 👌Очень доволен быстрой реакцией на заказ и ответами на все вопросы. Подсказали, помогли выбрать из 5 вариантов + актуальная цена ⭐ Хороших продаж 💛 обязательно вернусь!",
+    "rating": 5,
+    "date": 1733553028000
+  },
+  {
+    "id": "u6895",
+    "name": "Romanenko",
+    "text": "Спасибо, заказ получила ) Всё пришло очень быстро )) Хорошего вам дня🫶🏻🫶🏻",
+    "rating": 5,
+    "date": 1733525439000
+  },
+  {
+    "id": "u8223",
+    "name": "Иванка Д",
+    "text": "Забыла оставить отзыв после предыдущего заказа 🤭 Все отлично! И цена, и качество - спасибо🥰 Ребёнок доволен и теперь я тоже хочу чтото для себя 🤗",
+    "rating": 5,
+    "date": 1733477304000
+  },
+  {
+    "id": "u8599",
+    "name": "_Kate_2525",
+    "text": "Всем привет 🖐 Телефон чудесный, доставка быстрая, всё супер, спасибо 🥰🙌❤️",
+    "rating": 5,
+    "date": 1733476973000
+  },
+  {
+    "id": "u6456690",
+    "name": "Владислав",
+    "text": "Забрали айфончик и он просто идеальный 👌🏻 Именно то, что мы хотели. Большое спасибо вам 🤝",
+    "rating": 5,
+    "date": 1733452322000
+  },
+  {
+    "id": "u8265",
+    "name": "Kristi",
+    "text": "Телефон, просто супер и еще по дешевке 😻 Рекомендую всем Apple Market: отличное и быстрое обслуживание!",
+    "rating": 5,
+    "date": 1733443562000
+  },
+  {
+    "id": "u5024905",
+    "name": "Зырянова 💅",
+    "text": "Спасибо магазину за быструю доставку и советы. Всё супер, я ооочень благодарна, Рекомендую 👍❤️",
+    "rating": 5,
+    "date": 1733415925000
+  },
+  {
+    "id": "u9410",
+    "name": "Tasya Alexandrovna",
+    "text": "Буду обращаться к вам еще",
+    "rating": 5,
+    "date": 1733326560000
+  },
+  {
+    "id": "u4190",
+    "name": "mffxeij",
+    "text": "Искренне благодарен за сервис и быструю доставку ❤️ Полный отзыв написал в инстаграм 😊",
+    "rating": 5,
+    "date": 1733246181000
+  },
+  {
+    "id": "u8218",
+    "name": "Евгений Лещенко",
+    "text": "Уже получил телефон 👍Спасибо вам за оперативную работу! Буду пользоваться с удовольствием 🤝",
+    "rating": 5,
+    "date": 1733083497000
+  },
+  {
+    "id": "u7950258",
+    "name": "Вы нереальны",
+    "text": "Apple Market спасибо ❤️❤️",
+    "rating": 4,
+    "date": 1733060107000
+  },
+  {
+    "id": "u9792",
+    "name": "Natali Donchenko",
+    "text": "Добрый день, всё забываю написать 😂 Спасибо за вашу помощь на протяжении всего заказа и за терпение! Айфончик забрала всё работает идеально 😊❤️",
+    "rating": 5,
+    "date": 1733010438000
+  },
+  {
+    "id": "u8128",
+    "name": "🔥",
+    "text": "Спасибо большое, всё пришло 🔥🔥🔥🔥 вы лучшие 🔥",
+    "rating": 5,
+    "date": 1732892905000
+  },
+  {
+    "id": "u8954",
+    "name": "owiwwo",
+    "text": "Спасибо за высокий сервис и обслуживание)",
+    "rating": 5,
+    "date": 1732887988000
+  },
+  {
+    "id": "u8892",
+    "name": "yerin",
+    "text": "Получила долгожданный 15😌 Всё работает прекрасно, красивый, без малейших проблем. Спасибо вам за отличный сервис🥰 Обязательно обращусь к вам ещё🤗",
+    "rating": 5,
+    "date": 1732740070000
+  },
+  {
+    "id": "u2649",
+    "name": "В.",
+    "text": "Спасибо",
+    "rating": 5,
+    "date": 1732707306000
+  },
+  {
+    "id": "u1300638",
+    "name": "Танечка S",
+    "text": "Отдельно благодарю за заботу и профессиональный подход при консультации и выборе устройства 💐 Телефон получила, теперь разбираюсь с настройками 😊",
+    "rating": 5,
+    "date": 1732697216000
+  },
+  {
+    "id": "u9606",
+    "name": "НЕчта",
+    "text": "курьер доставил, заказ у меня, эпл маркет спасибо!",
+    "rating": 5,
+    "date": 1732656014000
+  },
+  {
+    "id": "u2209",
+    "name": "_felen",
+    "text": "Большое спасибо 💙 Довольна на все 100% 🖤",
+    "rating": 5,
+    "date": 1732643424000
+  },
+  {
+    "id": "u7525315",
+    "name": "twwlkbe",
+    "text": "Вчера забрал✅ Благодарен вам и доволен. Все работает без нареканий 👍Надеюсь и дальше всё будет без проблем.",
+    "rating": 4,
+    "date": 1732532175310
+  },
+  {
+    "id": "u5590",
+    "name": "Лахно Елена",
+    "text": "Спасибо за подробную консультацию и быструю отправку!",
+    "rating": 5,
+    "date": 1732523583000
+  },
+  {
+    "id": "u687762",
+    "name": "VikVix",
+    "text": "Вы крутые apple market топ🔝",
+    "rating": 4,
+    "date": 1732472155310
+  },
+  {
+    "id": "u2578",
+    "name": "Тарик",
+    "text": "Спасибо за часы) Всё подошло идеально, качество отличное) Рад, что купил именно у вас 😌",
+    "rating": 5,
+    "date": 1732273005000
+  },
+  {
+    "id": "u9526127",
+    "name": "2024",
+    "text": "Приветствую! Покупаем у вас уже третий телефон — все довольны 😊 Телефоны полностью соответствуют фото, без нареканий, всё отлично работает. Обслуживание 5/5, спасибо, ребята. Мой телефон — просто пушка 💣",
+    "rating": 5,
+    "date": 1732160138000
+  },
+  {
+    "id": "u9582",
+    "name": "М Teres",
+    "text": "Приставка у меня, уже играю))",
+    "rating": 5,
+    "date": 1732137525000
+  },
+  {
+    "id": "u1438970",
+    "name": "Бмвист",
+    "text": "Хочу поблагодарить вас🙌🏻 • Консультация — быстрая, чёткая, конкретная • Доставка — оперативная • Индивидуальный подход к клиенту — супер • Подсказки (по личному опыту) добавляют уверенности в товаре. Благодарен вам за айфон, будем заказывать ещё😎",
+    "rating": 5,
+    "date": 1732091852000
+  },
+  {
+    "id": "u2501",
+    "name": "AM_BY",
+    "text": "Ноутбук пришёл отлично запакован всё в порядке работает идеально",
+    "rating": 5,
+    "date": 1732027969000
+  },
+  {
+    "id": "u5500",
+    "name": "gd.vt",
+    "text": "Пользуюсь телефоном уже сутки, мне нравится. Ещё раз спасибо за отличный сервис, быстро, качественно и на высшем уровне ❤️‍🔥",
+    "rating": 5,
+    "date": 1732017984000
+  },
+  {
+    "id": "u9612",
+    "name": "Ленусик",
+    "text": "Забрала телефон — всё устроило! Телефон просто космос,огромное спасибо 💗",
+    "rating": 5,
+    "date": 1731978871000
+  },
+  {
+    "id": "u6808",
+    "name": "Ф44",
+    "text": "благодарность Тане, она настоящий профессионал своего дела 🔥",
+    "rating": 5,
+    "date": 1731892461000
+  },
+  {
+    "id": "u803080",
+    "name": "Mudrrr",
+    "text": "Все супер) Сєкономила и с оригинальным планшетом 😅",
+    "rating": 5,
+    "date": 1731725025000
+  },
+  {
+    "id": "u2078",
+    "name": "Игнат",
+    "text": "Впечатления остались только положительные! От цены и качества телефона до скорости общения с вами и работы персонала. Помогли с переносом данных и оформлением eSIM. Все супер 👌🏻",
+    "rating": 5,
+    "date": 1731507312000
+  },
+  {
+    "id": "u1674864",
+    "name": "Ann 1993",
+    "text": "Спасибо вам за отличное обслуживание и быструю доставку ❤️💚",
+    "rating": 5,
+    "date": 1731385033000
+  },
+  {
+    "id": "u4494",
+    "name": "💜",
+    "text": "Покупал у вас почти месяц назад MacBook💻 Очень доволен и рек. всем)",
+    "rating": 5,
+    "date": 1731315359000
+  },
+  {
+    "id": "u7744780",
+    "name": "Вопрос",
+    "text": "Подскажите, как перенести данные с Android?",
+    "rating": 4,
+    "date": 1731276097000
+  },
+  {
+    "id": "u9360",
+    "name": "Soffia",
+    "text": "Уже второй раз у вас заказываю и дальше буду, спасибо",
+    "rating": 5,
+    "date": 1731182098000
+  },
+  {
+    "id": "u9436457",
+    "name": "0011",
+    "text": "Забрала iPad. Уже всё настроила, работает отлично 😌 Спасибо вам за чудесный, быстрый сервис и за подарочек 🎁 Это уже третий девайс, который я купила у вас! Маме планшет тоже очень понравился 🥰",
+    "rating": 5,
+    "date": 1731122147000
+  },
+  {
+    "id": "u7682",
+    "name": "Modern",
+    "text": "Телефончик супер, претензий к работе и внешнему виду нет. Жена довольна! Спасибо вам большое!",
+    "rating": 5,
+    "date": 1731105065000
+  },
+  {
+    "id": "u7802",
+    "name": "Яна",
+    "text": "Добрый день) айфон забрала, уже пишу вам с него)) Всё супер, спасибо и отдельное спасибо менеджеру ❤️",
+    "rating": 5,
+    "date": 1730934030000
+  },
+  {
+    "id": "u3897",
+    "name": "Ашад",
+    "text": "Уже почти неделю хожу с новым телефоном 😌 Хочу сказать большое спасибо за вашу коммуникацию с клиентами — начиная от ответов даже на самые глупые вопросы, заканчивая тем, что вы написали о неправильно указанном номере при отправке. Консультация отличная, цены хорошие, телефон в состоянии 10/10, отправили в тот же день! Ни капли не пожалел, что наткнулся на ваш магазин и заказал именно у вас 🥺 Чуть позже обязательно ещё закажу",
+    "rating": 5,
+    "date": 1730801069000
+  },
+  {
+    "id": "u1204293",
+    "name": "Diana Di",
+    "text": "Буду рекомендовать вас друзьям и знакомым! Cтановитесь только лучше🙏🏻",
+    "rating": 5,
+    "date": 1730795776000
+  },
+  {
+    "id": "u8152445",
+    "name": "Мой отзыв",
+    "text": "Спасибо за телефон в отличном состоянии",
+    "rating": 5,
+    "date": 1730715745000
+  },
+  {
+    "id": "u7197987",
+    "name": "Nastasya",
+    "text": "Были в вашем магазине — остались отличные впечатления! Быстрое и приятное обслуживание, широкий ассортимент и хорошие цены 😍",
+    "rating": 5,
+    "date": 1730561318000
+  },
+  {
+    "id": "u6881",
+    "name": "mark tamasi",
+    "text": "Я доволен! Если в будущем что-то понадобится, обязательно свяжусь с вами и порекомендую вас другим 😎🤝👌❤️",
+    "rating": 5,
+    "date": 1730497804000
+  },
+  {
+    "id": "u4178",
+    "name": "Любовь",
+    "text": "Ещё раз хочу поблагодарить ваш магазин за помощь в покупке телефона. 💖 Муж очень доволен! Большой плюс это чехол и стекло в подарок 😍 Обязательно будем обращаться к вам снова!",
+    "rating": 5,
+    "date": 1730401181000
+  },
+  {
+    "id": "u4206220",
+    "name": "ViiktoriiiAAA",
+    "text": "Забрала уже телефончик) Пришёл в отличном состоянии всё просто супер спасибо 💜",
+    "rating": 5,
+    "date": 1730306255310
+  },
+  {
+    "id": "u5587",
+    "name": "Приват",
+    "text": "Айфон доставили, состояние идеальное — даже не ожидал 😍 Огромное вам спасибо за вашу продукцию 🙏😉",
+    "rating": 5,
+    "date": 1730248531000
+  },
+  {
+    "id": "u8276",
+    "name": "С Натали",
+    "text": "Получила посылку, телефон очень красивый. Искренне спасибо! Желаю вам процветания и больше клиентов!",
+    "rating": 5,
+    "date": 1730165053000
+  },
+  {
+    "id": "u8514",
+    "name": "Anna Shwets",
+    "text": "Телефон действительно красивый и качественный, уже всё настроила, работает быстро и отлично Огромное спасибо, что подобрали именно то, что я хотела ❤️",
+    "rating": 5,
+    "date": 1730139670000
+  },
+  {
+    "id": "u7255066",
+    "name": "Криптан",
+    "text": "Моему удовольствию от использования нет предела 😁 Состояние отличное, аппарат новый, ни царапинки) Очень доволен покупкой, Спасибо! Осталось купить Apple Watch — и будет полный комплект ⌚💻",
+    "rating": 5,
+    "date": 1730052094000
+  },
+  {
+    "id": "u2251",
+    "name": "Lera",
+    "text": "айфон уже со мной, всё супер😊 большое спасибо! все пришло быстро, аккуратно упаковано, без нюансов😍 очень приятно иметь дело с вами. успехов и побольше довольных клиентов!",
+    "rating": 5,
+    "date": 1729983655000
+  },
+  {
+    "id": "u8102290",
+    "name": "Гриша К",
+    "text": "+ репутация магазину appl market",
+    "rating": 5,
+    "date": 1729955860000
+  },
+  {
+    "id": "u4034056",
+    "name": "Даша Зимовец",
+    "text": "Работаем, первая партия пришла на ура 🥳🥳",
+    "rating": 4,
+    "date": 1729787993000
+  },
+  {
+    "id": "u6498",
+    "name": "Anastasia Kushtan",
+    "text": "Искренне спасибо за телефон 😍 Он чудесный, всё отлично работает 🥰 Летает, как новый 💕 Буду вас рекомендовать и дальше у вас заказывать ❤️🙌🏻",
+    "rating": 5,
+    "date": 1729722284000
+  },
+  {
+    "id": "u6991",
+    "name": "захар",
+    "text": "спасибо, все без обмана и приколов.",
+    "rating": 5,
+    "date": 1729688497000
+  },
+  {
+    "id": "u6721",
+    "name": "Yulia",
+    "text": "Спасибо!! телефон получила, всё отлично работает) Состояние идеальное, как и обещали. Спасибо за быстрые ответы и квалифицированные консультации",
+    "rating": 5,
+    "date": 1729677160000
+  },
+  {
+    "id": "u3256123",
+    "name": "С",
+    "text": "Безумно счастлива что выбрала именно ваш магазин😍",
+    "rating": 5,
+    "date": 1729612573000
+  },
+  {
+    "id": "u5203",
+    "name": "s.zaranek",
+    "text": "Здравствуйте, вчера получил телефон — качеством полностью доволен 📱 Большое спасибо за быструю отправку и отличный сервис 😌",
+    "rating": 5,
+    "date": 1729451241000
+  },
+  {
+    "id": "u4425",
+    "name": "Иринка 🦋",
+    "text": "Хотела поблагодарить за телефончик 🙈 , очень понравился 😍 Пришел в идеальном состоянии, все работает, проверен парнем на оригинальность 😌 Довольна на все сто процентов ❤️",
+    "rating": 5,
+    "date": 1729353123000
+  },
+  {
+    "id": "u9110",
+    "name": "Vadik",
+    "text": "Проверил на почте и без сомнений забрал ) Еду домой наслаждаться новенькими айфоном и пишу вам отзыв )",
+    "rating": 5,
+    "date": 1729275472000
+  },
+  {
+    "id": "u5668857",
+    "name": "Танюшка Минск",
+    "text": "Я забыла вам написать 😊 Часы забрали а ваш консультант просто чудо 😇🥹 Подобрал и оформил все наилучшим образом 🌸",
+    "rating": 4,
+    "date": 1729235778000
+  },
+  {
+    "id": "u7965",
+    "name": "Яна Д.",
+    "text": "Хочу оставить отзыв 😊 Покупала у вас iPhone 13 Pro Max 😍 Спасибо большое за понимание и терпение, что подождали с телефоном на почте 🙏 За ваш сервис отдельная благодарность! Буду обращаться ещё и рекомендовать друзьям 💕 Очень довольна телефоном ❤️",
+    "rating": 5,
+    "date": 1729169247000
+  },
+  {
+    "id": "u4629184",
+    "name": "mr_underwhat",
+    "text": "Спасибо! У вас, как всегда, техника высшего уровня и по хорошей цене 💪 Доволен, теперь буду работать в 1500 раз быстрее 😄 Всегда брал у вас — два айфона и мак, сервис просто топ 👌❤️",
+    "rating": 5,
+    "date": 1729158238000
+  },
+  {
+    "id": "u967043",
+    "name": "Шепель В",
+    "text": "Забрала планшет, спасибо вам 🩵🩵 Всё супер, никаких проблем с дисплеем, батарея отличная, выглядит просто как конфетка ✨ Теперь весь вечер буду с ним играться 😂 Спасибо большое 🔥🩵",
+    "rating": 5,
+    "date": 1729134444000
+  },
+  {
+    "id": "u6161",
+    "name": "Anastasia👑🔥",
+    "text": "Телефон в идеальном состоянии работает отлично такой же как на фото 😍 Очень понравился спасибо за консультацию и быструю доставку 💐",
+    "rating": 5,
+    "date": 1729128994000
+  },
+  {
+    "id": "u2507",
+    "name": "Шурик с Витебска",
+    "text": "Apple Market -- Я ВАС ОБОЖАЮ!!! Лучшие цены которые я видел!",
+    "rating": 5,
+    "date": 1729021956000
+  },
+  {
+    "id": "u2117",
+    "name": "_dashaaa9",
+    "text": "Уже получила свой телефон📱 спасибо за быструю отправку и качественное обслуживание ❤️ телефон в отличном состоянии (фоточки закинула Татьяне в тг)",
+    "rating": 5,
+    "date": 1728993266000
+  },
+  {
+    "id": "u2841",
+    "name": "Ку",
+    "text": "Планшет забрал, все работает, Спасибо🤝",
+    "rating": 5,
+    "date": 1728937041000
+  },
+  {
+    "id": "u1084573",
+    "name": "AnnaLarina",
+    "text": "Дд! Большое вам спасибо! Все работает, быстро, без нареканий) Это был подарок мужу, он тоже в восторге! Кстати, отличная упаковка 😍👍",
+    "rating": 5,
+    "date": 1728908398000
+  },
+  {
+    "id": "u8349",
+    "name": "Кристина 🐈‍⬛",
+    "text": "Заказываю здесь уже второй раз айфон. Всё отлично, телефон просто кайф. Отличное и быстрое обслуживание, большое спасибо менеджеру 🤍",
+    "rating": 5,
+    "date": 1728822298000
+  },
+  {
+    "id": "u175781",
+    "name": "(Без имени)",
+    "text": "iPhone — бомба 💣🔥 Очень понравился!Сервис чудесный, все быстро и надёжно 💪 Спасибо за вашу работу!",
+    "rating": 5,
+    "date": 1728657878000
+  },
+  {
+    "id": "u2505",
+    "name": "мария маша",
+    "text": "хочу поблагодарить вас за телефон ❤️ он просто супер, особенно когда переходишь с андроида на айфон 😂 У вас быстрая и четкая доставка, низкие цены и отличное обслуживание, спасибо вам! 😊",
+    "rating": 5,
+    "date": 1728569298000
+  },
+  {
+    "id": "u1317",
+    "name": "DDenis💯",
+    "text": "С телефоном разобрался - всё отлично 👌 Спасибо, всё прошло хорошо. Сейчас пишу с него. Просто супер, спасибо)",
+    "rating": 5,
+    "date": 1728531523000
+  },
+  {
+    "id": "u2626284",
+    "name": "🐰",
+    "text": "Ноутбук получила, Он просто нереальный! Даже не ожидала, что покупка пройдет так идеально! В следующий раз только к вам!",
+    "rating": 5,
+    "date": 1728380605000
+  },
+  {
+    "id": "u7111",
+    "name": ".raviss",
+    "text": "Телефон забрал, он шикарный, я очень доволен✊✊",
+    "rating": 5,
+    "date": 1728368495000
+  },
+  {
+    "id": "u2430",
+    "name": "Г.К.В.",
+    "text": "Все чудесно, я счастлива 🤍",
+    "rating": 5,
+    "date": 1728345723000
+  },
+  {
+    "id": "u4297",
+    "name": "name__is__ann",
+    "text": "Спасибо ВАМ большое за доставленный товар,за вашу ответственную работу и особый подход к каждому клиенту,именно поэтому возвращаемся к вам снова и снова!)",
+    "rating": 5,
+    "date": 1728310680000
+  },
+  {
+    "id": "u7444",
+    "name": "Ирина Лукьянова",
+    "text": "Искренне хочу поблагодарить вас за профессиональную помощь при выборе телефона. Для меня это было нелегкое задание 😅 Все пришло очень быстро, я максимально довольна! Желаю вам побольше клиентов ❤️ Буду ещё покупать для дочки",
+    "rating": 5,
+    "date": 1728244130000
+  },
+  {
+    "id": "u1457881",
+    "name": "kulinskaya",
+    "text": "Достойный магазин который работает на совесть и честность, а не для галочки.",
+    "rating": 5,
+    "date": 1728141760000
+  },
+  {
+    "id": "u8554",
+    "name": "Aleksandr.М",
+    "text": "Цена 5 из 5, орининал 5 из 5, сервис 5 из 5 🔝🖤",
+    "rating": 5,
+    "date": 1728059308000
+  },
+  {
+    "id": "u8296573",
+    "name": "Пряд Евгения",
+    "text": "Не раз уже у вас заказывала и в будущем буду покупать только у вас! AppleMarket 💎",
+    "rating": 5,
+    "date": 1727664354000
+  },
+  {
+    "id": "u7434",
+    "name": "ncts",
+    "text": "отличные цены и оригинальная техника ✅проверен магазин лично ",
+    "rating": 5,
+    "date": 1727608921000
+  },
+  {
+    "id": "u7705631",
+    "name": "отз Беларусь",
+    "text": "Покупал у вас телефон, хочу оставить отзыв.Пользуюсь им уже около недели — всё отлично! Долго лежал в коробке, не было времени перейти на новый 😅Телефон очень нравится, работает прекрасно, я доволен.Камера впечатляет.Сервис отличный, всё понравилось.Для тех, кто боится покупать с eSIM — я тоже купил eSIM, всё работает идеально.Быстро перенёс номер, разницы с физической сим не заметил..Я в восторге, большое спасибо за телефон 😁❤️❤️",
+    "rating": 5,
+    "date": 1727544560000
+  },
+  {
+    "id": "u7124",
+    "name": "ЖАННА",
+    "text": "Телефон привез курьер. Видно, что новый, целый и без повреждений. Включать будем на день рождения сына🎁 Тогда и проверим, как работает. Надеюсь, всё будет отлично и это будет хороший подарок 🎉 Спасибо 😊",
+    "rating": 5,
+    "date": 1727534212000
+  },
+  {
+    "id": "u5739370",
+    "name": "Яковлева",
+    "text": "Это просто мега-быстрая отправка 😍👌 Добрый день 😊 Муж вчера забрал посылку, ребёнок в восторге 🥰 Обязательно вернусь к вам за iPhone 14 для себя )",
+    "rating": 5,
+    "date": 1727454055000
+  },
+  {
+    "id": "u4809",
+    "name": "Anet 👩‍🦳",
+    "text": "Мама очень довольна телефоном. Разобрались быстро, как вы и писали. Спасибо вам большое. В будущем обязательно закажу у вас себе телефон. Отдельное спасибо за быструю доставку, приятную цену и качественную консультацию.",
+    "rating": 5,
+    "date": 1727418084000
+  },
+  {
+    "id": "u9763",
+    "name": "клиент",
+    "text": "всё как обещали, быстро, оригинально, без подвоха 💯",
+    "rating": 5,
+    "date": 1727256587000
+  },
+  {
+    "id": "u6924",
+    "name": "gsnvk3",
+    "text": "Проверили телефон после получения,все работает отлично 💪 Очень понравился, вы молодцы! Я очень доволен, буду всем вас советовать и буду покупать только у вас))",
+    "rating": 5,
+    "date": 1727182729000
+  },
+  {
+    "id": "u3246",
+    "name": "А.Zubeka",
+    "text": "Благодарю вас за айфон 🙏🏻 Немного испугалась, что коробка была открыта, но потом поняла что вы просто сразу наклеили стекло 😄",
+    "rating": 5,
+    "date": 1727160611000
+  },
+  {
+    "id": "u5312",
+    "name": "Вале444ка",
+    "text": "Успехов вам и хороших продаж!😌 P.s - Доверяйте только проверенным, а именно Apple Market!!",
+    "rating": 5,
+    "date": 1727142910000
+  },
+  {
+    "id": "u9573",
+    "name": "Danilenko 🦄",
+    "text": "Все как всегда, замечательно) Телефон в идеальном состоянии😍🥰 Как сказал мой молодой человек: А что он, как новый, хоть бы царапинка была! 😂😄 Работает отлично, но на всякий случай ещё понаблюдаем. Обязательно обращусь к вам снова😊",
+    "rating": 5,
+    "date": 1727115084000
+  },
+  {
+    "id": "u1035",
+    "name": "Ангелина",
+    "text": "Это мой первый айфон и я очень рада что нашла ваш магазин❤️Спасибо❤️ ",
+    "rating": 5,
+    "date": 1727094566000
+  },
+  {
+    "id": "u4201",
+    "name": "I Zhukovskaya",
+    "text": "Всей роднёй заказываем в AppleMarket 💎❤️‍🔥",
+    "rating": 5,
+    "date": 1727076462000
+  },
+  {
+    "id": "u6999155",
+    "name": "Плотникова. М.",
+    "text": "Посылочку получила 😍😍😍 Очень благодарна ❤️❤️❤️ Все супер, вы лучшие 😍",
+    "rating": 3,
+    "date": 1726866779000
+  },
+  {
+    "id": "u934941",
+    "name": "Нелла",
+    "text": "Спасибо вашему магазину!Буду рекомендовать знакомым!",
+    "rating": 5,
+    "date": 1726780955000
+  },
+  {
+    "id": "u4421",
+    "name": "Владддик, Могилев",
+    "text": "Доставка быстрая, телефон в идеале)) Уже второй раз заказываю и снова на 10/10)",
+    "rating": 5,
+    "date": 1726769274000
+  },
+  {
+    "id": "u3138002",
+    "name": "as.s77777",
+    "text": "Мы очень довольны, что обратились именно к вам! Желаю как можно больше таких довольных клиентов, как мы 🙏🏻 Я искренне буду рад ещё раз написать вам и что-то у вас приобрести!",
+    "rating": 5,
+    "date": 1726762514000
+  },
+  {
+    "id": "u8446",
+    "name": "vi.shalimova",
+    "text": "Хотела бы оставить отзыв о сегодняшней покупке :) Спасибо за качественное обслуживание, телефон прекрасный. Уже начала рекомендовать вас ❤️",
+    "rating": 5,
+    "date": 1726733497000
+  },
+  {
+    "id": "u1697",
+    "name": "Вероника к",
+    "text": "Добрый день, получила заказ 🙌🏻 Пока всё нравится особенно внешний вид как новый. Спасибо 😊",
+    "rating": 5,
+    "date": 1726559383000
+  },
+  {
+    "id": "u6306417",
+    "name": "nerw1ex",
+    "text": "AppleMArket - Все отлично, буду заказывать у вас и дальше 😇",
+    "rating": 4,
+    "date": 1726558283000
+  },
+  {
+    "id": "u4090384",
+    "name": "Отзыв",
+    "text": "муж доволен, всё супер, ему очень понравился подарок 🥰 Спасибо вам ❤️ Как всегда, на высоте 😉",
+    "rating": 5,
+    "date": 1726502339000
+  },
+  {
+    "id": "u1356",
+    "name": "Olya Gnyvka",
+    "text": "Отличный магазин! Спасибо вам, телефон получила — оооочень довольна 🥰 Обслуживание на высшем уровне, смело рекомендую ваш магазин Apple Market 👍 Так держать 💪",
+    "rating": 5,
+    "date": 1726484402000
+  },
+  {
+    "id": "u3309",
+    "name": "Ксения Ейсмонт",
+    "text": "Добрый день! Целую неделю не могла вам написать 🙈 Ноутбук получила — он просто чудесный 💜 Я прямо в него влюбилась! Спасибо вам, это уже моя 4-я крупная покупка в вашем магазине! Благодарна вам 💕",
+    "rating": 5,
+    "date": 1726356541000
+  },
+  {
+    "id": "u7767849",
+    "name": "k.ssoffi",
+    "text": "Получила телефон, очень нравится, спасибо большое) Буду обращаться ещё при необходимости 😍🤩",
+    "rating": 5,
+    "date": 1726351305310
+  },
+  {
+    "id": "u9503",
+    "name": "Osaulenko",
+    "text": "Добрый день 🤝 Получил свой заказ и хочу сказать, что безмерно счастлив, что выбрал именно вас, Спасибо 🙏❤️",
+    "rating": 5,
+    "date": 1726301359000
+  },
+  {
+    "id": "u7084",
+    "name": "Карина_9",
+    "text": "Уже включила телефон, всё подключила — пока всё отлично работает. Я довольна, он очень красивый 🥰",
+    "rating": 5,
+    "date": 1726269016000
+  },
+  {
+    "id": "u4916",
+    "name": "TheRostik",
+    "text": "Буду рекомендовать вас своим знакомым 😉❤️",
+    "rating": 5,
+    "date": 1726231312000
+  },
+  {
+    "id": "u7748",
+    "name": "inna_gromovik",
+    "text": "Спасибо! Уже пользуюсь и очень довольна) Всё работает безупречно)",
+    "rating": 5,
+    "date": 1726230984000
+  },
+  {
+    "id": "u9308",
+    "name": "Андриана СХ",
+    "text": "лучше цен я нигде не видела и наверное не найду😅🤭 вы лучшие🧡 ",
+    "rating": 5,
+    "date": 1726182588000
+  },
+  {
+    "id": "u4299",
+    "name": "MDV",
+    "text": "Посылку получила. Большое вам спасибо, всё в отличном состоянии, покупкой довольна. Спасибо за вашу работу ❤️",
+    "rating": 5,
+    "date": 1726178237000
+  },
+  {
+    "id": "u2966",
+    "name": "Марьяна К",
+    "text": "Хочу поблагодарить вас за телефон. Спасибо, он cупер 😇",
+    "rating": 5,
+    "date": 1726154201000
+  },
+  {
+    "id": "u6242",
+    "name": "Рыбка Игорь",
+    "text": "пользуюсь, все отлично 🔥❤️",
+    "rating": 5,
+    "date": 1726053389000
+  },
+  {
+    "id": "u3663",
+    "name": "Иванка_РБ",
+    "text": "AM_BY - сервис по технике номер 1 !!",
+    "rating": 5,
+    "date": 1726017657000
+  },
+  {
+    "id": "u2568515",
+    "name": "Svetlana Victorovna✨",
+    "text": "Ваши менеджеры — профессионалы своего дела 😌 Я осталась очень довольна обслуживанием ❤️",
+    "rating": 4,
+    "date": 1725985107000
+  },
+  {
+    "id": "u6554770",
+    "name": "Аля Лазарева",
+    "text": "Большое спасибо за такие замечательные цены и продукцию)) Дети в восторге 🤗🤗🤗",
+    "rating": 5,
+    "date": 1725955045310
+  },
+  {
+    "id": "u9834",
+    "name": "habloana1998",
+    "text": "Именно то что я хотела 🤩 Оригинал и по низко цене, БЛАГОДАРЮ вас.",
+    "rating": 5,
+    "date": 1725878526000
+  },
+  {
+    "id": "u6458",
+    "name": "Ник Фьюри",
+    "text": "Спасибо, забрал📦",
+    "rating": 5,
+    "date": 1725819446000
+  },
+  {
+    "id": "u6141",
+    "name": "Акулова Тат",
+    "text": "5 звезд без лишних слов",
+    "rating": 5,
+    "date": 1725749392000
+  },
+  {
+    "id": "u1993",
+    "name": "Andrej_Bart",
+    "text": "Часы забрал, доволен как младенец 😄 Спасибо за сервис, вы лучшие 🤝💛",
+    "rating": 5,
+    "date": 1725645507000
+  },
+  {
+    "id": "u6003",
+    "name": "🤍",
+    "text": "Телефон получила, всё супер, очень довольна! Спасибоооооо!! 🤍🤍🤍🥺",
+    "rating": 5,
+    "date": 1725529781000
+  },
+  {
+    "id": "u1296",
+    "name": "Егор Рыжиков",
+    "text": "хотел написать вам спасибо. телефон в отличном состоянии.",
+    "rating": 5,
+    "date": 1725517705000
+  },
+  {
+    "id": "u6360",
+    "name": "Meriana",
+    "text": "Забрала телефон, всё работает, спасибо за сотрудничество ❤️",
+    "rating": 5,
+    "date": 1725442192000
+  },
+  {
+    "id": "u8274",
+    "name": "Наталия Блищик",
+    "text": "Телефоном довольна, спасибо за быструю доставку и консультацию. удачных продаж 🙏🏻",
+    "rating": 5,
+    "date": 1725368763000
+  },
+  {
+    "id": "u4935",
+    "name": "Gavrilenko YA",
+    "text": "Быстрая доставка с польши к нам в брест, айфон оригинал, лично проверили по серийному номеру и мега приятные цены😻",
+    "rating": 5,
+    "date": 1725348530000
+  },
+  {
+    "id": "u1261",
+    "name": "П",
+    "text": "И сервис и техника на высщем уровне! Спасибо что без обмана",
+    "rating": 5,
+    "date": 1725310390000
+  },
+  {
+    "id": "u4805",
+    "name": "Вадик Манойло",
+    "text": "ЖИРНЫЙ ++ Реп вашему магаззину)",
+    "rating": 5,
+    "date": 1725035657000
+  },
+  {
+    "id": "u7853",
+    "name": "_b.u.n.n.y_",
+    "text": "Ребята, он идеальный 🥹 По ощущениям — будто из салона взяла 😂 Спасибо вам за быстрый сервис, внимательного менеджера и быструю доставку! Однозначно буду рекомендовать вас друзьям 🥹❤️",
+    "rating": 5,
+    "date": 1725019930000
+  },
+  {
+    "id": "u7625526",
+    "name": "Аli Rashitovna",
+    "text": "Безмерно благодарна 💜 Получила телефон, подарила дочке, столько радости) Уже пользуется 😊 Дай Бог, чтобы всё работало, а я к вам ещё вернусь за своим айфоном 😄",
+    "rating": 5,
+    "date": 1724750979000
+  },
+  {
+    "id": "u7171",
+    "name": "Никита Полянский",
+    "text": "всё хорошо, телефон забрали. как всегда вы на высоте! буду обращаться к вам постоянно, как и раньше, уже 8-й раз 😁 спасибо большое ❤️",
+    "rating": 5,
+    "date": 1724713739000
+  },
+  {
+    "id": "u1604",
+    "name": "Валентина",
+    "text": "Сегодня забрала свой подарок от мужа 🎁 Большое спасибо вам за оперативность 🔥 и помощь в подборе нового телефона. Я очень довольна 😍 Обязательно будем обращаться к вам снова 😌",
+    "rating": 5,
+    "date": 1724707019000
+  },
+  {
+    "id": "u6629978",
+    "name": "КuleshaМ",
+    "text": "Цены у вас конечно бомба, без воды и кота в мешке",
+    "rating": 5,
+    "date": 1724628447000
+  },
+  {
+    "id": "u2938701",
+    "name": "Марина",
+    "text": "Хочу безмерно поблагодарить за быструю отправку и отличный сервис. Рекомендую всем ❤️",
+    "rating": 5,
+    "date": 1724589286000
+  },
+  {
+    "id": "u5079",
+    "name": "Сам. Наталья",
+    "text": "Очень рада, что наткнулась именно на ваш магазин) хорошо сэкономила и еще в придачу с новеньким айфоном🥰🤗",
+    "rating": 5,
+    "date": 1724455670000
+  },
+  {
+    "id": "u4106",
+    "name": "Olchik",
+    "text": "Телефон просто 🔥 очень довольна что обратилась именно к вам за покупкой :)",
+    "rating": 5,
+    "date": 1724454560000
+  },
+  {
+    "id": "u9563",
+    "name": "Юлиааан",
+    "text": "Планшет забрала, уже немного освоилась 😄 Всё нравится, безумно благодарна за оперативность! Теперь знаю, у кого покупать качественную технику по приятной цене 🤝",
+    "rating": 5,
+    "date": 1724451515000
+  },
+  {
+    "id": "u3426",
+    "name": "алеся..",
+    "text": "счастью нет предела ❤️ спасибо вам огромное за исполненную мечту 😘👍",
+    "rating": 5,
+    "date": 1724328603000
+  },
+  {
+    "id": "u5307771",
+    "name": "Никола Н",
+    "text": "Все подключилось, все работает, все очень нравится!!!",
+    "rating": 5,
+    "date": 1724261846000
+  },
+  {
+    "id": "u7148252",
+    "name": "Mishko Alena4",
+    "text": "рекомендую эплэ маркет абсолютно всем 🔥💎",
+    "rating": 3,
+    "date": 1724255596000
+  },
+  {
+    "id": "u5897",
+    "name": "_tikhi",
+    "text": "Огромное спасибо за телефон! Покупала у вас ещё две недели назад — очень довольна 😌 Спасибо за прекрасное отношение к клиентам: всё объяснили, помогли, были на связи 👌 Хороших рабочих дней и благодарных клиентов 😉",
+    "rating": 5,
+    "date": 1724112058000
+  },
+  {
+    "id": "u2915192",
+    "name": "Игорь И",
+    "text": "Работаем на постоянке, пока все отлично.",
+    "rating": 5,
+    "date": 1724013619000
+  },
+  {
+    "id": "u5310",
+    "name": "N.R.",
+    "text": "Хочу поблагодарить вас за быструю доставку поддержку и помощь ❤️ Вы просто невероятные ❤️",
+    "rating": 5,
+    "date": 1723991273000
+  },
+  {
+    "id": "u7630",
+    "name": "Покупатель",
+    "text": "Даже лучше, чем на фото! Уже не надеялась найти эту модель в таком состоянии, потому что раньше было около 10 неудачных попыток 😅 Спасибо вам огромное 💚💚💚",
+    "rating": 5,
+    "date": 1723945603000
+  },
+  {
+    "id": "u5805",
+    "name": "Владислав Пашков",
+    "text": "Висит мой отзыв в инсте и напишу тут что лучше магазина чем APPLE MARKET вы не найдете !)",
+    "rating": 5,
+    "date": 1723805637000
+  },
+  {
+    "id": "u3499",
+    "name": "Абдуллаева А",
+    "text": "Получила часы ⌚  все настроила, это мои первые Apple Watch 😍",
+    "rating": 5,
+    "date": 1723675240000
+  },
+  {
+    "id": "u4755971",
+    "name": "Larisa_.",
+    "text": "Сегодня забрали телефон, все, как на фото идеально) После 11 это вообще нечто) Большое вам спасибо за оперативность и качество обслуживания 🥰🙌",
+    "rating": 5,
+    "date": 1723592940000
+  },
+  {
+    "id": "u8351",
+    "name": "Ира 2930",
+    "text": "Спасибо большое за скорость и профессионализм🤗 Поссылка на руках👌",
+    "rating": 5,
+    "date": 1723507674000
+  },
+  {
+    "id": "u265307",
+    "name": "I.linchik.",
+    "text": "Я уже забрала телефон и хочу поблагодарить вас — во-первых, за оперативность, во-вторых, за качественное обслуживание и информирование. Я очень довольна покупкой, спасибо вам 🙆🏻‍♀️",
+    "rating": 5,
+    "date": 1723467195000
+  },
+  {
+    "id": "u7353",
+    "name": "Валентин, г Минск",
+    "text": "спасибо за демократичную цену, подарки и бесплатную доставку.",
+    "rating": 5,
+    "date": 1723236158000
+  },
+  {
+    "id": "u4328",
+    "name": "arina blkk 🫀",
+    "text": "Айфончик забрала❤️  Рада, что выбрала именно вас🙌",
+    "rating": 5,
+    "date": 1723040334000
+  },
+  {
+    "id": "u7643",
+    "name": "Никннейм0f",
+    "text": "Доставили за неделю, привез курьер, ничего не доплачивал, реально бесплатная доставка, в комплекте был чехол с выбранным мною цветом и уже поклееное стекло. Никаких подвохов, все честно, от души !!",
+    "rating": 5,
+    "date": 1723018903000
+  },
+  {
+    "id": "u2773",
+    "name": "Mariam",
+    "text": "Всё супер! Спасибооооо!!! ❤️🤍",
+    "rating": 5,
+    "date": 1722954761000
+  },
+  {
+    "id": "u7996628",
+    "name": "Дарья__",
+    "text": "Получила свой телефон, уже пользуюсь — довольна на все 💯 и даже 💯💯😍 Спасибо за отличное обслуживание и супер быструю доставку 🚚 Обязательно буду вас рекомендовать ❤️",
+    "rating": 5,
+    "date": 1722888365000
+  },
+  {
+    "id": "u2179",
+    "name": "Чурс",
+    "text": "Скоро обратятся к вам мои знакомые я уже порекомендовал 😉",
+    "rating": 5,
+    "date": 1722844115000
+  },
+  {
+    "id": "u6016",
+    "name": "Andrey👮",
+    "text": "Это честный магазин, не мошенники. Проверен лично покупкой.",
+    "rating": 5,
+    "date": 1722794795000
+  },
+  {
+    "id": "u427927",
+    "name": "viks1wwx",
+    "text": "Доставили в сроки✅ Полный комплект как было указано ранее менеджером) Гарантия, все распечатанные чеки (многие магазины такое не предоставяют). Вы лучшие 😍🫶🏻💋",
+    "rating": 4,
+    "date": 1722763274000
+  },
+  {
+    "id": "u5171",
+    "name": "Диана Василенко",
+    "text": "Получила телефон, большое спасибо за терпение, помощь при выборе и быструю доставку 😊 Всё отлично работает! Желаю вам хороших продаж ✨❤️",
+    "rating": 5,
+    "date": 1722762462000
+  },
+  {
+    "id": "u3677",
+    "name": "Vlad Karpyak ⚽",
+    "text": "Посылку забрал. Все хорошо, все работает как нужно.",
+    "rating": 5,
+    "date": 1722666349000
+  },
+  {
+    "id": "u9802061",
+    "name": "Анонимный отзыв",
+    "text": "Хочу оставить отзыв о своей первой покупке в вашем магазине (Apple market). Спасибо огромное! Хотя немного сомневалась (покупка в интернете, сумма немаленькая 😅), но всё прошло идеально. Очень приятное общение, подробно отвечали на все вопросы 😊 Быстрая доставка и возможность проверки при получении — это сейчас важно. Телефон работает, я довольна!",
+    "rating": 4,
+    "date": 1722652755310
+  },
+  {
+    "id": "u3543",
+    "name": "olga.neskoromnayа",
+    "text": "Получила телефон) Внешний вид идеальный, всё настроили без проблем, ошибок нет, функции работают отлично, телефон просто летает!😍 Довольна на 100%! С радостью рекомендую ваш магазин👍 Обслуживание 5+🔥",
+    "rating": 5,
+    "date": 1722377363000
+  },
+  {
+    "id": "u5764",
+    "name": "Анна$",
+    "text": "Берём уже у вас третий раз — лучший магазин 🥰 Спасибо за приятные бонусы",
+    "rating": 5,
+    "date": 1722373743000
+  },
+  {
+    "id": "u8156666",
+    "name": "Наталия Блищик",
+    "text": "Честно и без обмана, как мы любим.",
+    "rating": 4,
+    "date": 1722350964000
+  },
+  {
+    "id": "u6383",
+    "name": "S.Vita_",
+    "text": "Айфон ООчень понравился, надеюсь и дальше будут только хорошие впечатления и от телефона и от вашего магазина 😊❤️",
+    "rating": 5,
+    "date": 1722237783000
+  },
+  {
+    "id": "u6794",
+    "name": "Раиса",
+    "text": "Телефон забрали) всё пересмотрела, кажется всё ок, очень красивый😍 Если будут вопросы, то буду обращаться к вам🙂",
+    "rating": 5,
+    "date": 1722160506000
+  },
+  {
+    "id": "u6587",
+    "name": "Ami Gi",
+    "text": "Дочке все понравилось",
+    "rating": 5,
+    "date": 1721996777000
+  },
+  {
+    "id": "u9025",
+    "name": "k_hannah",
+    "text": "забрала телефон, все чудесно. спасибо большое 🥰❤️",
+    "rating": 5,
+    "date": 1721988950000
+  },
+  {
+    "id": "u4233",
+    "name": "Отзыв +5 из 5",
+    "text": "Apple Market - Cтавлю 5",
+    "rating": 5,
+    "date": 1721937267000
+  },
+  {
+    "id": "u3457",
+    "name": "chernova_oksana11",
+    "text": "Всем привет, забрала телефон, всё нравится, работает отлично. Конечно еще не все настроила, но на данный момент все супер. Обязательно еще обращусь к вашему магазину💜",
+    "rating": 5,
+    "date": 1721932812000
+  },
+  {
+    "id": "u3639",
+    "name": "VIKTORIIA 🎈",
+    "text": "Айфон у меня, но забыла написать отзыв 🙈 Внешний вид безупречный, никаких проблем. Все функции работают четко, телефон просто бобма 😊 Очень довольна покупкой, спасибо за быстрое обслуживание и доставку! С радостью рекомендую ваш магазин 💝 Желаю вам хороших клиентов и успешных продаж 💕",
+    "rating": 5,
+    "date": 1721826529000
+  },
+  {
+    "id": "u7757",
+    "name": "Руслан Мамасуев",
+    "text": "Заказывал жене телефон в подарок. Сегодня получили, он в восторге! Большое вам спасибо) Уже отправил видео в тг как выглядит",
+    "rating": 5,
+    "date": 1721593790000
+  },
+  {
+    "id": "u7433",
+    "name": "💖Julia",
+    "text": "Вы очень хороший селлер, я вам искренне благодарна❤️",
+    "rating": 5,
+    "date": 1721556844000
+  },
+  {
+    "id": "u6289301",
+    "name": "S.A.S.H.A.",
+    "text": "Все как надо 👍🏻👍🏻👍🏻",
+    "rating": 4,
+    "date": 1721556074000
+  },
+  {
+    "id": "u213069",
+    "name": "Юля Кравец",
+    "text": "Сегодня подарили родителям телефон 🤗😇 Им очень понравился! Спасибо вам большое))",
+    "rating": 5,
+    "date": 1721310747000
+  },
+  {
+    "id": "u4004",
+    "name": "Елена Д2301",
+    "text": "С планшетом еще разбираюсь, но все классно. Спасибо огромное за такую красоту!",
+    "rating": 5,
+    "date": 1721292323000
+  },
+  {
+    "id": "u2347",
+    "name": "lov",
+    "text": "наконец-то без обмана и остальной фигни. спс за такие цены, без накруток.",
+    "rating": 5,
+    "date": 1721250853000
+  },
+  {
+    "id": "u4544",
+    "name": "Пользователь -24",
+    "text": "Спасибо что радуете нас - apple market💎",
+    "rating": 5,
+    "date": 1721142109000
+  },
+  {
+    "id": "u9226",
+    "name": "Деня",
+    "text": "Телевизор забрали, курьер помог занести, Благодарю 🤝",
+    "rating": 5,
+    "date": 1721125879000
+  },
+  {
+    "id": "u8617077",
+    "name": "IRYNA 💟",
+    "text": "Ребят, цените этот магазин и покупайте пока есть возможность..",
+    "rating": 5,
+    "date": 1721097619000
+  },
+  {
+    "id": "u2261",
+    "name": "ryhananna",
+    "text": "Хотела поблагодарить и сказать что телефон и ваш сайт мне очень понравились 😍 Спасибо вам, что делаете людей чуть счастливее ❤️ В будущем обязательно поменяем на другой только у вас 💯",
+    "rating": 5,
+    "date": 1720895175000
+  },
+  {
+    "id": "u9720",
+    "name": "Ольга. К.",
+    "text": "В целом телефоном очень довольна, все в хорошем состоянии как на фото ) Спасибо за качество и оперативность )",
+    "rating": 5,
+    "date": 1720878148000
+  },
+  {
+    "id": "u6783",
+    "name": "Профиль🍇",
+    "text": "Не первый и не последний мой заказ, уверенно говорю на всю аудиторию 🔝",
+    "rating": 5,
+    "date": 1720729389000
+  },
+  {
+    "id": "u6547876",
+    "name": "Ali🕊️",
+    "text": "рекомендую!!",
+    "rating": 4,
+    "date": 1720682285310
+  },
+  {
+    "id": "u1278",
+    "name": "vikamos_",
+    "text": "Достойные цены (лучшие на рынке), оригинальный ассортимент и быстрая доставка в Беларусь. Что бы я без вас делала)",
+    "rating": 5,
+    "date": 1720646170000
+  },
+  {
+    "id": "u5703089",
+    "name": "Marta Shvets",
+    "text": "Отличный сервис, никаких замечаний👌🏼",
+    "rating": 3,
+    "date": 1720605708000
+  },
+  {
+    "id": "u1301630",
+    "name": "Валерия_С",
+    "text": "Ребенок приставкой счастлив и я тоже 🥺🥹🥰",
+    "rating": 5,
+    "date": 1720384665310
+  },
+  {
+    "id": "u3572",
+    "name": "dante",
+    "text": "покупаю у вас технику уже не первый раз, всегда максимально доволен)",
+    "rating": 5,
+    "date": 1720265916000
+  },
+  {
+    "id": "u3158531",
+    "name": "Аristovaa😇",
+    "text": "Переходила с XR, разницу почувствовала сразу как только включила телефон😄 Спасибо вам за качество и сервис и за то что ответили на миллион моих вопросов😂",
+    "rating": 5,
+    "date": 1720253255000
+  },
+  {
+    "id": "u2509",
+    "name": "Alina gmsvr",
+    "text": "Всем родным уже порекомендовала ваш магазин и сама частенько обновляюсь у вас)",
+    "rating": 5,
+    "date": 1720228244000
+  },
+  {
+    "id": "u1092",
+    "name": "Илья 333",
+    "text": "Быстрый и качестенный сервис - мое почтение😎",
+    "rating": 5,
+    "date": 1720048076000
+  },
+  {
+    "id": "u8903404",
+    "name": "kin_gston",
+    "text": "телефон получил 😊 желаю только процветания",
+    "rating": 5,
+    "date": 1719997615310
+  },
+  {
+    "id": "u8786",
+    "name": "...",
+    "text": "Телефон забрали и уже подарили имениннице — спасибо огромное ❤️",
+    "rating": 5,
+    "date": 1719846211000
+  },
+  {
+    "id": "u6670",
+    "name": "🤍Lizka🤍",
+    "text": "Благодарю что ответили на все вопросы! Oчень боялась заказывать через интернет, но доверилась и не пожалела! Буду заказывать у вас снова и рекомендовать всем 🙏🏻🙏🏻",
+    "rating": 5,
+    "date": 1719844173000
+  },
+  {
+    "id": "u6868",
+    "name": "EvGeNiYa_",
+    "text": "Ребенок доволен.😊",
+    "rating": 5,
+    "date": 1719794648000
+  },
+  {
+    "id": "u6434085",
+    "name": "Имя",
+    "text": "Пока всё отлично без нареканий ещё не особо разбиралась но работает в обычном режиме",
+    "rating": 5,
+    "date": 1719676866000
+  },
+  {
+    "id": "u8836",
+    "name": "Sonia ❣️",
+    "text": "Хочу поблагодарить вас за то, что сделали мой день 🤩🤩 Я осуществила свою мечту! Отдельное огромное спасибо Татьяне, она настоящий профессионал! Очень рада что покупку сделала именно у вас ❤️ Всего вам самого лучшего!",
+    "rating": 5,
+    "date": 1719598259000
+  },
+  {
+    "id": "u5241",
+    "name": "OM",
+    "text": "будем обращаться к вам еще, никакого скама, все прозрачно) лучший сервис обслуживания 🤝",
+    "rating": 5,
+    "date": 1719537579000
+  },
+  {
+    "id": "u5033798",
+    "name": "IrenN",
+    "text": "Оригинал. Без пустых слов рейтинг 5!",
+    "rating": 5,
+    "date": 1719476165310
+  },
+  {
+    "id": "u1384",
+    "name": "Михаил",
+    "text": "За техникой обращаюсь только к вам) Вы всегда поможете и подскажете.",
+    "rating": 5,
+    "date": 1719409537000
+  },
+  {
+    "id": "u8733",
+    "name": "Ань_ка",
+    "text": "Телефон понравился, буду рекомендовать вас всем 😊 Огромная благодарность ❤️❤️",
+    "rating": 5,
+    "date": 1719169386000
+  },
+  {
+    "id": "u2827",
+    "name": "М SvеtLana",
+    "text": "Приятно иметь с вами дело 🌸",
+    "rating": 5,
+    "date": 1719164393000
+  },
+  {
+    "id": "u6646",
+    "name": "⭐",
+    "text": "Спс все круто, заказ у меня. Начинаю распаковку",
+    "rating": 5,
+    "date": 1719072027000
+  },
+  {
+    "id": "u3315",
+    "name": "Джери",
+    "text": "Хочу поблагодарить вас за чудесную работу и сервис! Телефон получил сегодня, всё просто идеально. Ооригинал, состояние как новое 💯 Доставка заняла ровно 6 дней из Польши, коробка запечатана, всё честно, без малейшего обмана 🙏 Спасибо большое за подарки. В комплекте был чехол и защитное стекло, очень приятно! ❤️ Apple Market теперь мой любимый магазин, буду советовать всем друзьям и знакомым!",
+    "rating": 5,
+    "date": 1719000993000
+  },
+  {
+    "id": "u7419283",
+    "name": "284_482",
+    "text": "Здравствуйте) Пишу чтобы сказать спасибо за iPhone 14 Pro, всё пришло точно в срок)",
+    "rating": 5,
+    "date": 1718991423000
+  },
+  {
+    "id": "u4707",
+    "name": "Маша",
+    "text": "Я давно хотела купить айфон, но боялась предоплаты. Оплатила 100% и через недельку получила свой заказ 😻 Теперь верю только вам ❤️",
+    "rating": 5,
+    "date": 1718903792000
+  },
+  {
+    "id": "u6984273",
+    "name": "с Пинска",
+    "text": "Заказала MacBook Air. Пришёл в идеальном состоянии, абсолютно как новый. Работает тихо, батарея держит отлично, все функции на месте. Доставка отслеживалась, служба поддержки отвечала даже вечером, это очень приятно!",
+    "rating": 5,
+    "date": 1718903786000
+  },
+  {
+    "id": "u4213",
+    "name": "🌞",
+    "text": "Сначала сомневалась делать ли оплату сразу, но все оказалось честно и прозрачно без обмана",
+    "rating": 5,
+    "date": 1718843484000
+  },
+  {
+    "id": "u5781",
+    "name": "Отзыв с Белорусии",
+    "text": "Благодарочка Apple Market за честность и оперативность! Не лохотрон, вы теперь мои любимчики!)",
+    "rating": 5,
+    "date": 1718751149000
+  },
+  {
+    "id": "u1756",
+    "name": "Ekatze",
+    "text": "Покупала андроид для мужа. Продавцы ответили на все вопросы, помогли выбрать модель, не навязывали ничего лишнего как это любят делать другие шопы 🙌",
+    "rating": 5,
+    "date": 1718713588000
+  },
+  {
+    "id": "u8439259",
+    "name": "Женя",
+    "text": "Уже порекомендовала вас подруге, она тоже заказала, ждет айфончик ) )",
+    "rating": 4,
+    "date": 1718677687000
+  },
+  {
+    "id": "u7239904",
+    "name": "Амели К",
+    "text": "Редкий случай когда онлайн магазин доставляет товары еще по таким ценам 😁 Держите уровень 💪🏼",
+    "rating": 5,
+    "date": 1718577959000
+  },
+  {
+    "id": "u5888",
+    "name": "🍑🍑",
+    "text": "Apple Market оправдали доверие на все 100💯 действительно честно и открыто!",
+    "rating": 5,
+    "date": 1718556598000
+  },
+  {
+    "id": "u5692",
+    "name": "Санчез",
+    "text": "Покупали знакомые лично в магазине для личной проверки) Все отлично, можно доверять)",
+    "rating": 5,
+    "date": 1718536514000
+  },
+  {
+    "id": "u8913",
+    "name": "А Л",
+    "text": "Заказывала айфон и самсунг для родителей. Никаких проблем с оплатой и доставкой, все безопасно.",
+    "rating": 5,
+    "date": 1718479180000
+  },
+  {
+    "id": "u7715",
+    "name": "Tvoy Drug",
+    "text": "Apple Market - мой выбор навсегда 🫶🏻🫶🏻🫶🏻",
+    "rating": 5,
+    "date": 1718367995000
+  },
+  {
+    "id": "u7140278",
+    "name": "Наталья._",
+    "text": "отличный опыт покупки в интернете) Я доверяю вам!",
+    "rating": 5,
+    "date": 1718315405000
+  },
+  {
+    "id": "u1122",
+    "name": "full moon 🌕",
+    "text": "Фен приехал, все на месте, прям подарок мечты 😍",
+    "rating": 5,
+    "date": 1718287846000
+  },
+  {
+    "id": "u5407",
+    "name": "М@ксим",
+    "text": "Спасибо что быстро, без обмана и потраченных нервов 😅 Вы действительно крутые, знаете как работать и обслуживать клиентов. 😌",
+    "rating": 5,
+    "date": 1718283034000
+  },
+  {
+    "id": "u7320154",
+    "name": "Отзыв",
+    "text": "Видела что у вас крадут отзывы, поэтому отмечу здесь вашу страничку t.me/apple_market_by",
+    "rating": 5,
+    "date": 1718237303000
+  },
+  {
+    "id": "u7029",
+    "name": "Ксения Г🦊",
+    "text": "Не хватало денег на новый айфон, но в рекламе попался ваш магазин. Ознакомилась с информацией, все было понятно, оформила заказ, оплатила (сразу почувствовала доверие) и наконец-то моя мечта сбылась🥰🙂 Я очень безумно благодарна вам, спасибо😘🤭",
+    "rating": 5,
+    "date": 1718053977000
+  },
+  {
+    "id": "u7338",
+    "name": "Vикторович",
+    "text": "Получил два айфона, доставили как указано менеджером. Новые, оригинал, в пломбах. Также спасибо за чехол и стекло!",
+    "rating": 5,
+    "date": 1718010654000
+  },
+  {
+    "id": "u7500",
+    "name": "💍",
+    "text": "Спасибо) Очень ценим вашу надежность и то что вы всегда на связи 🤝",
+    "rating": 5,
+    "date": 1717949451000
+  },
+  {
+    "id": "u9977925",
+    "name": "88",
+    "text": "Для новых клиентов можно было бы сделать оплату при получении, но понимаю что с законами не поспоришь 😬🙄 А так все в целом 5 + риск был оправдан.",
+    "rating": 5,
+    "date": 1717928166000
+  },
+  {
+    "id": "u7573",
+    "name": "Надя Заяц",
+    "text": "Отзывы писать не умею, все в парядке, заказ у меня, спасибо",
+    "rating": 5,
+    "date": 1717895020000
+  },
+  {
+    "id": "u5699758",
+    "name": "Ovseyshik Danil",
+    "text": "за кофемашинку спасибочки, уже с женой пьем кофе за ваш магазин 😄😉",
+    "rating": 5,
+    "date": 1717802935310
+  },
+  {
+    "id": "u9967694",
+    "name": "1",
+    "text": "честность, ответственность надежность - это всё про эпл маркет бай)",
+    "rating": 5,
+    "date": 1717794140000
+  },
+  {
+    "id": "u6531575",
+    "name": "Рудоманов",
+    "text": "Супер",
+    "rating": 5,
+    "date": 1717718074000
+  },
+  {
+    "id": "u7111734",
+    "name": "Инокеша_0",
+    "text": "Пишу отзыв с нового айфона) Для работы самый сок)",
+    "rating": 5,
+    "date": 1717695759000
+  },
+  {
+    "id": "u9436",
+    "name": "Кристина (jey93)",
+    "text": "ну что сказать... сколько прочитала отзывов, что в инсте, что в тг, что здесь на сайте и только под всеми подписываюсь и подтверждаю что это все правда😌😎 вы действительно топ 1 по рейтингу среди реселлеров по продаже электроники с европы😌",
+    "rating": 5,
+    "date": 1717595701000
+  },
+  {
+    "id": "u3875",
+    "name": "Adam Adamovish",
+    "text": "Кто читает мой отзыв и его бьют сомнения ( я сам такой был ), то пишу лично тебе - если хочешь сэкономить и купить оригинал а не шлак, то заказывай и не бойся!! Магазин проверен!",
+    "rating": 5,
+    "date": 1717533302000
+  },
+  {
+    "id": "u2046606",
+    "name": "Гриша. Барановичи",
+    "text": "Хотя все в Польше, но в Беларусь заказывают без проблем. Есть проверка при получении.",
+    "rating": 5,
+    "date": 1717417015000
+  },
+  {
+    "id": "u8116265",
+    "name": "🐆🩶",
+    "text": "У меня вся техника которой я пользуюсь заказанная у вас 🤭 Спасибо вам за вашу работу 🙏🏻",
+    "rating": 5,
+    "date": 1717321849000
+  },
+  {
+    "id": "u1139",
+    "name": "Сherepko 1991",
+    "text": "Айфон просто топ, доволен как никогда, спасибо AppleMarket ✊✊",
+    "rating": 5,
+    "date": 1717139168000
+  },
+  {
+    "id": "u2786",
+    "name": "Дион",
+    "text": "Магазин прекрасный, сервис 10/10 подберут нужный гаджет на любой бюджет, консультация безупречна, все пришло быстро. Спасибо консультанту Татьяне",
+    "rating": 5,
+    "date": 1717089331000
+  },
+  {
+    "id": "u5238",
+    "name": "Ковальчук Лена",
+    "text": "Большое спасибо за еще одну крутую технику, покупаем уже вторично в данном магазине! сервис отличный, быстро отвечают, отправка в течение часа после оплаты, описание товара соответствует действительности! Рекомендую!",
+    "rating": 5,
+    "date": 1716986960000
+  },
+  {
+    "id": "u3625",
+    "name": "Anasteisha9",
+    "text": "очень приятный опыт покупки нового компьютера 😊 Дружелюбная атмосфера, приятные цены, очень хорошее обслуживание. Спасибо консультанту за помощь в выборе 😇",
+    "rating": 5,
+    "date": 1716982645000
+  },
+  {
+    "id": "u2908",
+    "name": "Вадя",
+    "text": "Брал мак бук, всё четко)",
+    "rating": 5,
+    "date": 1716893755000
+  },
+  {
+    "id": "u5669",
+    "name": "Romchik Rm",
+    "text": "Спасибо Татьяне за подбор, а то долго определялся и помотал нервы 😢 Спасибо за выдержку и професионализм 🙏🏻",
+    "rating": 5,
+    "date": 1716819855000
+  },
+  {
+    "id": "u3064",
+    "name": "Екатерина Н.",
+    "text": "Приятно удивлена ​​сервисом. Подобрали технику под мой бюджет, все показали по видео перед отправкой. Получила айфон, состояние как новое. Пользуюсь уже 3 недели, все работает. Однозначно, рекомендую 🔥❤️‍🔥",
+    "rating": 5,
+    "date": 1716809329000
+  },
+  {
+    "id": "u7125",
+    "name": "Павел",
+    "text": "Соответствие цены, наличие, отгрузка товара, соответствие условий оплаты, фискальный чек",
+    "rating": 5,
+    "date": 1716717385000
+  },
+  {
+    "id": "u4527",
+    "name": "Beliy 😉",
+    "text": "Покупкой телефона очень доволен! Обслуживание на высоком уровне, все быстро, удобно и приятно. Спасибо обязательно буду вас рекомендовать!",
+    "rating": 5,
+    "date": 1716662344000
+  },
+  {
+    "id": "u9308",
+    "name": "Yarui_A",
+    "text": "Купил MacBook в этом магазине, покупкой очень доволен. Профессиональная консультация, товар прислан в заявленные сроки. Рекомендую магазин. Благодарю вас",
+    "rating": 5,
+    "date": 1716559674000
+  },
+  {
+    "id": "u8475",
+    "name": "Elena_Kom",
+    "text": "Получила заказ вовремя. Телефон отличный, все проверили при выдаче. Спасибо за приятное обслуживание 😊",
+    "rating": 5,
+    "date": 1716537865000
+  },
+  {
+    "id": "u9123",
+    "name": "Cонечка",
+    "text": "Купила мужу телефон, он в восторге)) Все пришло вовремя, хорошо упаковано. Приятно иметь дело с таким магазином!",
+    "rating": 5,
+    "date": 1716504596000
+  },
+  {
+    "id": "u1994607",
+    "name": "Погорелов Виталя",
+    "text": "Брал планшет на учебу. Заказ подтвердили быстро, отправили в тот же день. Все пришло целое, упаковано аккуратно. Без нареканий?",
+    "rating": 5,
+    "date": 1716425240000
+  },
+  {
+    "id": "u1378",
+    "name": "Александр-99",
+    "text": "Приобрел наушники в этом магазине, звучание супер, цена приятная. Спасибо менеджерам за помощь с выбором модели. Рекомендую⚡️",
+    "rating": 5,
+    "date": 1716340797000
+  },
+  {
+    "id": "u5134",
+    "name": "Oleg Bakh.",
+    "text": "Купил iPhone, все ок) Отправили без задержек, пришло в новой упаковке, без повреждений. Цена адекватная,без накруток, сервис супер. Без лишних слов работают как следует.",
+    "rating": 5,
+    "date": 1716314110000
+  },
+  {
+    "id": "u2634584",
+    "name": "Артур",
+    "text": "Отличный магазин 👍",
+    "rating": 5,
+    "date": 1716250768000
+  },
+  {
+    "id": "u8306098",
+    "name": "DaryaSoloma",
+    "text": "Очередная покупка в Applemarket, как всегда, все супер, спасибо 🙏🏻",
+    "rating": 3,
+    "date": 1716242955310
+  },
+  {
+    "id": "u9373241",
+    "name": "виктория 🍭",
+    "text": "самая низкая цена где я либо видел. Обратились в магазин и сразу же приобрели. Менеджеры посоветовали какой лучший вариант для ребенка. Планшетом удовлетворены)",
+    "rating": 5,
+    "date": 1716134250000
+  },
+  {
+    "id": "u3814",
+    "name": "Brest",
+    "text": "Покупал лично себе, привезли через 6 дней. Открыл на месте, помогли настроить. Все супер.",
+    "rating": 5,
+    "date": 1715887614000
+  },
+  {
+    "id": "u3126",
+    "name": "Sergioo",
+    "text": "Покупкой в ​​этом магазине остались максимально довольны. Привезли часы. Вежливый и приятный консультант 😌 Цена совпадала с сайтом. Планируем дальше покупать в этом магазине)",
+    "rating": 5,
+    "date": 1715854531000
+  },
+  {
+    "id": "u3291",
+    "name": "1701Дарья",
+    "text": "Покупаем в данном магазине уже далеко не в первый раз 🙌🏼 Техника всегда оригинальна, цены абалденные,  обслуживание отличное. Рекомендуем",
+    "rating": 5,
+    "date": 1715824582000
+  },
+  {
+    "id": "u1044",
+    "name": "Draxion",
+    "text": "Покупали телефон на подарок – все понравилось! спасибо! Будем еще обращаться к вам!",
+    "rating": 5,
+    "date": 1715674046000
+  },
+  {
+    "id": "u3490",
+    "name": "Ж Груэль",
+    "text": "Всё как нужно, оригинал и новый - applemarket спс",
+    "rating": 5,
+    "date": 1715433985000
+  },
+  {
+    "id": "u4959",
+    "name": "Миша_Б",
+    "text": "Прекрасный магазин с хорошими ценами и ассортиментом) Спасибо с выбором модели и качественным обслуживанием, покупкой доволен)",
+    "rating": 5,
+    "date": 1715426509000
+  },
+  {
+    "id": "u7842",
+    "name": "FediaAftikov",
+    "text": "рекомндую этот магазин 🔥🔥🔥",
+    "rating": 5,
+    "date": 1715386568000
+  },
+  {
+    "id": "u1592",
+    "name": "Ярик",
+    "text": "Остался очень доволен покупкой. Оперативная связь, четкое соблюдение сроков, цена соответствует заявленной. Все на самом высоком уровне, рекомендую!",
+    "rating": 5,
+    "date": 1715318599000
+  },
+  {
+    "id": "u8329",
+    "name": "EDarbin 🏎",
+    "text": "Спасибо менеджеру ответившему на все мои вопросы, так как долго колебался какую же все-таки модель телефона выбрать и не прогадал! Обслуживанием доволен) Еще вернусь за наушниками )",
+    "rating": 5,
+    "date": 1715263145000
+  },
+  {
+    "id": "u8927101",
+    "name": "Све1тл1ана",
+    "text": "не ожидала такого сервиса: менеджер перезвонила, уточнила детали, отправили в тот же день и привезли к назначенному времени, очень довольна покупкой",
+    "rating": 5,
+    "date": 1715183957000
+  },
+  {
+    "id": "u8221195",
+    "name": "Юрий Игоревич",
+    "text": "Уже не в первый раз покупаем в данном магазине, обслуживанием всегда довольны!",
+    "rating": 3,
+    "date": 1715106305310
+  },
+  {
+    "id": "u5580",
+    "name": "ettе",
+    "text": "Персонал очень внимательный и приветливый, менеджер профессионально помог выбрать модель. С радостью обращусь и обязательно буду рекомендовать знакомым😽 Спасибо😽",
+    "rating": 5,
+    "date": 1715040277000
+  },
+  {
+    "id": "u9727680",
+    "name": "Plushka",
+    "text": "Не лохотрон проверено",
+    "rating": 3,
+    "date": 1715031506000
+  },
+  {
+    "id": "u4652750",
+    "name": "СергейЛС",
+    "text": "Как всегда самая лучшая цена и наличие 😌🖤",
+    "rating": 5,
+    "date": 1714875550000
+  },
+  {
+    "id": "u3999",
+    "name": "mari_035 🐈",
+    "text": "Очень довольна покупкой! Купил 13 айфон, все прошло быстро и без проблем. Менеджер был очень вежлив, профессиональн и помог со всеми вопросами. Отдельно спасибо за приятное обслуживание и быстрое оформление. Рекомендуем)",
+    "rating": 5,
+    "date": 1714867570000
+  },
+  {
+    "id": "u6066",
+    "name": "Татьяна. К.",
+    "text": "Покупала в этом магазине телефон Телефон оригинальный, новый, был упакован в пломбах Обслуживание было удовлетворено",
+    "rating": 5,
+    "date": 1714824963000
+  },
+  {
+    "id": "u8632",
+    "name": "Илонка",
+    "text": "Брала телефон, все понравилось, сервис работает очень хорошо и быстро, очень качественно💎",
+    "rating": 5,
+    "date": 1714557851000
+  },
+  {
+    "id": "u2022",
+    "name": "Hlomozda 55",
+    "text": "Отличная цена, товар доставили очень быстро, обслуживание на самом высоком уровне) Однозначно рекомендую)",
+    "rating": 5,
+    "date": 1714526577000
+  },
+  {
+    "id": "u1426",
+    "name": "Дени_С",
+    "text": "По рекомендации знакомых купил телефон в этом магазине. Обслуживанием доволен! Спасибо менеджерам за оперативность, так как телефон нужен был в заявленный мною день 🔥🙏🏻",
+    "rating": 5,
+    "date": 1714435988000
+  },
+  {
+    "id": "u2305",
+    "name": "RICК7",
+    "text": "Покупка превзошла все ожидания 🥹 Спасибо за помощь в выборе модели. (Магазин НЕ фейк)",
+    "rating": 5,
+    "date": 1714424254000
+  },
+  {
+    "id": "u6504",
+    "name": "Komis",
+    "text": "Хороший магазин!!",
+    "rating": 5,
+    "date": 1714285901000
+  },
+  {
+    "id": "u2177",
+    "name": "Maрина Кубикова",
+    "text": "покупала в этом магазине два айфона📱привезли мой заказ и помогли с настройкой. очень довольна покупкой и обслуживанием ",
+    "rating": 5,
+    "date": 1714212043000
+  },
+  {
+    "id": "u5959",
+    "name": "Назар",
+    "text": "Покупаем гаджеты уже не в первый раз, всегда все было хорошо. Отзыв за AppleMarket",
+    "rating": 5,
+    "date": 1714180865000
+  },
+  {
+    "id": "u3134",
+    "name": "mersi1231",
+    "text": "CПАСИБО!) Уверенные 5 звёзд!",
+    "rating": 5,
+    "date": 1714179502000
+  },
+  {
+    "id": "u7319508",
+    "name": "Ди 😊",
+    "text": "Это вероятно лучший опыт покупки за очень долгое время 🥹 Вы великие молодцы) Остались только приятные впечатления 😌",
+    "rating": 4,
+    "date": 1714160409000
+  },
+  {
+    "id": "u2324",
+    "name": "Hanna",
+    "text": "Предлагаю дать премию Татьяне и признать работником года)))",
+    "rating": 5,
+    "date": 1714138803000
+  },
+  {
+    "id": "u7893",
+    "name": "Артём",
+    "text": "Все отлично, персонал приветливый!! Все доступно рассказали о часах) Спасибо AppleMarket за хорошие скидки!! Буду обращаться к вам и в следующем году! :)",
+    "rating": 5,
+    "date": 1714129328000
+  },
+  {
+    "id": "u3302",
+    "name": "П Руслана",
+    "text": "Я довольна новым айфоном на все 100% 😍 Фотки выходят почти как на фотоаппарат, а видео снимает просто вау, лучшее качество глазами только можно увидеть 😍",
+    "rating": 5,
+    "date": 1714089509000
+  },
+  {
+    "id": "u9167",
+    "name": "0Марта0",
+    "text": "Здравствуйте, огромное спасибо менеджеру Татьяне за помощь в выборе действительно классного гаджета, очень довольны покупкой. Будем еще обращаться за покупками только к вам! Процветание и успехов Вам и вашей команде.",
+    "rating": 5,
+    "date": 1714079091000
+  },
+  {
+    "id": "u6817",
+    "name": "лиза",
+    "text": "ммм, как оперативно вы ассортимент дополняете, просто красота ❤️‍🔥💞",
+    "rating": 5,
+    "date": 1714033227000
+  },
+  {
+    "id": "u3256",
+    "name": "Lidoshka",
+    "text": "Все классно! Спасибо!",
+    "rating": 5,
+    "date": 1713864864000
+  },
+  {
+    "id": "u1594",
+    "name": "Лев",
+    "text": "Ну цены здесь действительно самые низкие на рынке  последнее время только у вас закупаюсь так держать🔥",
+    "rating": 5,
+    "date": 1713852259000
+  },
+  {
+    "id": "u9406",
+    "name": "Марк, Минск",
+    "text": "Лучший магазин - и самое лучшее обслуживание. Все четко без (воды и впаривания) Первый раз не жалко прощатся с деньгами. Менеджер Татьяна - профессионал и человек, к которому сразу появилось доверие! Благодарен за профессионализм, быстрое и качественное обслуживание!!!",
+    "rating": 5,
+    "date": 1713704072000
+  },
+  {
+    "id": "u1533",
+    "name": "Коля375",
+    "text": "Лучший магазин эпл техники в мире 🤩🤩 Сервис и качество товара в магазине без сомнения лучшее) Сотрудники приятны, лаконичны, информированы и образованы. Хочется возвращаться сюда снова и снова)",
+    "rating": 5,
+    "date": 1713614772000
+  },
+  {
+    "id": "u8750893",
+    "name": "Ulyana",
+    "text": "Apple__Market_BY лучшие 👍🏻 Не останавливайтесь..",
+    "rating": 4,
+    "date": 1713524444000
+  },
+  {
+    "id": "u1035433",
+    "name": "Василиса🐬",
+    "text": "Прекрасный сервис, приятные работники, комфортная атмосфера! Цены на технику приятно радуют, однозначно лайк!",
+    "rating": 5,
+    "date": 1713426248000
+  },
+  {
+    "id": "u1753",
+    "name": "Марта kdfn2",
+    "text": "У меня осталось максимально положительное впечатление от AM 💎. Консультант помог подобрать все согласно моим пожеланиям, буду рекомендовать ваш магазин друзьям. Надеюсь что моя покупка хорошо послужит)спасибо😎",
+    "rating": 5,
+    "date": 1713229639000
+  },
+  {
+    "id": "u4258",
+    "name": "🇧🇾 Никита",
+    "text": "Всегда был противником яблока, но как тут не купить по такой сочной цене и не испытать его 😁 и что думаете... я ненавижу теперь андроиды 😂😂🤣 Айфоны лучшие телефоны на планете",
+    "rating": 5,
+    "date": 1713201076000
+  },
+  {
+    "id": "u9629",
+    "name": "Vlaaadochka",
+    "text": "Удовлетворена обслуживанием в магазине) Ничего лишнего, все доступно и конструктивно было объяснено. Заказ выполнен в кратчайшие сроки,спасибо)",
+    "rating": 5,
+    "date": 1712950853000
+  },
+  {
+    "id": "u3055285",
+    "name": "Счастливый клиент",
+    "text": "Заказ пришёл быстро, упаковка без повреждений, товар полностью соответствует описанию и работает без проблем",
+    "rating": 5,
+    "date": 1712888039000
+  },
+  {
+    "id": "u7281563",
+    "name": "Имя 505",
+    "text": "понравилось отношение к клиенту 🥺🥰",
+    "rating": 5,
+    "date": 1712858722000
+  },
+  {
+    "id": "u6658",
+    "name": "Аrina 🌼",
+    "text": "Все таки не восстановленный айфон) Спасибо за нереальные цены на сегодня 🫣 Буду советовать и рекомендовать всем)",
+    "rating": 5,
+    "date": 1712855893000
+  },
+  {
+    "id": "u2109",
+    "name": "Кирилл",
+    "text": "Респект магазину 👍 Честно не ожидал что это все правда...",
+    "rating": 5,
+    "date": 1712783039000
+  },
+  {
+    "id": "u7570",
+    "name": "AlinaVin",
+    "text": "Осталась довольна покупкой в ​​магазине. Менеджер помог с выбором, доставили все даже раньше оговоренного срока. Большое спасибо за удобство и внимательность к моим пожеланиям.",
+    "rating": 5,
+    "date": 1712614809000
+  },
+  {
+    "id": "u7272",
+    "name": "Ded6",
+    "text": "Заказал Iphone в AppleMarket. Обычно не пишу отзывы, но здесь хочу отметить то, что понравилось) Телефон работает просто супер, нереально приятные цены и отдельно хочу сказать за консультантов – продавцы в магазине молодцы, все показали, рассказали и помогли с настройками.",
+    "rating": 5,
+    "date": 1712579448000
+  },
+  {
+    "id": "u1238",
+    "name": "🍓Элеонора🍓",
+    "text": "Искала себе ноут для работы, который потянет графику. Остановилась на Predator, посоветовавшаяся в магазине эпл маркет бай. Заказала онлайн, доставили быстро, все упаковано надежно. Ноут мощный, тянет все что мне нужно, еще выглядит стильно. Осталась довольна и техникой, и сервисом!",
+    "rating": 5,
+    "date": 1712564331000
+  },
+  {
+    "id": "u1390829",
+    "name": "Дмитрий Колесник",
+    "text": "Очень доволен заказом в данном магазине! Быстрая доставка, вежливые и компетентные менеджеры, все качественно упаковано. Приятно иметь дело с профессионалами. Рекомендую!💪",
+    "rating": 4,
+    "date": 1712391018000
+  },
+  {
+    "id": "u6587",
+    "name": "bukhi_",
+    "text": "благодарю вас за супер низкие цены без накруток, быструю и безопасную доставку, оригинальный товар который совпадает с серийным номером, спасибо за подарочки и самое главное спасибо за честность 🙏🏻🥹😇",
+    "rating": 5,
+    "date": 1712324400000
+  }
+];
+
+const STORAGE_APPROVED='am_by_reviews_approved_v5';
+const STORAGE_PENDING='am_by_reviews_pending_v5';
+const ADMIN_PASSWORD='lariskatop777'; // ВАЖНО: для реального сайта вынести авторизацию на сервер.
+let approved=load(STORAGE_APPROVED); if(!Array.isArray(approved)||!approved.length) approved=seed.slice();
+let pending=load(STORAGE_PENDING)||[];
+let visible=20, selectedRating=5;
+const $=id=>document.getElementById(id);
+function load(k){try{return JSON.parse(localStorage.getItem(k))}catch{return null}}
+function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function esc(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+function stars(n){return '★'.repeat(n)+'☆'.repeat(5-n)}
+function fmtDate(v){const d=new Date(typeof v==='string'&&isNaN(v)?v:Number(v));return isNaN(d)?'':d.toLocaleDateString('ru-RU',{day:'2-digit',month:'long',year:'numeric'})}
+function category(text){const s=String(text).toLowerCase();if(/mac|макбук|мак/.test(s))return'MacBook';if(/ipad|айпад|планшет/.test(s))return'iPad';if(/watch|часы/.test(s))return'Apple Watch';if(/iphone|айфон/.test(s))return'iPhone';return'Другое'}
+
+function reviewPhoto(r){
+  if(!r.photo) return '';
+  const raw=String(r.photo).trim();
+  if(!raw) return '';
+  // Если указано только имя файла, ищем его в папке reviews/.
+  // Если указан путь (например images/reviews/iphone.jpg), используем его как есть.
+  const src=/^[a-zA-Z0-9._-]+$/.test(raw)?`reviews/${encodeURIComponent(raw)}`:raw;
+  return `<img class="review-photo" src="${esc(src)}" alt="Фото клиента" loading="lazy" data-photo="${esc(src)}" onerror="this.style.display='none'">`;
+}
+function renderReviews(){const list=approved;const shown=list.slice(0,visible);$('resultInfo').textContent='Ваши отзывы';if(!shown.length){$('reviewList').innerHTML='<div class="empty">По выбранному фильтру отзывов пока нет.</div>'}else{$('reviewList').innerHTML=shown.map((r,i)=>{const name=esc(r.name||'Аноним');const text=esc(r.text||'');return `<article class="review-card"><div class="review-top"><div class="avatar">${esc((r.name||'А').charAt(0).toUpperCase())}</div><div class="review-main"><div class="name-row"><span class="name">${name}</span>${r.verified?'<span class="verified">✓ Проверенная покупка</span>':''}<span class="rating">${stars(Math.max(1,Math.min(5,Number(r.rating)||5)))}</span></div><div class="meta">${fmtDate(r.date)} · AM_BY</div></div></div><div class="review-text">${text}</div>${reviewPhoto(r)}${r.reply?`<div class="reply"><b>AM_BY 💎</b>${esc(r.reply)}</div>`:''}</article>`}).join('')}$('loadMore').style.display=visible<list.length?'inline-block':'none'}
+$('loadMore').onclick=()=>{visible+=20;renderReviews()};
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove('show'),2600)}
+function makeStars(){$('starPicker').innerHTML=[1,2,3,4,5].map(i=>`<button type="button" class="star-btn ${i<=selectedRating?'active':''}" data-star="${i}">★</button>`).join('');document.querySelectorAll('.star-btn').forEach(b=>b.onclick=()=>{selectedRating=Number(b.dataset.star);$('rating').value=selectedRating;makeStars()})}
+$('reviewForm').addEventListener('submit',e=>{e.preventDefault();const name=$('name').value.trim(),text=$('text').value.trim(),rating=selectedRating,product=$('product').value;if(!name||!text){toast('Заполните имя и текст отзыва');return}const r={id:'p'+Date.now().toString(36),name,text,rating,product,date:Date.now()};pending.unshift(r);save(STORAGE_PENDING,pending);e.target.reset();selectedRating=5;makeStars();$('photoPreview').style.display='none';toast('Спасибо! Отзыв отправлен на модерацию.')});
+$('photo').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const u=URL.createObjectURL(f);$('photoPreview').src=u;$('photoPreview').style.display='block'});
+function renderAdmin(){$('pendingList').innerHTML=pending.length?pending.map(r=>`<div class="admin-item"><b>${esc(r.name)}</b><div class="meta">${stars(r.rating)} · ${fmtDate(r.date)} · ${esc(r.product||category(r.text))}</div><p style="font-size:13px;line-height:1.5">${esc(r.text)}</p>${reviewPhoto(r)}<div class="actions"><button class="btn small" data-a="approve" data-id="${r.id}">Опубликовать</button><button class="btn small danger" data-a="reject" data-id="${r.id}">Удалить</button></div></div>`).join(''):'<div class="empty">Новых отзывов нет.</div>';const recent=approved.slice().reverse().slice(0,60);$('publishedList').innerHTML=recent.map(r=>`<div class="admin-item"><b>${esc(r.name)}</b><div class="meta">${stars(r.rating)} · ${fmtDate(r.date)}</div><p style="font-size:12px;line-height:1.45">${esc(r.text)}</p>${reviewPhoto(r)}<div class="actions"><button class="btn small danger" data-a="delete" data-id="${r.id}">Удалить</button></div></div>`).join('')}
+function adminAction(e){const b=e.target.closest('[data-a]');if(!b)return;const id=b.dataset.id,a=b.dataset.a;if(a==='approve'){const i=pending.findIndex(x=>x.id===id);if(i>-1){approved.unshift({...pending[i],verified:false});pending.splice(i,1)}}else if(a==='reject'){pending=pending.filter(x=>x.id!==id)}else if(a==='delete'){approved=approved.filter(x=>x.id!==id)}save(STORAGE_APPROVED,approved);save(STORAGE_PENDING,pending);renderReviews();renderAdmin();toast(a==='approve'?'Отзыв опубликован':'Изменения сохранены')}
+$('pendingList').addEventListener('click',adminAction);$('publishedList').addEventListener('click',adminAction);
+$('adminOpen').onclick=()=>$('adminModal').classList.add('open');$('adminClose').onclick=()=>$('adminModal').classList.remove('open');$('adminModal').addEventListener('click',e=>{if(e.target.id==='adminModal')e.currentTarget.classList.remove('open')});
+$('adminEnter').onclick=()=>{if($('adminPassword').value===ADMIN_PASSWORD){$('adminLogin').style.display='none';$('adminArea').style.display='block';renderAdmin()}else toast('Неверный пароль')};
+makeStars();renderReviews();
+document.addEventListener('click',e=>{
+  const img=e.target.closest('.review-photo');
+  if(!img)return;
+  $('photoModalImg').src=img.dataset.photo;
+  $('photoModal').classList.add('open');
+});
+$('photoModalClose').onclick=()=>$('photoModal').classList.remove('open');
+$('photoModal').addEventListener('click',e=>{if(e.target.id==='photoModal')e.currentTarget.classList.remove('open')});
+
+</script>
+</body>
+</html>
